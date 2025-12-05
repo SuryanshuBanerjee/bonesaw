@@ -3,3 +3,4 @@ typer
 feedparser
 pytest
 requests
+ruff

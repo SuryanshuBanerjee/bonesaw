@@ -233,7 +233,7 @@ class WriteMarkdownReportStep:
             f.write('\n'.join(lines))
         
         context['report_path'] = self.output_path
-        logger.info(f"Report written successfully")
+        logger.info("Report written successfully")
         
         return stats
 

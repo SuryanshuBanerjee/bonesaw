@@ -71,7 +71,7 @@ def load_config(path: str) -> dict[str, Any]:
     logger.info(f"Loading configuration from {path}")
     with open(path, 'r') as f:
         config = yaml.safe_load(f)
-    logger.debug(f"Configuration loaded successfully")
+    logger.debug("Configuration loaded successfully")
     return config
 
 

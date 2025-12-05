@@ -1,1 +1,1 @@
-# Bonesaw Skeleton Core
+"""Core pipeline framework for the Bonesaw skeleton."""

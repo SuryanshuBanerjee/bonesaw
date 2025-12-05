@@ -8,7 +8,6 @@ from YAML configuration files.
 import importlib
 import logging
 import os
-import sys
 from pathlib import Path
 
 import typer
