@@ -1,0 +1,17 @@
+pipeline:
+  name: haunted_log_cleaner
+  steps:
+    - type: load_logs
+      path: "apps/haunted_log_cleaner/sample_logs.log"
+    
+    - type: parse_logs
+    
+    - type: anonymize_logs
+    
+    - type: aggregate_errors
+    
+    - type: write_markdown_report
+      output_path: "apps/haunted_log_cleaner/output_report.md"
+    
+    - type: log_llm_summary
+      output_path: "apps/haunted_log_cleaner/output_report.md"

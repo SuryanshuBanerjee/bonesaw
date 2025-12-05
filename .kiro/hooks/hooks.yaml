@@ -1,0 +1,32 @@
+hooks:
+  # Automatically run tests when core framework or test files change
+  - name: "Run Tests"
+    description: "Automatically run pytest when skeleton_core or tests are modified"
+    trigger:
+      type: "file_save"
+      patterns:
+        - "skeleton_core/**/*.py"
+        - "tests/**/*.py"
+    action:
+      type: "shell"
+      command: "pytest -q"
+    
+  # Automatically run linter when any Python file changes
+  - name: "Lint Python Files"
+    description: "Run ruff linter on Python file changes"
+    trigger:
+      type: "file_save"
+      patterns:
+        - "**/*.py"
+    action:
+      type: "shell"
+      command: "ruff check ."
+    
+  # Manual syntax check hook
+  - name: "Syntax Check"
+    description: "Manually check Python syntax across the entire project"
+    trigger:
+      type: "manual"
+    action:
+      type: "shell"
+      command: "python -m compileall ."

@@ -1,0 +1,18 @@
+pipeline:
+  name: graveyard_feed_reviver
+  steps:
+    - type: load_feed_urls
+      path: "apps/graveyard_feed_reviver/sample_feeds.txt"
+    
+    - type: fetch_feeds
+    
+    - type: normalize_entries
+    
+    - type: write_json
+      output_path: "apps/graveyard_feed_reviver/output_feeds.json"
+    
+    - type: write_markdown
+      output_path: "apps/graveyard_feed_reviver/output_feeds.md"
+    
+    - type: feed_llm_summary
+      output_path: "apps/graveyard_feed_reviver/output_feeds.md"

@@ -1,0 +1,1 @@
+# Haunted Log Cleaner Application
