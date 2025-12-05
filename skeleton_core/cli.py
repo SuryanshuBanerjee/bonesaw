@@ -56,6 +56,149 @@ def list_apps():
         typer.echo(f"  - {app_name}")
 
 
+def _get_step_description(step) -> str:
+    """
+    Extract a short description from a step instance.
+    
+    Args:
+        step: Step instance
+        
+    Returns:
+        First non-empty line of docstring, or fallback message
+    """
+    docstring = step.__class__.__doc__
+    if docstring:
+        lines = [line.strip() for line in docstring.split('\n') if line.strip()]
+        if lines:
+            return lines[0]
+    return "No description provided."
+
+
+def _load_app_and_config(app_name: str, config_path: str):
+    """
+    Load app module and config, returning the config dict.
+    
+    Args:
+        app_name: Name of the app
+        config_path: Path to YAML config file
+        
+    Returns:
+        Tuple of (config_dict, pipeline)
+        
+    Raises:
+        typer.Exit on any error
+    """
+    # Validate that the app exists
+    app_pipelines_path = Path("apps") / app_name / "pipelines.py"
+    if not app_pipelines_path.exists():
+        typer.echo(f"Error: Application '{app_name}' not found.", err=True)
+        typer.echo(f"Expected to find: {app_pipelines_path}", err=True)
+        raise typer.Exit(code=1)
+    
+    # Import the app's pipelines module to register steps
+    try:
+        module_name = f"apps.{app_name}.pipelines"
+        logger.debug(f"Importing {module_name} to register steps")
+        importlib.import_module(module_name)
+    except ImportError as e:
+        typer.echo(f"Error: Failed to import {module_name}: {e}", err=True)
+        raise typer.Exit(code=1)
+    
+    # Load configuration
+    try:
+        config_dict = load_config(config_path)
+    except FileNotFoundError:
+        typer.echo(f"Error: Config file not found: {config_path}", err=True)
+        raise typer.Exit(code=1)
+    except Exception as e:
+        typer.echo(f"Error: Failed to load config: {e}", err=True)
+        raise typer.Exit(code=1)
+    
+    # Build pipeline
+    try:
+        pipeline = build_pipeline_from_config(config_dict)
+    except Exception as e:
+        typer.echo(f"Error: Failed to build pipeline: {e}", err=True)
+        logger.error(f"Pipeline build failed: {e}", exc_info=True)
+        raise typer.Exit(code=1)
+    
+    return config_dict, pipeline
+
+
+@app.command()
+def inspect(
+    app_name: str = typer.Option(..., "--app", "-a", help="Name of the app to inspect"),
+    config: str = typer.Option(..., "--config", "-c", help="Path to YAML config file")
+):
+    """
+    Inspect a pipeline configuration without executing it.
+    
+    Shows the pipeline structure and step descriptions.
+    """
+    print_banner()
+    
+    logger.info(f"Inspecting pipeline for app '{app_name}'")
+    
+    # Load app and config
+    config_dict, pipeline = _load_app_and_config(app_name, config)
+    
+    # Print pipeline summary
+    typer.echo(f"Pipeline: {pipeline.name}")
+    typer.echo()
+    
+    for i, step in enumerate(pipeline.steps, start=1):
+        step_type = step.__class__.__name__
+        description = _get_step_description(step)
+        typer.echo(f"{i}. {step_type}  → {description}")
+    
+    typer.echo()
+    typer.echo(f"Total steps: {len(pipeline.steps)}")
+
+
+@app.command()
+def dry_run(
+    app_name: str = typer.Option(..., "--app", "-a", help="Name of the app to simulate"),
+    config: str = typer.Option(..., "--config", "-c", help="Path to YAML config file")
+):
+    """
+    Perform a dry-run of a pipeline without executing steps.
+    
+    Shows detailed information about what would be executed.
+    """
+    print_banner()
+    
+    logger.info(f"Dry-run for app '{app_name}'")
+    
+    # Load app and config
+    config_dict, pipeline = _load_app_and_config(app_name, config)
+    
+    # Print dry-run header
+    typer.echo("⚠️  NOTE: This is a dry-run; no data will be processed or written.")
+    typer.echo()
+    typer.echo(f"Dry run: {pipeline.name}")
+    typer.echo()
+    
+    # Print detailed step information
+    for i, step in enumerate(pipeline.steps, start=1):
+        step_type = step.__class__.__name__
+        description = _get_step_description(step)
+        
+        typer.echo(f"Step {i}: {step_type}")
+        typer.echo(f"  - Description: {description}")
+        
+        # Show step parameters if available
+        if hasattr(step, '__dict__'):
+            params = {k: v for k, v in step.__dict__.items() if not k.startswith('_')}
+            if params:
+                typer.echo(f"  - Parameters: {params}")
+        
+        typer.echo()
+    
+    typer.echo(f"Total steps: {len(pipeline.steps)}")
+    typer.echo()
+    typer.echo("✅ Dry-run complete. Use 'run' command to execute the pipeline.")
+
+
 @app.command()
 def run(
     app_name: str = typer.Option(..., "--app", "-a", help="Name of the application to run"),

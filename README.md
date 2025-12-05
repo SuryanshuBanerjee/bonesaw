@@ -33,4 +33,4 @@ This project demonstrates spec-driven development, steering docs, hooks, and aut
 
 ## License
 
-MIT
+MPL 2.0
