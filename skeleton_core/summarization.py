@@ -308,6 +308,91 @@ def summarize_logs(stats: dict[str, Any], context: dict[str, Any] | None = None)
         return base_summary
 
 
+def summarize_text(lines: list[str], context: dict[str, Any] | None = None) -> str:
+    """
+    Generate a summary of text lines with optional LLM enhancement.
+    
+    Always produces a deterministic template-based summary. If LLM is enabled
+    and configured, appends an LLM-generated summary. Falls back gracefully
+    if LLM call fails.
+    
+    Args:
+        lines: List of text lines to summarize
+        context: Pipeline context (may contain 'use_llm' flag)
+        
+    Returns:
+        Summary text (deterministic, or deterministic + LLM)
+    """
+    config = get_summarization_config(context)
+    
+    # Build deterministic template summary
+    total_lines = len(lines)
+    sample_lines = lines[:3]
+    
+    summary_parts = [
+        f"The pipeline processed {total_lines} lines of text.",
+    ]
+    
+    if sample_lines:
+        summary_parts.append("Sample lines:")
+        for line in sample_lines:
+            # Truncate long lines
+            display_line = line[:100] + "..." if len(line) > 100 else line
+            summary_parts.append(f"  - {display_line}")
+    
+    summary_parts.append(
+        "The transformed text has been captured in the spectral realm of the pipeline... 👻"
+    )
+    
+    base_summary = "\n".join(summary_parts)
+    
+    if not llm_enabled(config):
+        # Log specific reasons why LLM is not enabled
+        if config.use_llm_flag:
+            missing = []
+            if not config.provider:
+                missing.append("BONESAW_LLM_PROVIDER")
+            if not config.model:
+                missing.append("BONESAW_LLM_MODEL")
+            if not config.api_key:
+                missing.append("BONESAW_LLM_API_KEY")
+            
+            if missing:
+                logger.warning(
+                    "LLM requested but missing configuration: %s. Falling back to deterministic summary.",
+                    ", ".join(missing)
+                )
+        else:
+            logger.debug("LLM not enabled for text summarization")
+        return base_summary
+    
+    try:
+        # Prepare text for LLM (truncate if very long)
+        text_sample = "\n".join(lines[:50])  # First 50 lines
+        if len(text_sample) > 2000:
+            text_sample = text_sample[:2000] + "\n... (truncated)"
+        
+        prompt = (
+            f"You are an assistant summarizing pipeline output text.\n\n"
+            f"Given the following processed text lines:\n\n{text_sample}\n\n"
+            f"Produce:\n"
+            f"- 3 short bullet points summarizing the content\n"
+            f"- 1 spooky or eerie closing sentence\n\n"
+            f"Avoid leaking any secrets; speak generally about the content."
+        )
+        
+        llm_text = _call_llm(
+            config.provider or "unknown",
+            config.api_key or "",
+            config.model or "unknown",
+            prompt
+        )
+        return base_summary + "\n\n---\n\n" + llm_text
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("LLM summarization for text failed, falling back to template only: %s", exc)
+        return base_summary
+
+
 def summarize_feeds(entries: list[dict[str, Any]], context: dict[str, Any] | None = None) -> str:
     """
     Generate a summary of feed entries with optional LLM enhancement.

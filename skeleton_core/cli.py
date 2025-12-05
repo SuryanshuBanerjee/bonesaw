@@ -8,11 +8,13 @@ from YAML configuration files.
 import importlib
 import logging
 import os
+import shutil
 from pathlib import Path
 
 import typer
 
 from skeleton_core.config import build_pipeline_from_config, load_config
+from skeleton_core.scaffold import generate_app_files
 
 logger = logging.getLogger(__name__)
 
@@ -23,6 +25,90 @@ def print_banner():
     """Print a spooky ASCII banner."""
     typer.echo("🦴 BONESAW CLI 🦴")
     typer.echo()
+
+
+@app.command()
+def create_app(
+    app_name: str = typer.Argument(..., help="Name of the new app (folder under apps/)"),
+    force: bool = typer.Option(False, "--force", "-f", help="Overwrite existing app directory if it exists")
+):
+    """
+    Create a new Bonesaw application with a working text processing pipeline.
+    
+    Generates a complete app skeleton with pipelines, config, sample data, and README.
+    """
+    print_banner()
+    
+    # Compute target directory
+    target_dir = Path("apps") / app_name
+    
+    # Check if directory exists
+    if target_dir.exists():
+        if not force:
+            typer.echo(f"Error: App directory already exists: {target_dir}", err=True)
+            typer.echo("Use --force to overwrite the existing app.", err=True)
+            raise typer.Exit(code=1)
+        else:
+            typer.echo(f"⚠️  Overwriting existing app at {target_dir}")
+    
+    # Create the app
+    logger.info(f"Creating new app '{app_name}' at {target_dir}")
+    
+    try:
+        generate_app_files(app_name, target_dir)
+    except Exception as e:
+        typer.echo(f"Error: Failed to create app: {e}", err=True)
+        logger.error(f"App creation failed: {e}", exc_info=True)
+        raise typer.Exit(code=1)
+    
+    # Success message
+    typer.echo(f"✅ Successfully created app '{app_name}' at {target_dir}")
+    typer.echo()
+    typer.echo("Next steps:")
+    typer.echo(f"  1. Inspect:  python main.py inspect --app {app_name} --config apps/{app_name}/config.example.yml")
+    typer.echo(f"  2. Dry-run:  python main.py dry-run --app {app_name} --config apps/{app_name}/config.example.yml")
+    typer.echo(f"  3. Run:      python main.py run --app {app_name} --config apps/{app_name}/config.example.yml")
+
+
+@app.command()
+def delete_app(
+    app_name: str = typer.Argument(..., help="Name of the app (folder under apps/) to delete"),
+    force: bool = typer.Option(False, "--force", "-f", help="Delete without confirmation")
+):
+    """
+    Delete an application and all its files.
+    
+    Removes the app directory under apps/. Use with caution!
+    """
+    print_banner()
+    
+    # Resolve target directory
+    target_dir = Path("apps") / app_name
+    
+    # Check if directory exists
+    if not target_dir.exists():
+        typer.echo(f"Error: App '{app_name}' does not exist under 'apps/'.", err=True)
+        raise typer.Exit(code=1)
+    
+    # Confirm deletion unless force is set
+    if not force:
+        confirm = typer.confirm(
+            f"Are you sure you want to delete app '{app_name}' and all its files?"
+        )
+        if not confirm:
+            typer.echo("Deletion cancelled.")
+            return
+    
+    # Delete the directory
+    logger.info(f"Deleting app '{app_name}' at {target_dir}")
+    
+    try:
+        shutil.rmtree(target_dir)
+        typer.echo(f"✅ Successfully deleted app '{app_name}'")
+    except Exception as e:
+        typer.echo(f"Error: Failed to delete app: {e}", err=True)
+        logger.error(f"App deletion failed: {e}", exc_info=True)
+        raise typer.Exit(code=1)
 
 
 @app.command()

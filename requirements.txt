@@ -4,3 +4,4 @@ feedparser
 pytest
 requests
 ruff
+mcp[cli]
