@@ -1,148 +1,39 @@
-<div align="center">
+# Bonesaw
 
-# 🎃 Bonesaw
-
-### *A Kiro-Powered Skeleton Crew Automation Engine*
-
-**Spookily extensible pipeline framework that Kiro can create, inspect, and control through MCP**
+A modular Python automation framework for building composable data processing pipelines.
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](.github/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MPL--2.0-orange.svg)](LICENSE)
-[![Kiroween 2025](https://img.shields.io/badge/Kiroween-2025-purple.svg)](https://kiro.ai)
 
----
+## Overview
 
-</div>
+Bonesaw is a lightweight, extensible framework for creating automation pipelines. It provides a step-based architecture where each step performs a discrete operation, and pipelines are defined declaratively using YAML configuration files.
 
-## 🩸 What Is Bonesaw?
+The framework is designed for:
+- Data processing workflows
+- Log analysis and transformation
+- Feed aggregation and normalization
+- Report generation
+- Any sequential automation task
 
-**Bonesaw** is not just a pipeline framework — it's a **summoning ritual for automation**. Every app is a "bone" the framework animates, and **Kiro** (via MCP) becomes the necromancer controlling it.
+## Key Features
 
-This repository contains:
+- **Declarative Configuration**: Define pipelines using YAML files
+- **Step Registry**: Automatic step discovery via decorator-based registration
+- **Context Sharing**: Pass state between steps using a shared context dictionary
+- **CLI Tools**: Built-in commands for running, inspecting, and managing pipelines
+- **App Scaffolding**: Generate new pipeline applications with a single command
+- **Optional LLM Integration**: Enhance output with AI-powered summaries via OpenRouter
+- **Testing**: Comprehensive test suite with pytest
+- **Code Quality**: Enforced linting with Ruff
+- **CI/CD**: GitHub Actions workflow included
 
-- 🦴 **A reusable pipeline engine** (`skeleton_core/`)
-- 🧟 **Two full spooky applications** (required by Skeleton Crew track)
-  - **Haunted Log Cleaner** — Forensic log analysis with eldritch summaries
-  - **Graveyard Feed Reviver** — RSS/Atom necromancy with AI-powered scrolls
-- 🌐 **An MCP server** that exposes Bonesaw as a programmable automation platform
-- ⚡ **A create-app generator** that scaffolds new automation apps instantly
-- 📜 **Kiro specs + hooks** powering a full CI-tested, spec-driven workflow
-
-**Bonesaw isn't a demo — it's a complete automation ecosystem.**
-
----
-
-## 🔥 Key Features
-
-### 1. 🧙 Deep Kiro Integration (MCP, Specs, Hooks, Steering)
-
-Bonesaw exposes **five MCP tools** that let Kiro inspect, run, create, and delete pipeline applications **live**:
-
-| MCP Tool | Description |
-|----------|-------------|
-| `bonesaw_list_pipelines` | Discover all available pipeline apps |
-| `bonesaw_inspect_pipeline` | Analyze structure without execution |
-| `bonesaw_run_pipeline` | Execute pipelines remotely with full output |
-| `bonesaw_create_app` | Generate new apps programmatically |
-| `bonesaw_delete_app` | Remove apps with confirmation |
-
-This transforms Kiro into a **live IDE for automation pipelines**.
-
-The repository includes:
-- `.kiro/specs/` — Defining pipeline requirements and code patterns
-- `.kiro/hooks/` — Automating linting, tests, and structure validation
-- `.kiro/steering/` — Guiding Kiro's development behavior
-- Vibe-coded workflows baked into the development process
-
-### 2. 🧩 Pipeline Skeleton Framework
-
-A production-ready framework providing:
-
-- **Step Registry** — `@register_step` decorator for automatic discovery
-- **Context-Driven Execution** — Shared state across pipeline steps
-- **YAML-Based Definitions** — Declarative pipeline configuration
-- **Rich CLI** — `run`, `inspect`, `dry-run`, `list-apps`, `create-app`, `delete-app`
-- **Strong Test Suite** — Full pytest coverage with deterministic tests
-- **Linting** — Ruff-enforced code quality
-- **UTF-8 Safe** — Proper encoding handling everywhere
-
-> *This is Zapier meets necromancy, inside Python.*
-
-### 3. 🧙 Optional LLM Summarization via OpenRouter
-
-All apps support:
-- **Deterministic summaries** (offline mode, always works)
-- **Optional enhanced summaries** via OpenRouter:
-
-```bash
-set BONESAW_LLM_PROVIDER=openrouter
-set BONESAW_LLM_MODEL=deepseek/deepseek-r1-0528-qwen3-8b
-set BONESAW_LLM_API_KEY=your_key_here
-python main.py run --app haunted_log_cleaner --config apps/haunted_log_cleaner/config.example.yml --use-llm
-```
-
-Graceful fallback ensures pipelines always complete successfully.
-
-### 4. 🧫 App Scaffolding & Deletion
-
-**Developer productivity magic:**
-
-```bash
-python main.py create-app my_app
-python main.py delete-app my_app
-```
-
-Creates complete runnable apps with:
-- `pipelines.py` — Step implementations
-- `config.example.yml` — Working configuration
-- `sample_input.txt` — Test data
-- Report generator with UTF-8 output
-- Optional LLM text summary step
-- `README.md` — Documentation
-- Kiro-compatible structure
-
-**The best DX in the hackathon.**
-
-### 5. ⚰️ Two Fully-Built Skeleton Crew Apps
-
-#### 🩸 Haunted Log Cleaner
-
-A forensic log analysis ritual:
-
-1. **Loads** "cursed" logs from disk
-2. **Parses** entries with regex patterns
-3. **Anonymizes** IPs and emails
-4. **Aggregates** warnings and errors
-5. **Outputs** Markdown forensic report
-6. **Adds** an AI "Eldritch Summary" section
-
-```bash
-python main.py run --app haunted_log_cleaner --config apps/haunted_log_cleaner/config.example.yml
-```
-
-#### 🕯 Graveyard Feed Reviver
-
-RSS/Atom feed necromancy:
-
-1. **Fetches** RSS/Atom feeds from the digital graveyard
-2. **Normalizes** metadata across feed formats
-3. **Writes** artifacts: JSON + Markdown "Necromancer's Scroll"
-4. **Generates** LLM-powered summary (optional)
-
-```bash
-python main.py run --app graveyard_feed_reviver --config apps/graveyard_feed_reviver/config.example.yml
-```
-
-Each app is a **complete, spooky narrative-driven automation ritual**.
-
----
-
-## ⚙️ Installation & Quick Start
+## Installation
 
 ### Prerequisites
 
-- Python 3.11+
+- Python 3.11 or higher
 - pip
 
 ### Install Dependencies
@@ -151,332 +42,474 @@ Each app is a **complete, spooky narrative-driven automation ritual**.
 pip install -r requirements.txt
 ```
 
-### Explore the CLI
+## Quick Start
 
-```bash
-python main.py --help
-```
-
-### List All Apps
+### List Available Applications
 
 ```bash
 python main.py list-apps
 ```
 
-### Inspect a Pipeline (No Execution)
+### Inspect a Pipeline
+
+View pipeline structure without executing:
 
 ```bash
-python main.py inspect --app haunted_log_cleaner --config apps/haunted_log_cleaner/config.example.yml
+python main.py inspect --app log_cleaner --config apps/log_cleaner/config.example.yml
 ```
 
-### Dry-Run (Detailed Step Info)
+
+### Dry-Run a Pipeline
+
+See detailed step information without side effects:
 
 ```bash
-python main.py dry-run --app graveyard_feed_reviver --config apps/graveyard_feed_reviver/config.example.yml
+python main.py dry-run --app feed_processor --config apps/feed_processor/config.example.yml
 ```
 
 ### Run a Pipeline
 
+Execute a complete pipeline:
+
 ```bash
-python main.py run --app haunted_log_cleaner --config apps/haunted_log_cleaner/config.example.yml
+python main.py run --app log_cleaner --config apps/log_cleaner/config.example.yml
 ```
 
-### Enable LLM Support
+## Directory Structure
+
+```
+bonesaw/
+├── skeleton_core/          # Core framework
+│   ├── pipeline.py         # Pipeline execution engine
+│   ├── config.py           # Step registry and configuration loader
+│   ├── cli.py              # Command-line interface
+│   ├── scaffold.py         # App generator
+│   └── summarization.py    # Optional LLM integration
+├── apps/                   # Pipeline applications
+│   ├── log_cleaner/        # Example: Log processing pipeline
+│   └── feed_processor/     # Example: RSS/Atom feed pipeline
+├── tests/                  # Test suite
+├── main.py                 # CLI entry point
+└── requirements.txt        # Python dependencies
+```
+
+### Core Components
+
+- **`skeleton_core/`**: Contains the reusable framework code
+- **`apps/`**: Individual pipeline applications, each with its own steps and configuration
+- **`tests/`**: Pytest test files for framework and applications
+- **`main.py`**: Entry point for the CLI
+
+## Usage Examples
+
+### Creating a New Application
+
+Generate a new pipeline application with scaffolding:
+
+```bash
+python main.py create-app my_processor
+```
+
+This creates:
+- `apps/my_processor/pipelines.py` - Step implementations
+- `apps/my_processor/config.example.yml` - Pipeline configuration
+- `apps/my_processor/sample_input.txt` - Sample data
+- `apps/my_processor/README.md` - Documentation
+
+### Running with LLM Enhancement
+
+Enable optional AI-powered summaries:
 
 ```bash
 set BONESAW_LLM_PROVIDER=openrouter
 set BONESAW_LLM_MODEL=deepseek/deepseek-r1-0528-qwen3-8b
-set BONESAW_LLM_API_KEY=your_key_here
+set BONESAW_LLM_API_KEY=your_api_key
 
-python main.py run --app haunted_log_cleaner --config apps/haunted_log_cleaner/config.example.yml --use-llm
+python main.py run --app my_processor --config apps/my_processor/config.example.yml --use-llm
 ```
 
-### Create a New App
+### Deleting an Application
+
+Remove an application and its files:
 
 ```bash
-python main.py create-app my_app
+python main.py delete-app my_processor
 ```
 
-### Delete an App
+
+## Creating Custom Pipeline Steps
+
+Steps are the building blocks of pipelines. Each step implements a `run` method that processes data and optionally updates shared context.
+
+### Step Implementation
+
+```python
+from skeleton_core.config import register_step
+from typing import Any
+
+@register_step("transform_data")
+class TransformDataStep:
+    """
+    Transforms input data according to specified rules.
+    
+    Input: Raw data dictionary
+    Output: Transformed data dictionary
+    Context: Writes 'transform_count' with number of transformations
+    """
+    
+    def __init__(self, mode: str = "default", multiplier: int = 1):
+        """
+        Initialize the step with configuration parameters.
+        
+        Args:
+            mode: Transformation mode
+            multiplier: Scaling factor for numeric values
+        """
+        self.mode = mode
+        self.multiplier = multiplier
+    
+    def run(self, data: Any, context: dict[str, Any]) -> Any:
+        """
+        Execute the transformation step.
+        
+        Args:
+            data: Input data from previous step
+            context: Shared context dictionary
+            
+        Returns:
+            Transformed data for next step
+        """
+        # Implement transformation logic
+        transformed = self._transform(data)
+        
+        # Update context
+        context['transform_count'] = len(transformed)
+        
+        return transformed
+    
+    def _transform(self, data: Any) -> Any:
+        # Transformation implementation
+        return data
+```
+
+### Pipeline Configuration
+
+Define pipelines in YAML:
+
+```yaml
+pipeline:
+  name: data_processor
+  steps:
+    - type: load_data
+      source: input.txt
+    
+    - type: transform_data
+      mode: advanced
+      multiplier: 2
+    
+    - type: write_output
+      destination: output.txt
+```
+
+### Step Registration
+
+The `@register_step` decorator automatically registers steps in the global registry. The framework uses the step type from the configuration to instantiate the correct class.
+
+
+## Example Applications
+
+The repository includes two complete example applications demonstrating different use cases.
+
+### Log Cleaner
+
+A log processing pipeline that:
+1. Loads log files from disk
+2. Parses log entries using regex patterns
+3. Anonymizes sensitive data (IP addresses, email addresses)
+4. Aggregates errors and warnings
+5. Generates a formatted Markdown report
+6. Optionally adds an AI-generated summary
+
+**Usage:**
+```bash
+python main.py run --app log_cleaner --config apps/log_cleaner/config.example.yml
+```
+
+### Feed Processor
+
+An RSS/Atom feed aggregation pipeline that:
+1. Loads feed URLs from a text file
+2. Fetches and parses feeds using feedparser
+3. Normalizes entry metadata across different feed formats
+4. Outputs structured JSON data
+5. Generates a formatted Markdown report
+6. Optionally adds an AI-generated summary
+
+**Usage:**
+```bash
+python main.py run --app feed_processor --config apps/feed_processor/config.example.yml
+```
+
+## Optional LLM Integration
+
+Bonesaw supports optional AI-powered text summarization via OpenRouter.
+
+### Configuration
+
+Set environment variables:
 
 ```bash
-python main.py delete-app my_app
+set BONESAW_LLM_PROVIDER=openrouter
+set BONESAW_LLM_MODEL=deepseek/deepseek-r1-0528-qwen3-8b
+set BONESAW_LLM_API_KEY=your_api_key_here
 ```
 
----
+### Behavior
 
-## 🌐 Bonesaw MCP Server
+- **Without LLM**: Pipelines generate deterministic, template-based summaries
+- **With LLM**: Summaries are enhanced with AI-generated insights
+- **Fallback**: If LLM calls fail, the system gracefully falls back to deterministic summaries
 
-### Start the MCP Server
+### Supported Providers
 
-```bash
-python bonesaw_mcp_server.py
-```
+Currently supports OpenRouter. The framework can be extended to support additional providers by modifying `skeleton_core/summarization.py`.
 
-This exposes Bonesaw to any MCP-compatible client (like Kiro).
 
-### Available MCP Tools
+## Testing
 
-| Tool | Description |
-|------|-------------|
-| `bonesaw_list_pipelines` | Discover all pipeline apps |
-| `bonesaw_inspect_pipeline` | Analyze structure of any app |
-| `bonesaw_run_pipeline` | Execute pipelines remotely |
-| `bonesaw_create_app` | Generate new apps programmatically |
-| `bonesaw_delete_app` | Remove apps remotely |
+The project includes a comprehensive test suite using pytest.
 
-### Kiro Integration
-
-Kiro automatically connects via `.kiro/settings/mcp.json`:
-
-```json
-{
-  "mcpServers": {
-    "bonesaw-local": {
-      "url": "http://localhost:8000/mcp",
-      "disabled": false,
-      "autoApprove": [
-        "bonesaw_list_pipelines",
-        "bonesaw_inspect_pipeline",
-        "bonesaw_run_pipeline",
-        "bonesaw_create_app",
-        "bonesaw_delete_app"
-      ]
-    }
-  }
-}
-```
-
-This makes Bonesaw visible inside Kiro as a **fully controllable automation system**.
-
----
-
-## 🧪 Testing & CI
-
-This repository includes:
-
-- ✅ **Full pytest coverage**
-- ✅ **Deterministic tests** (no network, no LLM needed)
-- ✅ **GitHub Actions CI**
-- ✅ **Ruff linting enforced**
-
-Run tests:
+### Running Tests
 
 ```bash
 pytest
 ```
 
-Run linting:
+### Test Coverage
+
+- **`tests/test_pipeline_core.py`**: Core framework functionality
+- **`tests/test_logs.py`**: Log cleaner application
+- **`tests/test_feeds.py`**: Feed processor application
+
+All tests are deterministic and do not require network access or external API calls.
+
+### Code Quality
+
+Linting is enforced using Ruff:
 
 ```bash
 ruff check .
 ```
 
-**Everything passes.**
+## Continuous Integration
 
----
+The repository includes a GitHub Actions workflow (`.github/workflows/ci.yml`) that:
+- Runs on push and pull requests to main/master branches
+- Tests against Python 3.11 on Ubuntu
+- Installs dependencies
+- Runs Ruff linting
+- Executes the full test suite
 
-## 🧱 How to Extend Bonesaw
+## Extending the Framework
 
-### Create a New App
+### Adding New Step Types
 
-```bash
-python main.py create-app my_new_app
-```
+1. Create a new class in your app's `pipelines.py`
+2. Decorate with `@register_step("step_name")`
+3. Implement the `run(self, data, context)` method
+4. Add the step to your pipeline configuration
 
-### Edit the Generated Files
+### Creating Reusable Steps
 
-- `apps/my_new_app/pipelines.py`
-- `apps/my_new_app/config.example.yml`
+Steps can be shared across applications by:
+- Placing them in a common module
+- Importing them in application-specific `pipelines.py` files
+- Ensuring they are registered before pipeline execution
 
-### Add Custom Steps
+### Custom Context Keys
 
+Steps can read and write arbitrary keys to the shared context dictionary. Common patterns:
+- Store metadata: `context['record_count'] = 100`
+- Share configuration: `context['output_format'] = 'json'`
+- Pass intermediate results: `context['parsed_data'] = data`
+
+
+## Architecture
+
+### Pipeline Execution Flow
+
+1. **Configuration Loading**: YAML file is parsed into a dictionary
+2. **Step Instantiation**: Each step type is looked up in the registry and instantiated with its parameters
+3. **Pipeline Creation**: Steps are assembled into a Pipeline object
+4. **Execution**: Pipeline runs each step sequentially, passing data and context
+5. **Output**: Final step returns the processed result
+
+### Step Protocol
+
+Steps must implement:
 ```python
-from skeleton_core.config import register_step
-
-@register_step("my_step")
-class MyStep:
-    """What this step does."""
+def run(self, data: Any, context: dict[str, Any]) -> Any:
+    """
+    Process data and return result for next step.
     
-    def __init__(self, param1: str = "default"):
-        self.param1 = param1
-    
-    def run(self, data, context):
-        # Your logic here
-        return processed_data
+    Args:
+        data: Output from previous step (or initial_data for first step)
+        context: Shared dictionary for passing state between steps
+        
+    Returns:
+        Processed data for next step
+    """
 ```
 
-### Run / Test / Integrate via MCP
+### Context Dictionary
+
+The context is a mutable dictionary shared across all steps in a pipeline execution. It enables:
+- Passing metadata between steps
+- Accumulating statistics
+- Sharing configuration
+- Storing intermediate results
+
+## CLI Reference
+
+### Commands
+
+- **`list-apps`**: Display all available pipeline applications
+- **`inspect`**: Show pipeline structure without execution
+- **`dry-run`**: Display detailed step information without side effects
+- **`run`**: Execute a complete pipeline
+- **`create-app`**: Generate a new pipeline application
+- **`delete-app`**: Remove a pipeline application
+
+### Common Options
+
+- **`--app`**: Application name (required for most commands)
+- **`--config`**: Path to YAML configuration file (required for pipeline operations)
+- **`--use-llm`**: Enable LLM-enhanced summaries (optional, requires environment variables)
+- **`--force`**: Skip confirmation prompts (for delete-app)
+
+### Examples
 
 ```bash
-python main.py run --app my_new_app --config apps/my_new_app/config.example.yml
+# List all applications
+python main.py list-apps
+
+# Inspect pipeline structure
+python main.py inspect --app my_app --config apps/my_app/config.example.yml
+
+# Run with detailed output
+python main.py run --app my_app --config apps/my_app/config.example.yml
+
+# Create new application
+python main.py create-app new_processor
+
+# Delete application (with confirmation)
+python main.py delete-app old_processor
+
+# Delete application (skip confirmation)
+python main.py delete-app old_processor --force
 ```
 
----
 
-## 🧛 Skeleton Crew Theme Alignment
+## Requirements
 
-Bonesaw is **thematically designed from the ground up**:
+### Python Dependencies
 
-- 🧟 "Haunted" logs
-- ⚰️ "Graveyard" feeds
-- 🔮 "Necromancer's overview"
-- 📜 Summaries written in spooky tone
-- 💀 CLI uses skull/bone ASCII indicators
-- 🦴 Pipeline = skeleton
-- 🩸 Steps = bones
-- 🧙 Kiro = necromancer controlling the bones through MCP
+- **pyyaml**: YAML configuration parsing
+- **typer**: CLI framework
+- **feedparser**: RSS/Atom feed parsing (for feed processor example)
+- **requests**: HTTP client (for LLM integration)
+- **pytest**: Testing framework
+- **ruff**: Code linting and formatting
 
-**This is not a skin-deep theme — it's integrated into the architecture.**
+See `requirements.txt` for complete dependency list with versions.
 
----
+### System Requirements
 
-## 🧠 How Kiro Was Used
+- Python 3.11 or higher
+- pip package manager
+- Operating System: Windows, macOS, or Linux
 
-> *Judges will look for this!*
+## Configuration File Format
 
-### 🌀 Vibe Coding
+Pipeline configurations use YAML format:
 
-Kiro generated large parts of:
-- Pipeline engine
-- Decorators and step registry
-- CLI scaffolding
-- MCP server
-- Test suite
-- Error handling
-
-Requests were structured like:
-> *"Implement X but ensure it's deterministic, UTF-8 safe, and CI-friendly."*
-
-Kiro maintained style, architecture, and consistency across sessions.
-
-### 📜 Spec-Driven Development
-
-Bonesaw was built from `.kiro/specs/` which defined:
-- Expected module architecture
-- Function signatures
-- Required behavior
-- Constraints (deterministic tests, no network, etc.)
-
-Kiro followed these specs to generate:
-- CLI commands
-- App templates
-- Pipeline patterns
-- Documentation
-
-**This approach was more reliable than vibe coding alone** — structure was rock solid from the beginning.
-
-### 🔧 Hooks
-
-`.kiro/hooks/` automated:
-- Running pytest on changes
-- Running ruff linting
-- Validating pipeline config
-- Enforcing code patterns
-
-This meant **every iteration stayed stable and safe**.
-
-### 🧭 Steering Docs
-
-The project used:
-- **Tone steering** for spooky narrative
-- **Architecture steering** for consistent pipeline style
-- **Behavioral steering** for predictable error handling
-
-Steering massively improved consistency.
-
-### 🧩 MCP Integration
-
-**This is the biggest win.**
-
-Bonesaw exposes full automation control to Kiro:
-- Listing pipelines
-- Inspecting structure
-- Executing pipelines from inside Kiro
-- Scaffolding whole new apps via `bonesaw_create_app`
-- Deleting them
-
-This transforms the project from:
-> *"A pipeline framework"*
-
-into:
-> *"A programmable spooky automation platform that Kiro can extend live."*
-
-**This alone makes the project stand out at the hackathon.**
-
----
-
-## 📁 Repository Structure
-
-```
-bonesaw/
-├── .github/
-│   └── workflows/
-│       └── ci.yml              # GitHub Actions CI
-├── .kiro/
-│   ├── hooks/
-│   │   └── hooks.yaml          # Automated testing & linting
-│   ├── settings/
-│   │   └── mcp.json            # MCP server configuration
-│   ├── specs/
-│   │   └── skeleton_core.md    # Framework specification
-│   └── steering/
-│       └── project_guide.md    # Development guidelines
-├── apps/
-│   ├── graveyard_feed_reviver/
-│   │   ├── config.example.yml
-│   │   ├── pipelines.py
-│   │   ├── README.md
-│   │   └── sample_feeds.txt
-│   └── haunted_log_cleaner/
-│       ├── config.example.yml
-│       ├── pipelines.py
-│       ├── README.md
-│       └── sample_logs.log
-├── skeleton_core/
-│   ├── cli.py                  # Typer-based CLI
-│   ├── config.py               # Step registry & config loading
-│   ├── pipeline.py             # Pipeline execution engine
-│   ├── scaffold.py             # App generator
-│   └── summarization.py        # LLM integration
-├── tests/
-│   ├── conftest.py
-│   ├── test_feeds.py
-│   ├── test_logs.py
-│   └── test_pipeline_core.py
-├── bonesaw_mcp_server.py       # FastMCP server
-├── main.py                     # CLI entry point
-├── requirements.txt
-├── LICENSE
-└── README.md
+```yaml
+pipeline:
+  name: my_pipeline
+  steps:
+    - type: step_type_1
+      param1: value1
+      param2: value2
+    
+    - type: step_type_2
+      param1: value1
+    
+    - type: step_type_3
+      param1: value1
+      param2: value2
+      param3: value3
 ```
 
+### Configuration Rules
+
+- **`pipeline.name`**: Arbitrary string for identification and logging
+- **`pipeline.steps`**: Ordered list of step definitions
+- **`type`**: Step type name (must match a registered step)
+- Additional keys are passed as keyword arguments to the step constructor
+
+## Error Handling
+
+The framework provides clear error messages for common issues:
+
+- **Unknown step type**: Raised when a step type is not found in the registry
+- **Missing configuration**: Raised when required parameters are not provided
+- **File not found**: Raised when configuration or input files cannot be located
+- **Step execution errors**: Logged with full context and re-raised for debugging
+
+All errors include descriptive messages to aid in troubleshooting.
+
+## Contributing
+
+Contributions are welcome. Please ensure:
+- All tests pass (`pytest`)
+- Code passes linting (`ruff check .`)
+- New features include tests
+- Documentation is updated
+
+
+## License
+
+This project is licensed under the Mozilla Public License 2.0 (MPL-2.0).
+
+See the [LICENSE](LICENSE) file for full license text.
+
+### MPL-2.0 Summary
+
+- **Permissions**: Commercial use, modification, distribution, patent use, private use
+- **Conditions**: Disclose source, include license and copyright notice, state changes
+- **Limitations**: Liability, warranty
+
+## Project Status
+
+This project is actively maintained and suitable for production use. The framework is stable and the API is considered mature.
+
+## Support
+
+For issues, questions, or feature requests:
+- Open an issue on GitHub
+- Check existing documentation
+- Review example applications for usage patterns
+
+## Acknowledgments
+
+Built with:
+- Python 3.11+
+- Typer for CLI
+- PyYAML for configuration
+- Feedparser for RSS/Atom support
+- Pytest for testing
+- Ruff for code quality
+
 ---
 
-## 📜 License
-
-[MPL-2.0](LICENSE)
-
----
-
-## ⚰️ Kiroween 2025 – Skeleton Crew Submission
-
-This project fulfills **all category requirements**:
-
-- ✅ 2+ apps
-- ✅ `.kiro` directory
-- ✅ Open-source code
-- ✅ CI, tests, hooks, specs
-- ✅ MCP integration
-- ✅ Kiro-powered development
-- ✅ Spooky theme
-
----
-
-<div align="center">
-
-### 🎃 *Built with Kiro. Animated by necromancy. Powered by automation.* 🎃
-
-**[View on GitHub](https://github.com/yourusername/bonesaw)** • **[Report Bug](https://github.com/yourusername/bonesaw/issues)** • **[Request Feature](https://github.com/yourusername/bonesaw/issues)**
-
-</div>
+**Bonesaw** - A modular Python automation framework for composable data processing pipelines.
