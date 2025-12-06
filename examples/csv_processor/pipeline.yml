@@ -1,0 +1,39 @@
+pipeline:
+  name: csv_data_pipeline
+  steps:
+    # Download sample CSV data
+    - type: download_file
+      url: https://raw.githubusercontent.com/datasets/covid-19/main/data/countries-aggregated.csv
+      output_path: examples/csv_processor/data.csv
+
+    # Read the downloaded file
+    - type: read_file
+
+    # Parse CSV
+    - type: parse_csv
+      has_header: true
+
+    # Filter for recent US data
+    - type: filter_data
+      field: Country
+      value: US
+      condition: equals
+
+    # Convert back to CSV
+    - type: to_csv
+
+    # Save processed data
+    - type: write_file
+      path: examples/csv_processor/processed.csv
+
+    # Also convert to JSON for APIs
+    - type: read_file
+      path: examples/csv_processor/processed.csv
+
+    - type: parse_csv
+
+    - type: to_json
+      indent: 2
+
+    - type: write_file
+      path: examples/csv_processor/processed.json

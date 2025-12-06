@@ -69,7 +69,7 @@ def load_config(path: str) -> dict[str, Any]:
         yaml.YAMLError: If the file contains invalid YAML
     """
     logger.info(f"Loading configuration from {path}")
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
     logger.debug("Configuration loaded successfully")
     return config

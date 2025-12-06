@@ -12,7 +12,7 @@ import logging
 import os
 import textwrap
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, Optional
 
 import requests
 
@@ -22,13 +22,13 @@ logger = logging.getLogger(__name__)
 @dataclass
 class SummarizationConfig:
     """Configuration for summarization mode."""
-    provider: str | None
-    api_key: str | None
-    model: str | None
+    provider: Optional[str]
+    api_key: Optional[str]
+    model: Optional[str]
     use_llm_flag: bool
 
 
-def get_summarization_config(context: dict[str, Any] | None = None) -> SummarizationConfig:
+def get_summarization_config(context: Optional[dict[str, Any]] = None) -> SummarizationConfig:
     """
     Determine summarization configuration from environment and context.
     
@@ -252,7 +252,7 @@ def _simulated_response(provider: str, model: str, prompt: str) -> str:
     return f"[Simulated LLM summary via {provider}:{model or 'unknown'} based on: {trimmed}]"
 
 
-def summarize_logs(stats: dict[str, Any], context: dict[str, Any] | None = None) -> str:
+def summarize_logs(stats: dict[str, Any], context: Optional[dict[str, Any]] = None) -> str:
     """
     Generate a summary of log statistics with optional LLM enhancement.
     
@@ -308,7 +308,7 @@ def summarize_logs(stats: dict[str, Any], context: dict[str, Any] | None = None)
         return base_summary
 
 
-def summarize_text(lines: list[str], context: dict[str, Any] | None = None) -> str:
+def summarize_text(lines: list[str], context: Optional[dict[str, Any]] = None) -> str:
     """
     Generate a summary of text lines with optional LLM enhancement.
     
@@ -393,7 +393,7 @@ def summarize_text(lines: list[str], context: dict[str, Any] | None = None) -> s
         return base_summary
 
 
-def summarize_feeds(entries: list[dict[str, Any]], context: dict[str, Any] | None = None) -> str:
+def summarize_feeds(entries: list[dict[str, Any]], context: Optional[dict[str, Any]] = None) -> str:
     """
     Generate a summary of feed entries with optional LLM enhancement.
     

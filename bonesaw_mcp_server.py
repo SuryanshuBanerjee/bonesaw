@@ -15,6 +15,8 @@ from mcp.server.fastmcp import FastMCP
 
 from skeleton_core.config import build_pipeline_from_config, load_config
 from skeleton_core.scaffold import generate_app_files
+# Import built-in steps to auto-register them
+import skeleton_core.steps  # noqa: F401
 
 # Configure logging
 logging.basicConfig(
@@ -349,6 +351,23 @@ def bonesaw_delete_app(app: str, force: bool = False) -> dict:
 
 
 if __name__ == "__main__":
-    # Run HTTP server on localhost:8001, path /mcp
-    logger.info("Starting Bonesaw MCP server on http://localhost:8001/mcp")
-    mcp.run(transport="streamable-http")
+    # Run HTTP server on localhost:8000, path /mcp
+    logger.info("Starting Bonesaw MCP server on http://localhost:8000/mcp")
+
+    # Handle graceful shutdown
+    import signal
+    import sys
+
+    def signal_handler(sig, frame):
+        """Handle shutdown gracefully."""
+        logger.info("Shutting down Bonesaw MCP server...")
+        sys.exit(0)
+
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+
+    try:
+        mcp.run(transport="streamable-http")
+    except KeyboardInterrupt:
+        logger.info("Server stopped by user")
+        sys.exit(0)

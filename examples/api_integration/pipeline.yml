@@ -1,0 +1,31 @@
+pipeline:
+  name: api_data_flow
+  steps:
+    # Fetch data from JSONPlaceholder API
+    - type: http_get
+      url: https://jsonplaceholder.typicode.com/posts/1
+
+    # Parse JSON response
+    - type: parse_json
+
+    # Transform to YAML for readability
+    - type: to_yaml
+
+    # Save as YAML
+    - type: write_file
+      path: examples/api_integration/data.yml
+
+    # Read it back
+    - type: read_file
+      path: examples/api_integration/data.yml
+
+    # Parse YAML
+    - type: parse_yaml
+
+    # Convert to pretty JSON
+    - type: to_json
+      indent: 2
+
+    # Save final JSON
+    - type: write_file
+      path: examples/api_integration/data.json

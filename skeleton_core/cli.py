@@ -10,20 +10,41 @@ import logging
 import os
 import shutil
 from pathlib import Path
+from typing import Optional
 
 import typer
 
+from skeleton_core.cache import cache_stats, clear_cache
 from skeleton_core.config import build_pipeline_from_config, load_config
 from skeleton_core.scaffold import generate_app_files
+# Import built-in steps to auto-register them
+import skeleton_core.steps  # noqa: F401
 
 logger = logging.getLogger(__name__)
 
-app = typer.Typer(help="🦴 Bonesaw - Pipeline automation framework 🦴")
+app = typer.Typer(help="Bonesaw - Pipeline automation framework")
+
+
+def safe_echo(text: str, **kwargs):
+    """
+    Echo text to console, falling back to ASCII if Unicode fails.
+
+    Handles Windows console encoding issues by stripping emojis/Unicode
+    characters when the console doesn't support them.
+    """
+    try:
+        typer.echo(text, **kwargs)
+    except UnicodeEncodeError:
+        # Remove emoji and special Unicode characters for Windows consoles
+        import re
+        ascii_text = re.sub(r'[\u2600-\u27BF\U0001F300-\U0001F9FF\u2192\u26A0\uFE0F]+', '', text)
+        ascii_text = ascii_text.replace('→', '->').replace('⚠', 'WARNING:').replace('✅', '[OK]').replace('❌', '[FAIL]')
+        typer.echo(ascii_text.strip(), **kwargs)
 
 
 def print_banner():
     """Print a spooky ASCII banner."""
-    typer.echo("🦴 BONESAW CLI 🦴")
+    safe_echo("🦴 BONESAW CLI 🦴")
     typer.echo()
 
 
@@ -49,7 +70,7 @@ def create_app(
             typer.echo("Use --force to overwrite the existing app.", err=True)
             raise typer.Exit(code=1)
         else:
-            typer.echo(f"⚠️  Overwriting existing app at {target_dir}")
+            safe_echo(f"⚠️  Overwriting existing app at {target_dir}")
     
     # Create the app
     logger.info(f"Creating new app '{app_name}' at {target_dir}")
@@ -62,7 +83,7 @@ def create_app(
         raise typer.Exit(code=1)
     
     # Success message
-    typer.echo(f"✅ Successfully created app '{app_name}' at {target_dir}")
+    safe_echo(f"✅ Successfully created app '{app_name}' at {target_dir}")
     typer.echo()
     typer.echo("Next steps:")
     typer.echo(f"  1. Inspect:  python main.py inspect --app {app_name} --config apps/{app_name}/config.example.yml")
@@ -104,7 +125,7 @@ def delete_app(
     
     try:
         shutil.rmtree(target_dir)
-        typer.echo(f"✅ Successfully deleted app '{app_name}'")
+        safe_echo(f"✅ Successfully deleted app '{app_name}'")
     except Exception as e:
         typer.echo(f"Error: Failed to delete app: {e}", err=True)
         logger.error(f"App deletion failed: {e}", exc_info=True)
@@ -159,35 +180,39 @@ def _get_step_description(step) -> str:
     return "No description provided."
 
 
-def _load_app_and_config(app_name: str, config_path: str):
+def _load_app_and_config(app_name: Optional[str], config_path: str):
     """
     Load app module and config, returning the config dict.
-    
+
     Args:
-        app_name: Name of the app
+        app_name: Name of the app (None for standalone configs)
         config_path: Path to YAML config file
-        
+
     Returns:
         Tuple of (config_dict, pipeline)
-        
+
     Raises:
         typer.Exit on any error
     """
-    # Validate that the app exists
-    app_pipelines_path = Path("apps") / app_name / "pipelines.py"
-    if not app_pipelines_path.exists():
-        typer.echo(f"Error: Application '{app_name}' not found.", err=True)
-        typer.echo(f"Expected to find: {app_pipelines_path}", err=True)
-        raise typer.Exit(code=1)
-    
-    # Import the app's pipelines module to register steps
-    try:
-        module_name = f"apps.{app_name}.pipelines"
-        logger.debug(f"Importing {module_name} to register steps")
-        importlib.import_module(module_name)
-    except ImportError as e:
-        typer.echo(f"Error: Failed to import {module_name}: {e}", err=True)
-        raise typer.Exit(code=1)
+    # If app is specified, import its pipelines module
+    if app_name:
+        # Validate that the app exists
+        app_pipelines_path = Path("apps") / app_name / "pipelines.py"
+        if not app_pipelines_path.exists():
+            typer.echo(f"Error: Application '{app_name}' not found.", err=True)
+            typer.echo(f"Expected to find: {app_pipelines_path}", err=True)
+            raise typer.Exit(code=1)
+
+        # Import the app's pipelines module to register steps
+        try:
+            module_name = f"apps.{app_name}.pipelines"
+            logger.debug(f"Importing {module_name} to register steps")
+            importlib.import_module(module_name)
+        except ImportError as e:
+            typer.echo(f"Error: Failed to import {module_name}: {e}", err=True)
+            raise typer.Exit(code=1)
+    else:
+        logger.debug("Using built-in steps only (no app specified)")
     
     # Load configuration
     try:
@@ -212,53 +237,59 @@ def _load_app_and_config(app_name: str, config_path: str):
 
 @app.command()
 def inspect(
-    app_name: str = typer.Option(..., "--app", "-a", help="Name of the app to inspect"),
-    config: str = typer.Option(..., "--config", "-c", help="Path to YAML config file")
+    config: str = typer.Option(..., "--config", "-c", help="Path to YAML config file"),
+    app_name: Optional[str] = typer.Option(None, "--app", "-a", help="Name of the app to inspect (optional for standalone configs)")
 ):
     """
     Inspect a pipeline configuration without executing it.
-    
+
     Shows the pipeline structure and step descriptions.
     """
     print_banner()
-    
-    logger.info(f"Inspecting pipeline for app '{app_name}'")
-    
+
+    if app_name:
+        logger.info(f"Inspecting pipeline for app '{app_name}'")
+    else:
+        logger.info(f"Inspecting standalone pipeline")
+
     # Load app and config
     config_dict, pipeline = _load_app_and_config(app_name, config)
-    
+
     # Print pipeline summary
     typer.echo(f"Pipeline: {pipeline.name}")
     typer.echo()
-    
+
     for i, step in enumerate(pipeline.steps, start=1):
         step_type = step.__class__.__name__
         description = _get_step_description(step)
-        typer.echo(f"{i}. {step_type}  → {description}")
-    
+        safe_echo(f"{i}. {step_type}  → {description}")
+
     typer.echo()
     typer.echo(f"Total steps: {len(pipeline.steps)}")
 
 
 @app.command()
 def dry_run(
-    app_name: str = typer.Option(..., "--app", "-a", help="Name of the app to simulate"),
-    config: str = typer.Option(..., "--config", "-c", help="Path to YAML config file")
+    config: str = typer.Option(..., "--config", "-c", help="Path to YAML config file"),
+    app_name: Optional[str] = typer.Option(None, "--app", "-a", help="Name of the app to simulate (optional for standalone configs)")
 ):
     """
     Perform a dry-run of a pipeline without executing steps.
-    
+
     Shows detailed information about what would be executed.
     """
     print_banner()
-    
-    logger.info(f"Dry-run for app '{app_name}'")
+
+    if app_name:
+        logger.info(f"Dry-run for app '{app_name}'")
+    else:
+        logger.info(f"Dry-run for standalone pipeline")
     
     # Load app and config
     config_dict, pipeline = _load_app_and_config(app_name, config)
     
     # Print dry-run header
-    typer.echo("⚠️  NOTE: This is a dry-run; no data will be processed or written.")
+    safe_echo("⚠️  NOTE: This is a dry-run; no data will be processed or written.")
     typer.echo()
     typer.echo(f"Dry run: {pipeline.name}")
     typer.echo()
@@ -275,44 +306,48 @@ def dry_run(
         if hasattr(step, '__dict__'):
             params = {k: v for k, v in step.__dict__.items() if not k.startswith('_')}
             if params:
-                typer.echo(f"  - Parameters: {params}")
-        
+                safe_echo(f"  - Parameters: {params}")
+
         typer.echo()
     
     typer.echo(f"Total steps: {len(pipeline.steps)}")
     typer.echo()
-    typer.echo("✅ Dry-run complete. Use 'run' command to execute the pipeline.")
+    safe_echo("✅ Dry-run complete. Use 'run' command to execute the pipeline.")
 
 
 @app.command()
 def run(
-    app_name: str = typer.Option(..., "--app", "-a", help="Name of the application to run"),
     config: str = typer.Option(..., "--config", "-c", help="Path to YAML config file"),
+    app_name: Optional[str] = typer.Option(None, "--app", "-a", help="Name of the application to run (optional for standalone configs)"),
     use_llm: bool = typer.Option(False, "--use-llm", help="Enable LLM-enhanced summaries if BONESAW_LLM_* is configured")
 ):
     """
     Run a pipeline from a YAML configuration file.
-    
-    The specified app's pipelines.py module will be imported to register
-    all step types, then the pipeline will be built and executed.
+
+    If --app is specified, the app's pipelines.py module will be imported to register
+    custom step types. Otherwise, only built-in steps will be available.
     """
     print_banner()
-    
-    # Validate that the app exists
-    app_pipelines_path = Path("apps") / app_name / "pipelines.py"
-    if not app_pipelines_path.exists():
-        typer.echo(f"Error: Application '{app_name}' not found.", err=True)
-        typer.echo(f"Expected to find: {app_pipelines_path}", err=True)
-        raise typer.Exit(code=1)
-    
-    # Import the app's pipelines module to register steps
-    try:
-        module_name = f"apps.{app_name}.pipelines"
-        logger.info(f"Importing {module_name} to register steps")
-        importlib.import_module(module_name)
-    except ImportError as e:
-        typer.echo(f"Error: Failed to import {module_name}: {e}", err=True)
-        raise typer.Exit(code=1)
+
+    # If app is specified, import its pipelines module
+    if app_name:
+        # Validate that the app exists
+        app_pipelines_path = Path("apps") / app_name / "pipelines.py"
+        if not app_pipelines_path.exists():
+            typer.echo(f"Error: Application '{app_name}' not found.", err=True)
+            typer.echo(f"Expected to find: {app_pipelines_path}", err=True)
+            raise typer.Exit(code=1)
+
+        # Import the app's pipelines module to register steps
+        try:
+            module_name = f"apps.{app_name}.pipelines"
+            logger.info(f"Importing {module_name} to register steps")
+            importlib.import_module(module_name)
+        except ImportError as e:
+            typer.echo(f"Error: Failed to import {module_name}: {e}", err=True)
+            raise typer.Exit(code=1)
+    else:
+        logger.info("Running with built-in steps only (no app specified)")
     
     # Load configuration
     try:
@@ -340,29 +375,94 @@ def run(
         if llm_provider and llm_api_key:
             logger.info(f"LLM enhancement enabled with provider: {llm_provider}")
         else:
-            typer.echo("⚠️  --use-llm specified but BONESAW_LLM_PROVIDER or BONESAW_LLM_API_KEY not set", err=True)
+            safe_echo("⚠️  --use-llm specified but BONESAW_LLM_PROVIDER or BONESAW_LLM_API_KEY not set", err=True)
             typer.echo("    Falling back to deterministic summaries", err=True)
     
     # Run pipeline
     typer.echo(f"Running pipeline '{pipeline.name}' from app '{app_name}'...")
     typer.echo()
-    
+
     try:
-        # Pass context with use_llm flag
-        context = {"app": app_name, "use_llm": use_llm}
+        # Pass context with use_llm flag and timestamp
+        from datetime import datetime
+        context = {
+            "app": app_name,
+            "use_llm": use_llm,
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
         result = pipeline.run(context=context)
         typer.echo()
-        typer.echo("✅ Pipeline completed successfully!")
-        
+        safe_echo("✅ Pipeline completed successfully!")
+
         # Optionally display the result if it's a simple type
         if result is not None and not isinstance(result, (dict, list)):
             typer.echo(f"Final result: {result}")
-        
+
     except Exception as e:
         typer.echo()
-        typer.echo(f"❌ Pipeline failed: {e}", err=True)
+        safe_echo(f"❌ Pipeline failed: {e}", err=True)
         logger.error(f"Pipeline execution failed: {e}", exc_info=True)
         raise typer.Exit(code=1)
+
+
+@app.command()
+def cache_info():
+    """
+    Show cache statistics.
+    """
+    print_banner()
+
+    stats = cache_stats()
+
+    if stats['file_count'] == 0:
+        typer.echo("Cache is empty")
+        return
+
+    safe_echo(f"📊 Cache Statistics:")
+    typer.echo(f"  Files: {stats['file_count']}")
+    typer.echo(f"  Total size: {stats['total_size_mb']} MB")
+    typer.echo(f"  Oldest entry: {stats['oldest_age']}s ago")
+    typer.echo(f"  Newest entry: {stats['newest_age']}s ago")
+
+
+@app.command()
+def cache_clear(
+    older_than: int = typer.Option(
+        0,
+        help="Only clear cache entries older than N seconds (0 = clear all)"
+    ),
+    force: bool = typer.Option(
+        False,
+        "--force",
+        "-f",
+        help="Skip confirmation prompt"
+    )
+):
+    """
+    Clear the pipeline cache.
+    """
+    print_banner()
+
+    stats = cache_stats()
+
+    if stats['file_count'] == 0:
+        typer.echo("Cache is already empty")
+        return
+
+    if not force:
+        if older_than > 0:
+            typer.echo(f"This will clear cache entries older than {older_than}s")
+        else:
+            typer.echo(f"This will clear ALL {stats['file_count']} cache entries ({stats['total_size_mb']} MB)")
+
+        confirm = typer.confirm("Continue?")
+        if not confirm:
+            typer.echo("Cancelled")
+            raise typer.Exit()
+
+    clear_cache(older_than=older_than if older_than > 0 else None)
+
+    safe_echo("✅ Cache cleared")
 
 
 if __name__ == "__main__":

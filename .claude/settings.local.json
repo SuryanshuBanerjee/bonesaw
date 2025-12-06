@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest:*)",
+      "Bash(pytest:*)",
+      "Bash(pip install:*)",
+      "Bash(python main.py:*)",
+      "Bash(find:*)",
+      "Bash(xargs -I {} sh -c 'grep -q \"\"from typing import.*Optional\"\" {} || sed -i \"\"s/from typing import \\(.*\\)$/from typing import \\1, Optional/\"\" {}')"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

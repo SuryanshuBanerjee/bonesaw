@@ -69,3 +69,7 @@ Thumbs.db
 *.log
 output/
 reports/
+
+# Kiro-specific files
+.kiro/
+.bonesaw_cache/

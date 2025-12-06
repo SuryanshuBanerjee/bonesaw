@@ -7,7 +7,7 @@ be chained together into pipelines.
 """
 
 import logging
-from typing import Any, Protocol
+from typing import Any, Protocol, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -43,7 +43,7 @@ class Pipeline:
     common context dictionary for storing metadata and intermediate state.
     """
     
-    def __init__(self, steps: list[Step], name: str | None = None):
+    def __init__(self, steps: list[Step], name: Optional[str] = None):
         """
         Initialize a pipeline with an ordered list of steps.
         
@@ -54,7 +54,7 @@ class Pipeline:
         self.steps = steps
         self.name = name or "unnamed_pipeline"
         
-    def run(self, initial_data: Any | None = None, context: dict[str, Any] | None = None) -> Any:
+    def run(self, initial_data: Optional[Any] = None, context: Optional[dict[str, Any]] = None) -> Any:
         """
         Execute all steps in the pipeline sequentially.
         
@@ -76,21 +76,28 @@ class Pipeline:
         
         # Start with initial data
         data = initial_data
-        
-        try:
-            # Execute each step sequentially
-            for i, step in enumerate(self.steps):
-                step_name = step.__class__.__name__
+
+        # Execute each step sequentially
+        for i, step in enumerate(self.steps):
+            step_name = step.__class__.__name__
+            try:
                 logger.info(f"Step {i + 1}/{len(self.steps)}: {step_name} starting")
-                
+
                 # Run the step and capture its output
                 data = step.run(data, context)
-                
+
                 logger.info(f"Step {i + 1}/{len(self.steps)}: {step_name} completed")
-                
-            logger.info(f"Pipeline '{self.name}' completed successfully")
-            return data
-            
-        except Exception as e:
-            logger.error(f"Pipeline '{self.name}' failed: {e}", exc_info=True)
-            raise
+
+            except Exception as e:
+                logger.error(
+                    f"Pipeline '{self.name}' failed at step {i + 1}/{len(self.steps)} "
+                    f"({step_name}): {e}",
+                    exc_info=True
+                )
+                raise RuntimeError(
+                    f"Pipeline '{self.name}' failed at step {i + 1}/{len(self.steps)} "
+                    f"({step_name}): {e}"
+                ) from e
+
+        logger.info(f"Pipeline '{self.name}' completed successfully")
+        return data

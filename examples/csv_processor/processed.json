@@ -1,0 +1,5714 @@
+[
+  {
+    "Date": "2020-01-22",
+    "Country": "US",
+    "Confirmed": "1",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-23",
+    "Country": "US",
+    "Confirmed": "1",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-24",
+    "Country": "US",
+    "Confirmed": "2",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-25",
+    "Country": "US",
+    "Confirmed": "2",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-26",
+    "Country": "US",
+    "Confirmed": "5",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-27",
+    "Country": "US",
+    "Confirmed": "5",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-28",
+    "Country": "US",
+    "Confirmed": "5",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-29",
+    "Country": "US",
+    "Confirmed": "6",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-30",
+    "Country": "US",
+    "Confirmed": "6",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-01-31",
+    "Country": "US",
+    "Confirmed": "8",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-01",
+    "Country": "US",
+    "Confirmed": "8",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-02",
+    "Country": "US",
+    "Confirmed": "8",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-03",
+    "Country": "US",
+    "Confirmed": "11",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-04",
+    "Country": "US",
+    "Confirmed": "11",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-05",
+    "Country": "US",
+    "Confirmed": "11",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-06",
+    "Country": "US",
+    "Confirmed": "12",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-07",
+    "Country": "US",
+    "Confirmed": "12",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-08",
+    "Country": "US",
+    "Confirmed": "12",
+    "Recovered": "0",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-09",
+    "Country": "US",
+    "Confirmed": "12",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-10",
+    "Country": "US",
+    "Confirmed": "12",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-11",
+    "Country": "US",
+    "Confirmed": "13",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-12",
+    "Country": "US",
+    "Confirmed": "13",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-13",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-14",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-15",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-16",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-17",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-18",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-19",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-20",
+    "Country": "US",
+    "Confirmed": "14",
+    "Recovered": "3",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-21",
+    "Country": "US",
+    "Confirmed": "16",
+    "Recovered": "5",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-22",
+    "Country": "US",
+    "Confirmed": "16",
+    "Recovered": "5",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-23",
+    "Country": "US",
+    "Confirmed": "16",
+    "Recovered": "5",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-24",
+    "Country": "US",
+    "Confirmed": "16",
+    "Recovered": "5",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-25",
+    "Country": "US",
+    "Confirmed": "16",
+    "Recovered": "6",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-26",
+    "Country": "US",
+    "Confirmed": "16",
+    "Recovered": "6",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-27",
+    "Country": "US",
+    "Confirmed": "17",
+    "Recovered": "6",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-28",
+    "Country": "US",
+    "Confirmed": "17",
+    "Recovered": "7",
+    "Deaths": "0"
+  },
+  {
+    "Date": "2020-02-29",
+    "Country": "US",
+    "Confirmed": "25",
+    "Recovered": "7",
+    "Deaths": "1"
+  },
+  {
+    "Date": "2020-03-01",
+    "Country": "US",
+    "Confirmed": "32",
+    "Recovered": "7",
+    "Deaths": "1"
+  },
+  {
+    "Date": "2020-03-02",
+    "Country": "US",
+    "Confirmed": "55",
+    "Recovered": "7",
+    "Deaths": "6"
+  },
+  {
+    "Date": "2020-03-03",
+    "Country": "US",
+    "Confirmed": "74",
+    "Recovered": "7",
+    "Deaths": "7"
+  },
+  {
+    "Date": "2020-03-04",
+    "Country": "US",
+    "Confirmed": "107",
+    "Recovered": "7",
+    "Deaths": "11"
+  },
+  {
+    "Date": "2020-03-05",
+    "Country": "US",
+    "Confirmed": "184",
+    "Recovered": "7",
+    "Deaths": "12"
+  },
+  {
+    "Date": "2020-03-06",
+    "Country": "US",
+    "Confirmed": "237",
+    "Recovered": "7",
+    "Deaths": "14"
+  },
+  {
+    "Date": "2020-03-07",
+    "Country": "US",
+    "Confirmed": "403",
+    "Recovered": "7",
+    "Deaths": "17"
+  },
+  {
+    "Date": "2020-03-08",
+    "Country": "US",
+    "Confirmed": "519",
+    "Recovered": "7",
+    "Deaths": "21"
+  },
+  {
+    "Date": "2020-03-09",
+    "Country": "US",
+    "Confirmed": "594",
+    "Recovered": "7",
+    "Deaths": "22"
+  },
+  {
+    "Date": "2020-03-10",
+    "Country": "US",
+    "Confirmed": "782",
+    "Recovered": "8",
+    "Deaths": "28"
+  },
+  {
+    "Date": "2020-03-11",
+    "Country": "US",
+    "Confirmed": "1147",
+    "Recovered": "8",
+    "Deaths": "33"
+  },
+  {
+    "Date": "2020-03-12",
+    "Country": "US",
+    "Confirmed": "1586",
+    "Recovered": "12",
+    "Deaths": "43"
+  },
+  {
+    "Date": "2020-03-13",
+    "Country": "US",
+    "Confirmed": "2219",
+    "Recovered": "12",
+    "Deaths": "51"
+  },
+  {
+    "Date": "2020-03-14",
+    "Country": "US",
+    "Confirmed": "2978",
+    "Recovered": "12",
+    "Deaths": "58"
+  },
+  {
+    "Date": "2020-03-15",
+    "Country": "US",
+    "Confirmed": "3212",
+    "Recovered": "12",
+    "Deaths": "70"
+  },
+  {
+    "Date": "2020-03-16",
+    "Country": "US",
+    "Confirmed": "4679",
+    "Recovered": "17",
+    "Deaths": "97"
+  },
+  {
+    "Date": "2020-03-17",
+    "Country": "US",
+    "Confirmed": "6512",
+    "Recovered": "17",
+    "Deaths": "134"
+  },
+  {
+    "Date": "2020-03-18",
+    "Country": "US",
+    "Confirmed": "9169",
+    "Recovered": "105",
+    "Deaths": "194"
+  },
+  {
+    "Date": "2020-03-19",
+    "Country": "US",
+    "Confirmed": "13663",
+    "Recovered": "121",
+    "Deaths": "266"
+  },
+  {
+    "Date": "2020-03-20",
+    "Country": "US",
+    "Confirmed": "20030",
+    "Recovered": "147",
+    "Deaths": "372"
+  },
+  {
+    "Date": "2020-03-21",
+    "Country": "US",
+    "Confirmed": "26025",
+    "Recovered": "176",
+    "Deaths": "475"
+  },
+  {
+    "Date": "2020-03-22",
+    "Country": "US",
+    "Confirmed": "34944",
+    "Recovered": "178",
+    "Deaths": "603"
+  },
+  {
+    "Date": "2020-03-23",
+    "Country": "US",
+    "Confirmed": "46096",
+    "Recovered": "178",
+    "Deaths": "790"
+  },
+  {
+    "Date": "2020-03-24",
+    "Country": "US",
+    "Confirmed": "56714",
+    "Recovered": "348",
+    "Deaths": "1033"
+  },
+  {
+    "Date": "2020-03-25",
+    "Country": "US",
+    "Confirmed": "68841",
+    "Recovered": "361",
+    "Deaths": "1366"
+  },
+  {
+    "Date": "2020-03-26",
+    "Country": "US",
+    "Confirmed": "86662",
+    "Recovered": "681",
+    "Deaths": "1783"
+  },
+  {
+    "Date": "2020-03-27",
+    "Country": "US",
+    "Confirmed": "105253",
+    "Recovered": "869",
+    "Deaths": "2305"
+  },
+  {
+    "Date": "2020-03-28",
+    "Country": "US",
+    "Confirmed": "127417",
+    "Recovered": "1072",
+    "Deaths": "3018"
+  },
+  {
+    "Date": "2020-03-29",
+    "Country": "US",
+    "Confirmed": "143544",
+    "Recovered": "2665",
+    "Deaths": "3573"
+  },
+  {
+    "Date": "2020-03-30",
+    "Country": "US",
+    "Confirmed": "165698",
+    "Recovered": "5644",
+    "Deaths": "4280"
+  },
+  {
+    "Date": "2020-03-31",
+    "Country": "US",
+    "Confirmed": "192079",
+    "Recovered": "7024",
+    "Deaths": "5359"
+  },
+  {
+    "Date": "2020-04-01",
+    "Country": "US",
+    "Confirmed": "223254",
+    "Recovered": "8474",
+    "Deaths": "6635"
+  },
+  {
+    "Date": "2020-04-02",
+    "Country": "US",
+    "Confirmed": "255530",
+    "Recovered": "9001",
+    "Deaths": "8142"
+  },
+  {
+    "Date": "2020-04-03",
+    "Country": "US",
+    "Confirmed": "287931",
+    "Recovered": "9707",
+    "Deaths": "9562"
+  },
+  {
+    "Date": "2020-04-04",
+    "Country": "US",
+    "Confirmed": "319776",
+    "Recovered": "14652",
+    "Deaths": "11165"
+  },
+  {
+    "Date": "2020-04-05",
+    "Country": "US",
+    "Confirmed": "349016",
+    "Recovered": "17448",
+    "Deaths": "12781"
+  },
+  {
+    "Date": "2020-04-06",
+    "Country": "US",
+    "Confirmed": "380798",
+    "Recovered": "19581",
+    "Deaths": "14523"
+  },
+  {
+    "Date": "2020-04-07",
+    "Country": "US",
+    "Confirmed": "410834",
+    "Recovered": "21763",
+    "Deaths": "17099"
+  },
+  {
+    "Date": "2020-04-08",
+    "Country": "US",
+    "Confirmed": "441897",
+    "Recovered": "23559",
+    "Deaths": "19249"
+  },
+  {
+    "Date": "2020-04-09",
+    "Country": "US",
+    "Confirmed": "477507",
+    "Recovered": "25410",
+    "Deaths": "21463"
+  },
+  {
+    "Date": "2020-04-10",
+    "Country": "US",
+    "Confirmed": "511790",
+    "Recovered": "28790",
+    "Deaths": "23649"
+  },
+  {
+    "Date": "2020-04-11",
+    "Country": "US",
+    "Confirmed": "540714",
+    "Recovered": "31270",
+    "Deaths": "25785"
+  },
+  {
+    "Date": "2020-04-12",
+    "Country": "US",
+    "Confirmed": "567022",
+    "Recovered": "32988",
+    "Deaths": "27674"
+  },
+  {
+    "Date": "2020-04-13",
+    "Country": "US",
+    "Confirmed": "594165",
+    "Recovered": "43482",
+    "Deaths": "29657"
+  },
+  {
+    "Date": "2020-04-14",
+    "Country": "US",
+    "Confirmed": "622493",
+    "Recovered": "47763",
+    "Deaths": "32132"
+  },
+  {
+    "Date": "2020-04-15",
+    "Country": "US",
+    "Confirmed": "648390",
+    "Recovered": "52096",
+    "Deaths": "34730"
+  },
+  {
+    "Date": "2020-04-16",
+    "Country": "US",
+    "Confirmed": "678028",
+    "Recovered": "54703",
+    "Deaths": "36913"
+  },
+  {
+    "Date": "2020-04-17",
+    "Country": "US",
+    "Confirmed": "711135",
+    "Recovered": "58545",
+    "Deaths": "39008"
+  },
+  {
+    "Date": "2020-04-18",
+    "Country": "US",
+    "Confirmed": "738464",
+    "Recovered": "64840",
+    "Deaths": "40954"
+  },
+  {
+    "Date": "2020-04-19",
+    "Country": "US",
+    "Confirmed": "763886",
+    "Recovered": "70337",
+    "Deaths": "42934"
+  },
+  {
+    "Date": "2020-04-20",
+    "Country": "US",
+    "Confirmed": "793970",
+    "Recovered": "72329",
+    "Deaths": "45179"
+  },
+  {
+    "Date": "2020-04-21",
+    "Country": "US",
+    "Confirmed": "820045",
+    "Recovered": "75204",
+    "Deaths": "47662"
+  },
+  {
+    "Date": "2020-04-22",
+    "Country": "US",
+    "Confirmed": "849926",
+    "Recovered": "77366",
+    "Deaths": "50128"
+  },
+  {
+    "Date": "2020-04-23",
+    "Country": "US",
+    "Confirmed": "881891",
+    "Recovered": "80203",
+    "Deaths": "52542"
+  },
+  {
+    "Date": "2020-04-24",
+    "Country": "US",
+    "Confirmed": "913856",
+    "Recovered": "99079",
+    "Deaths": "54711"
+  },
+  {
+    "Date": "2020-04-25",
+    "Country": "US",
+    "Confirmed": "944770",
+    "Recovered": "100372",
+    "Deaths": "56445"
+  },
+  {
+    "Date": "2020-04-26",
+    "Country": "US",
+    "Confirmed": "970741",
+    "Recovered": "106988",
+    "Deaths": "57850"
+  },
+  {
+    "Date": "2020-04-27",
+    "Country": "US",
+    "Confirmed": "995390",
+    "Recovered": "111424",
+    "Deaths": "59330"
+  },
+  {
+    "Date": "2020-04-28",
+    "Country": "US",
+    "Confirmed": "1019963",
+    "Recovered": "115936",
+    "Deaths": "61571"
+  },
+  {
+    "Date": "2020-04-29",
+    "Country": "US",
+    "Confirmed": "1046815",
+    "Recovered": "120720",
+    "Deaths": "63962"
+  },
+  {
+    "Date": "2020-04-30",
+    "Country": "US",
+    "Confirmed": "1076517",
+    "Recovered": "153947",
+    "Deaths": "66154"
+  },
+  {
+    "Date": "2020-05-01",
+    "Country": "US",
+    "Confirmed": "1111409",
+    "Recovered": "164015",
+    "Deaths": "68063"
+  },
+  {
+    "Date": "2020-05-02",
+    "Country": "US",
+    "Confirmed": "1138174",
+    "Recovered": "175382",
+    "Deaths": "69804"
+  },
+  {
+    "Date": "2020-05-03",
+    "Country": "US",
+    "Confirmed": "1161907",
+    "Recovered": "180152",
+    "Deaths": "71007"
+  },
+  {
+    "Date": "2020-05-04",
+    "Country": "US",
+    "Confirmed": "1185709",
+    "Recovered": "187180",
+    "Deaths": "72365"
+  },
+  {
+    "Date": "2020-05-05",
+    "Country": "US",
+    "Confirmed": "1209728",
+    "Recovered": "189791",
+    "Deaths": "74586"
+  },
+  {
+    "Date": "2020-05-06",
+    "Country": "US",
+    "Confirmed": "1234210",
+    "Recovered": "189910",
+    "Deaths": "76905"
+  },
+  {
+    "Date": "2020-05-07",
+    "Country": "US",
+    "Confirmed": "1261949",
+    "Recovered": "195036",
+    "Deaths": "78821"
+  },
+  {
+    "Date": "2020-05-08",
+    "Country": "US",
+    "Confirmed": "1289132",
+    "Recovered": "198993",
+    "Deaths": "80593"
+  },
+  {
+    "Date": "2020-05-09",
+    "Country": "US",
+    "Confirmed": "1313586",
+    "Recovered": "212534",
+    "Deaths": "82058"
+  },
+  {
+    "Date": "2020-05-10",
+    "Country": "US",
+    "Confirmed": "1332332",
+    "Recovered": "216169",
+    "Deaths": "83059"
+  },
+  {
+    "Date": "2020-05-11",
+    "Country": "US",
+    "Confirmed": "1351409",
+    "Recovered": "232733",
+    "Deaths": "84093"
+  },
+  {
+    "Date": "2020-05-12",
+    "Country": "US",
+    "Confirmed": "1374791",
+    "Recovered": "230287",
+    "Deaths": "85682"
+  },
+  {
+    "Date": "2020-05-13",
+    "Country": "US",
+    "Confirmed": "1394806",
+    "Recovered": "243430",
+    "Deaths": "87416"
+  },
+  {
+    "Date": "2020-05-14",
+    "Country": "US",
+    "Confirmed": "1420696",
+    "Recovered": "246414",
+    "Deaths": "89197"
+  },
+  {
+    "Date": "2020-05-15",
+    "Country": "US",
+    "Confirmed": "1445547",
+    "Recovered": "250747",
+    "Deaths": "90862"
+  },
+  {
+    "Date": "2020-05-16",
+    "Country": "US",
+    "Confirmed": "1469597",
+    "Recovered": "268376",
+    "Deaths": "92060"
+  },
+  {
+    "Date": "2020-05-17",
+    "Country": "US",
+    "Confirmed": "1488326",
+    "Recovered": "272265",
+    "Deaths": "92891"
+  },
+  {
+    "Date": "2020-05-18",
+    "Country": "US",
+    "Confirmed": "1510634",
+    "Recovered": "283178",
+    "Deaths": "94110"
+  },
+  {
+    "Date": "2020-05-19",
+    "Country": "US",
+    "Confirmed": "1531136",
+    "Recovered": "289392",
+    "Deaths": "95555"
+  },
+  {
+    "Date": "2020-05-20",
+    "Country": "US",
+    "Confirmed": "1553962",
+    "Recovered": "294312",
+    "Deaths": "97056"
+  },
+  {
+    "Date": "2020-05-21",
+    "Country": "US",
+    "Confirmed": "1579114",
+    "Recovered": "298418",
+    "Deaths": "98246"
+  },
+  {
+    "Date": "2020-05-22",
+    "Country": "US",
+    "Confirmed": "1602942",
+    "Recovered": "350135",
+    "Deaths": "99450"
+  },
+  {
+    "Date": "2020-05-23",
+    "Country": "US",
+    "Confirmed": "1623131",
+    "Recovered": "361239",
+    "Deaths": "100524"
+  },
+  {
+    "Date": "2020-05-24",
+    "Country": "US",
+    "Confirmed": "1643305",
+    "Recovered": "366736",
+    "Deaths": "101165"
+  },
+  {
+    "Date": "2020-05-25",
+    "Country": "US",
+    "Confirmed": "1662399",
+    "Recovered": "379157",
+    "Deaths": "101762"
+  },
+  {
+    "Date": "2020-05-26",
+    "Country": "US",
+    "Confirmed": "1681125",
+    "Recovered": "384902",
+    "Deaths": "102418"
+  },
+  {
+    "Date": "2020-05-27",
+    "Country": "US",
+    "Confirmed": "1699888",
+    "Recovered": "391508",
+    "Deaths": "103896"
+  },
+  {
+    "Date": "2020-05-28",
+    "Country": "US",
+    "Confirmed": "1721155",
+    "Recovered": "399991",
+    "Deaths": "104985"
+  },
+  {
+    "Date": "2020-05-29",
+    "Country": "US",
+    "Confirmed": "1746237",
+    "Recovered": "406446",
+    "Deaths": "106102"
+  },
+  {
+    "Date": "2020-05-30",
+    "Country": "US",
+    "Confirmed": "1769317",
+    "Recovered": "416461",
+    "Deaths": "107053"
+  },
+  {
+    "Date": "2020-05-31",
+    "Country": "US",
+    "Confirmed": "1788236",
+    "Recovered": "444758",
+    "Deaths": "107674"
+  },
+  {
+    "Date": "2020-06-01",
+    "Country": "US",
+    "Confirmed": "1806076",
+    "Recovered": "458231",
+    "Deaths": "108448"
+  },
+  {
+    "Date": "2020-06-02",
+    "Country": "US",
+    "Confirmed": "1826166",
+    "Recovered": "463868",
+    "Deaths": "109428"
+  },
+  {
+    "Date": "2020-06-03",
+    "Country": "US",
+    "Confirmed": "1845322",
+    "Recovered": "479258",
+    "Deaths": "110437"
+  },
+  {
+    "Date": "2020-06-04",
+    "Country": "US",
+    "Confirmed": "1873256",
+    "Recovered": "485002",
+    "Deaths": "111443"
+  },
+  {
+    "Date": "2020-06-05",
+    "Country": "US",
+    "Confirmed": "1899695",
+    "Recovered": "491706",
+    "Deaths": "112321"
+  },
+  {
+    "Date": "2020-06-06",
+    "Country": "US",
+    "Confirmed": "1919964",
+    "Recovered": "500849",
+    "Deaths": "112958"
+  },
+  {
+    "Date": "2020-06-07",
+    "Country": "US",
+    "Confirmed": "1937790",
+    "Recovered": "506367",
+    "Deaths": "113415"
+  },
+  {
+    "Date": "2020-06-08",
+    "Country": "US",
+    "Confirmed": "1954689",
+    "Recovered": "518522",
+    "Deaths": "113926"
+  },
+  {
+    "Date": "2020-06-09",
+    "Country": "US",
+    "Confirmed": "1975010",
+    "Recovered": "524855",
+    "Deaths": "114840"
+  },
+  {
+    "Date": "2020-06-10",
+    "Country": "US",
+    "Confirmed": "1996728",
+    "Recovered": "533504",
+    "Deaths": "115715"
+  },
+  {
+    "Date": "2020-06-11",
+    "Country": "US",
+    "Confirmed": "2019006",
+    "Recovered": "540292",
+    "Deaths": "116532"
+  },
+  {
+    "Date": "2020-06-12",
+    "Country": "US",
+    "Confirmed": "2044564",
+    "Recovered": "547386",
+    "Deaths": "117357"
+  },
+  {
+    "Date": "2020-06-13",
+    "Country": "US",
+    "Confirmed": "2068721",
+    "Recovered": "556606",
+    "Deaths": "118077"
+  },
+  {
+    "Date": "2020-06-14",
+    "Country": "US",
+    "Confirmed": "2087622",
+    "Recovered": "561816",
+    "Deaths": "118425"
+  },
+  {
+    "Date": "2020-06-15",
+    "Country": "US",
+    "Confirmed": "2108621",
+    "Recovered": "576334",
+    "Deaths": "118826"
+  },
+  {
+    "Date": "2020-06-16",
+    "Country": "US",
+    "Confirmed": "2133170",
+    "Recovered": "583503",
+    "Deaths": "119612"
+  },
+  {
+    "Date": "2020-06-17",
+    "Country": "US",
+    "Confirmed": "2160220",
+    "Recovered": "592191",
+    "Deaths": "120359"
+  },
+  {
+    "Date": "2020-06-18",
+    "Country": "US",
+    "Confirmed": "2188447",
+    "Recovered": "599115",
+    "Deaths": "121059"
+  },
+  {
+    "Date": "2020-06-19",
+    "Country": "US",
+    "Confirmed": "2219501",
+    "Recovered": "606715",
+    "Deaths": "121693"
+  },
+  {
+    "Date": "2020-06-20",
+    "Country": "US",
+    "Confirmed": "2251327",
+    "Recovered": "617460",
+    "Deaths": "122257"
+  },
+  {
+    "Date": "2020-06-21",
+    "Country": "US",
+    "Confirmed": "2277163",
+    "Recovered": "622133",
+    "Deaths": "122574"
+  },
+  {
+    "Date": "2020-06-22",
+    "Country": "US",
+    "Confirmed": "2306964",
+    "Recovered": "640198",
+    "Deaths": "122952"
+  },
+  {
+    "Date": "2020-06-23",
+    "Country": "US",
+    "Confirmed": "2345694",
+    "Recovered": "647548",
+    "Deaths": "123691"
+  },
+  {
+    "Date": "2020-06-24",
+    "Country": "US",
+    "Confirmed": "2381945",
+    "Recovered": "656161",
+    "Deaths": "124446"
+  },
+  {
+    "Date": "2020-06-25",
+    "Country": "US",
+    "Confirmed": "2421243",
+    "Recovered": "663562",
+    "Deaths": "124994"
+  },
+  {
+    "Date": "2020-06-26",
+    "Country": "US",
+    "Confirmed": "2470289",
+    "Recovered": "670809",
+    "Deaths": "125620"
+  },
+  {
+    "Date": "2020-06-27",
+    "Country": "US",
+    "Confirmed": "2511043",
+    "Recovered": "679308",
+    "Deaths": "126116"
+  },
+  {
+    "Date": "2020-06-28",
+    "Country": "US",
+    "Confirmed": "2553968",
+    "Recovered": "685164",
+    "Deaths": "126437"
+  },
+  {
+    "Date": "2020-06-29",
+    "Country": "US",
+    "Confirmed": "2595264",
+    "Recovered": "705203",
+    "Deaths": "126806"
+  },
+  {
+    "Date": "2020-06-30",
+    "Country": "US",
+    "Confirmed": "2645088",
+    "Recovered": "720631",
+    "Deaths": "127365"
+  },
+  {
+    "Date": "2020-07-01",
+    "Country": "US",
+    "Confirmed": "2694210",
+    "Recovered": "729994",
+    "Deaths": "128063"
+  },
+  {
+    "Date": "2020-07-02",
+    "Country": "US",
+    "Confirmed": "2749154",
+    "Recovered": "781970",
+    "Deaths": "128802"
+  },
+  {
+    "Date": "2020-07-03",
+    "Country": "US",
+    "Confirmed": "2800657",
+    "Recovered": "790404",
+    "Deaths": "129479"
+  },
+  {
+    "Date": "2020-07-04",
+    "Country": "US",
+    "Confirmed": "2846602",
+    "Recovered": "894325",
+    "Deaths": "129781"
+  },
+  {
+    "Date": "2020-07-05",
+    "Country": "US",
+    "Confirmed": "2900332",
+    "Recovered": "906763",
+    "Deaths": "130104"
+  },
+  {
+    "Date": "2020-07-06",
+    "Country": "US",
+    "Confirmed": "2943498",
+    "Recovered": "924148",
+    "Deaths": "130475"
+  },
+  {
+    "Date": "2020-07-07",
+    "Country": "US",
+    "Confirmed": "3000728",
+    "Recovered": "936476",
+    "Deaths": "131616"
+  },
+  {
+    "Date": "2020-07-08",
+    "Country": "US",
+    "Confirmed": "3061034",
+    "Recovered": "953462",
+    "Deaths": "132457"
+  },
+  {
+    "Date": "2020-07-09",
+    "Country": "US",
+    "Confirmed": "3120690",
+    "Recovered": "969111",
+    "Deaths": "133488"
+  },
+  {
+    "Date": "2020-07-10",
+    "Country": "US",
+    "Confirmed": "3189548",
+    "Recovered": "983185",
+    "Deaths": "134304"
+  },
+  {
+    "Date": "2020-07-11",
+    "Country": "US",
+    "Confirmed": "3249987",
+    "Recovered": "995576",
+    "Deaths": "135058"
+  },
+  {
+    "Date": "2020-07-12",
+    "Country": "US",
+    "Confirmed": "3310119",
+    "Recovered": "1006326",
+    "Deaths": "135531"
+  },
+  {
+    "Date": "2020-07-13",
+    "Country": "US",
+    "Confirmed": "3369485",
+    "Recovered": "1031939",
+    "Deaths": "135966"
+  },
+  {
+    "Date": "2020-07-14",
+    "Country": "US",
+    "Confirmed": "3435147",
+    "Recovered": "1049098",
+    "Deaths": "136862"
+  },
+  {
+    "Date": "2020-07-15",
+    "Country": "US",
+    "Confirmed": "3501175",
+    "Recovered": "1075882",
+    "Deaths": "137827"
+  },
+  {
+    "Date": "2020-07-16",
+    "Country": "US",
+    "Confirmed": "3571990",
+    "Recovered": "1090645",
+    "Deaths": "138788"
+  },
+  {
+    "Date": "2020-07-17",
+    "Country": "US",
+    "Confirmed": "3638462",
+    "Recovered": "1107204",
+    "Deaths": "139703"
+  },
+  {
+    "Date": "2020-07-18",
+    "Country": "US",
+    "Confirmed": "3702784",
+    "Recovered": "1122720",
+    "Deaths": "140585"
+  },
+  {
+    "Date": "2020-07-19",
+    "Country": "US",
+    "Confirmed": "3761716",
+    "Recovered": "1131121",
+    "Deaths": "141061"
+  },
+  {
+    "Date": "2020-07-20",
+    "Country": "US",
+    "Confirmed": "3822379",
+    "Recovered": "1160087",
+    "Deaths": "141590"
+  },
+  {
+    "Date": "2020-07-21",
+    "Country": "US",
+    "Confirmed": "3890573",
+    "Recovered": "1182018",
+    "Deaths": "142686"
+  },
+  {
+    "Date": "2020-07-22",
+    "Country": "US",
+    "Confirmed": "3958119",
+    "Recovered": "1210849",
+    "Deaths": "143911"
+  },
+  {
+    "Date": "2020-07-23",
+    "Country": "US",
+    "Confirmed": "4026006",
+    "Recovered": "1233269",
+    "Deaths": "144997"
+  },
+  {
+    "Date": "2020-07-24",
+    "Country": "US",
+    "Confirmed": "4101153",
+    "Recovered": "1261624",
+    "Deaths": "146091"
+  },
+  {
+    "Date": "2020-07-25",
+    "Country": "US",
+    "Confirmed": "4165354",
+    "Recovered": "1279414",
+    "Deaths": "147060"
+  },
+  {
+    "Date": "2020-07-26",
+    "Country": "US",
+    "Confirmed": "4221194",
+    "Recovered": "1297863",
+    "Deaths": "147594"
+  },
+  {
+    "Date": "2020-07-27",
+    "Country": "US",
+    "Confirmed": "4280918",
+    "Recovered": "1325804",
+    "Deaths": "148694"
+  },
+  {
+    "Date": "2020-07-28",
+    "Country": "US",
+    "Confirmed": "4345748",
+    "Recovered": "1355363",
+    "Deaths": "149916"
+  },
+  {
+    "Date": "2020-07-29",
+    "Country": "US",
+    "Confirmed": "4409876",
+    "Recovered": "1389425",
+    "Deaths": "151356"
+  },
+  {
+    "Date": "2020-07-30",
+    "Country": "US",
+    "Confirmed": "4479120",
+    "Recovered": "1414155",
+    "Deaths": "152645"
+  },
+  {
+    "Date": "2020-07-31",
+    "Country": "US",
+    "Confirmed": "4543696",
+    "Recovered": "1438160",
+    "Deaths": "153828"
+  },
+  {
+    "Date": "2020-08-01",
+    "Country": "US",
+    "Confirmed": "4601276",
+    "Recovered": "1461885",
+    "Deaths": "154947"
+  },
+  {
+    "Date": "2020-08-02",
+    "Country": "US",
+    "Confirmed": "4648385",
+    "Recovered": "1468689",
+    "Deaths": "155404"
+  },
+  {
+    "Date": "2020-08-03",
+    "Country": "US",
+    "Confirmed": "4690071",
+    "Recovered": "1513446",
+    "Deaths": "155963"
+  },
+  {
+    "Date": "2020-08-04",
+    "Country": "US",
+    "Confirmed": "4751729",
+    "Recovered": "1528979",
+    "Deaths": "157218"
+  },
+  {
+    "Date": "2020-08-05",
+    "Country": "US",
+    "Confirmed": "4806078",
+    "Recovered": "1577851",
+    "Deaths": "158626"
+  },
+  {
+    "Date": "2020-08-06",
+    "Country": "US",
+    "Confirmed": "4866258",
+    "Recovered": "1598624",
+    "Deaths": "159807"
+  },
+  {
+    "Date": "2020-08-07",
+    "Country": "US",
+    "Confirmed": "4926845",
+    "Recovered": "1623870",
+    "Deaths": "161098"
+  },
+  {
+    "Date": "2020-08-08",
+    "Country": "US",
+    "Confirmed": "4990778",
+    "Recovered": "1643118",
+    "Deaths": "162185"
+  },
+  {
+    "Date": "2020-08-09",
+    "Country": "US",
+    "Confirmed": "5045045",
+    "Recovered": "1656864",
+    "Deaths": "162757"
+  },
+  {
+    "Date": "2020-08-10",
+    "Country": "US",
+    "Confirmed": "5096662",
+    "Recovered": "1670755",
+    "Deaths": "163274"
+  },
+  {
+    "Date": "2020-08-11",
+    "Country": "US",
+    "Confirmed": "5153618",
+    "Recovered": "1714960",
+    "Deaths": "164371"
+  },
+  {
+    "Date": "2020-08-12",
+    "Country": "US",
+    "Confirmed": "5208863",
+    "Recovered": "1753760",
+    "Deaths": "165886"
+  },
+  {
+    "Date": "2020-08-13",
+    "Country": "US",
+    "Confirmed": "5260520",
+    "Recovered": "1774648",
+    "Deaths": "166924"
+  },
+  {
+    "Date": "2020-08-14",
+    "Country": "US",
+    "Confirmed": "5330645",
+    "Recovered": "1796326",
+    "Deaths": "168233"
+  },
+  {
+    "Date": "2020-08-15",
+    "Country": "US",
+    "Confirmed": "5383041",
+    "Recovered": "1818527",
+    "Deaths": "169278"
+  },
+  {
+    "Date": "2020-08-16",
+    "Country": "US",
+    "Confirmed": "5417703",
+    "Recovered": "1833067",
+    "Deaths": "169886"
+  },
+  {
+    "Date": "2020-08-17",
+    "Country": "US",
+    "Confirmed": "5455552",
+    "Recovered": "1865580",
+    "Deaths": "170355"
+  },
+  {
+    "Date": "2020-08-18",
+    "Country": "US",
+    "Confirmed": "5500454",
+    "Recovered": "1898159",
+    "Deaths": "171580"
+  },
+  {
+    "Date": "2020-08-19",
+    "Country": "US",
+    "Confirmed": "5546338",
+    "Recovered": "1925049",
+    "Deaths": "172269"
+  },
+  {
+    "Date": "2020-08-20",
+    "Country": "US",
+    "Confirmed": "5591469",
+    "Recovered": "1947035",
+    "Deaths": "173369"
+  },
+  {
+    "Date": "2020-08-21",
+    "Country": "US",
+    "Confirmed": "5639060",
+    "Recovered": "1965056",
+    "Deaths": "174461"
+  },
+  {
+    "Date": "2020-08-22",
+    "Country": "US",
+    "Confirmed": "5684735",
+    "Recovered": "1985484",
+    "Deaths": "175427"
+  },
+  {
+    "Date": "2020-08-23",
+    "Country": "US",
+    "Confirmed": "5716646",
+    "Recovered": "1997761",
+    "Deaths": "175922"
+  },
+  {
+    "Date": "2020-08-24",
+    "Country": "US",
+    "Confirmed": "5750569",
+    "Recovered": "2020774",
+    "Deaths": "176345"
+  },
+  {
+    "Date": "2020-08-25",
+    "Country": "US",
+    "Confirmed": "5793243",
+    "Recovered": "2053699",
+    "Deaths": "177571"
+  },
+  {
+    "Date": "2020-08-26",
+    "Country": "US",
+    "Confirmed": "5835318",
+    "Recovered": "2084465",
+    "Deaths": "178728"
+  },
+  {
+    "Date": "2020-08-27",
+    "Country": "US",
+    "Confirmed": "5885836",
+    "Recovered": "2101326",
+    "Deaths": "179827"
+  },
+  {
+    "Date": "2020-08-28",
+    "Country": "US",
+    "Confirmed": "5932307",
+    "Recovered": "2118367",
+    "Deaths": "180755"
+  },
+  {
+    "Date": "2020-08-29",
+    "Country": "US",
+    "Confirmed": "5975408",
+    "Recovered": "2140614",
+    "Deaths": "181731"
+  },
+  {
+    "Date": "2020-08-30",
+    "Country": "US",
+    "Confirmed": "6009539",
+    "Recovered": "2153939",
+    "Deaths": "182171"
+  },
+  {
+    "Date": "2020-08-31",
+    "Country": "US",
+    "Confirmed": "6042902",
+    "Recovered": "2184825",
+    "Deaths": "182656"
+  },
+  {
+    "Date": "2020-09-01",
+    "Country": "US",
+    "Confirmed": "6084880",
+    "Recovered": "2202663",
+    "Deaths": "183718"
+  },
+  {
+    "Date": "2020-09-02",
+    "Country": "US",
+    "Confirmed": "6124841",
+    "Recovered": "2231757",
+    "Deaths": "184777"
+  },
+  {
+    "Date": "2020-09-03",
+    "Country": "US",
+    "Confirmed": "6169982",
+    "Recovered": "2266957",
+    "Deaths": "185794"
+  },
+  {
+    "Date": "2020-09-04",
+    "Country": "US",
+    "Confirmed": "6218318",
+    "Recovered": "2283454",
+    "Deaths": "186757"
+  },
+  {
+    "Date": "2020-09-05",
+    "Country": "US",
+    "Confirmed": "6261943",
+    "Recovered": "2302187",
+    "Deaths": "187562"
+  },
+  {
+    "Date": "2020-09-06",
+    "Country": "US",
+    "Confirmed": "6291062",
+    "Recovered": "2315995",
+    "Deaths": "187996"
+  },
+  {
+    "Date": "2020-09-07",
+    "Country": "US",
+    "Confirmed": "6315625",
+    "Recovered": "2333551",
+    "Deaths": "188313"
+  },
+  {
+    "Date": "2020-09-08",
+    "Country": "US",
+    "Confirmed": "6342372",
+    "Recovered": "2359111",
+    "Deaths": "188778"
+  },
+  {
+    "Date": "2020-09-09",
+    "Country": "US",
+    "Confirmed": "6376010",
+    "Recovered": "2387479",
+    "Deaths": "189880"
+  },
+  {
+    "Date": "2020-09-10",
+    "Country": "US",
+    "Confirmed": "6415458",
+    "Recovered": "2403511",
+    "Deaths": "190786"
+  },
+  {
+    "Date": "2020-09-11",
+    "Country": "US",
+    "Confirmed": "6460081",
+    "Recovered": "2417878",
+    "Deaths": "191934"
+  },
+  {
+    "Date": "2020-09-12",
+    "Country": "US",
+    "Confirmed": "6505665",
+    "Recovered": "2434658",
+    "Deaths": "192669"
+  },
+  {
+    "Date": "2020-09-13",
+    "Country": "US",
+    "Confirmed": "6545957",
+    "Recovered": "2451406",
+    "Deaths": "193060"
+  },
+  {
+    "Date": "2020-09-14",
+    "Country": "US",
+    "Confirmed": "6578522",
+    "Recovered": "2474570",
+    "Deaths": "193479"
+  },
+  {
+    "Date": "2020-09-15",
+    "Country": "US",
+    "Confirmed": "6615700",
+    "Recovered": "2495127",
+    "Deaths": "194677"
+  },
+  {
+    "Date": "2020-09-16",
+    "Country": "US",
+    "Confirmed": "6653992",
+    "Recovered": "2525573",
+    "Deaths": "195614"
+  },
+  {
+    "Date": "2020-09-17",
+    "Country": "US",
+    "Confirmed": "6699310",
+    "Recovered": "2540334",
+    "Deaths": "196469"
+  },
+  {
+    "Date": "2020-09-18",
+    "Country": "US",
+    "Confirmed": "6749496",
+    "Recovered": "2556465",
+    "Deaths": "197425"
+  },
+  {
+    "Date": "2020-09-19",
+    "Country": "US",
+    "Confirmed": "6795273",
+    "Recovered": "2577446",
+    "Deaths": "198120"
+  },
+  {
+    "Date": "2020-09-20",
+    "Country": "US",
+    "Confirmed": "6836883",
+    "Recovered": "2590671",
+    "Deaths": "198379"
+  },
+  {
+    "Date": "2020-09-21",
+    "Country": "US",
+    "Confirmed": "6868927",
+    "Recovered": "2615949",
+    "Deaths": "198785"
+  },
+  {
+    "Date": "2020-09-22",
+    "Country": "US",
+    "Confirmed": "6907199",
+    "Recovered": "2646959",
+    "Deaths": "199811"
+  },
+  {
+    "Date": "2020-09-23",
+    "Country": "US",
+    "Confirmed": "6948318",
+    "Recovered": "2670256",
+    "Deaths": "200858"
+  },
+  {
+    "Date": "2020-09-24",
+    "Country": "US",
+    "Confirmed": "6997199",
+    "Recovered": "2710183",
+    "Deaths": "201753"
+  },
+  {
+    "Date": "2020-09-25",
+    "Country": "US",
+    "Confirmed": "7044336",
+    "Recovered": "2727335",
+    "Deaths": "202662"
+  },
+  {
+    "Date": "2020-09-26",
+    "Country": "US",
+    "Confirmed": "7087884",
+    "Recovered": "2750459",
+    "Deaths": "203434"
+  },
+  {
+    "Date": "2020-09-27",
+    "Country": "US",
+    "Confirmed": "7121663",
+    "Recovered": "2766280",
+    "Deaths": "203736"
+  },
+  {
+    "Date": "2020-09-28",
+    "Country": "US",
+    "Confirmed": "7159403",
+    "Recovered": "2794608",
+    "Deaths": "204070"
+  },
+  {
+    "Date": "2020-09-29",
+    "Country": "US",
+    "Confirmed": "7201437",
+    "Recovered": "2813305",
+    "Deaths": "204965"
+  },
+  {
+    "Date": "2020-09-30",
+    "Country": "US",
+    "Confirmed": "7240070",
+    "Recovered": "2840688",
+    "Deaths": "205872"
+  },
+  {
+    "Date": "2020-10-01",
+    "Country": "US",
+    "Confirmed": "7286316",
+    "Recovered": "2860650",
+    "Deaths": "206769"
+  },
+  {
+    "Date": "2020-10-02",
+    "Country": "US",
+    "Confirmed": "7339761",
+    "Recovered": "2873369",
+    "Deaths": "207604"
+  },
+  {
+    "Date": "2020-10-03",
+    "Country": "US",
+    "Confirmed": "7389041",
+    "Recovered": "2897322",
+    "Deaths": "208275"
+  },
+  {
+    "Date": "2020-10-04",
+    "Country": "US",
+    "Confirmed": "7422172",
+    "Recovered": "2911699",
+    "Deaths": "208644"
+  },
+  {
+    "Date": "2020-10-05",
+    "Country": "US",
+    "Confirmed": "7459530",
+    "Recovered": "2935142",
+    "Deaths": "209114"
+  },
+  {
+    "Date": "2020-10-06",
+    "Country": "US",
+    "Confirmed": "7504076",
+    "Recovered": "2952390",
+    "Deaths": "209810"
+  },
+  {
+    "Date": "2020-10-07",
+    "Country": "US",
+    "Confirmed": "7553214",
+    "Recovered": "2999895",
+    "Deaths": "210715"
+  },
+  {
+    "Date": "2020-10-08",
+    "Country": "US",
+    "Confirmed": "7611105",
+    "Recovered": "3021252",
+    "Deaths": "211692"
+  },
+  {
+    "Date": "2020-10-09",
+    "Country": "US",
+    "Confirmed": "7666185",
+    "Recovered": "3039089",
+    "Deaths": "212659"
+  },
+  {
+    "Date": "2020-10-10",
+    "Country": "US",
+    "Confirmed": "7721553",
+    "Recovered": "3062983",
+    "Deaths": "213312"
+  },
+  {
+    "Date": "2020-10-11",
+    "Country": "US",
+    "Confirmed": "7768453",
+    "Recovered": "3075077",
+    "Deaths": "213769"
+  },
+  {
+    "Date": "2020-10-12",
+    "Country": "US",
+    "Confirmed": "7810535",
+    "Recovered": "3106728",
+    "Deaths": "214159"
+  },
+  {
+    "Date": "2020-10-13",
+    "Country": "US",
+    "Confirmed": "7860659",
+    "Recovered": "3124593",
+    "Deaths": "214931"
+  },
+  {
+    "Date": "2020-10-14",
+    "Country": "US",
+    "Confirmed": "7919101",
+    "Recovered": "3155794",
+    "Deaths": "215920"
+  },
+  {
+    "Date": "2020-10-15",
+    "Country": "US",
+    "Confirmed": "7982638",
+    "Recovered": "3177397",
+    "Deaths": "216748"
+  },
+  {
+    "Date": "2020-10-16",
+    "Country": "US",
+    "Confirmed": "8052813",
+    "Recovered": "3197539",
+    "Deaths": "217674"
+  },
+  {
+    "Date": "2020-10-17",
+    "Country": "US",
+    "Confirmed": "8107645",
+    "Recovered": "3220573",
+    "Deaths": "218483"
+  },
+  {
+    "Date": "2020-10-18",
+    "Country": "US",
+    "Confirmed": "8159818",
+    "Recovered": "3234138",
+    "Deaths": "218941"
+  },
+  {
+    "Date": "2020-10-19",
+    "Country": "US",
+    "Confirmed": "8227702",
+    "Recovered": "3272603",
+    "Deaths": "219420"
+  },
+  {
+    "Date": "2020-10-20",
+    "Country": "US",
+    "Confirmed": "8289442",
+    "Recovered": "3295148",
+    "Deaths": "220353"
+  },
+  {
+    "Date": "2020-10-21",
+    "Country": "US",
+    "Confirmed": "8350148",
+    "Recovered": "3323354",
+    "Deaths": "221510"
+  },
+  {
+    "Date": "2020-10-22",
+    "Country": "US",
+    "Confirmed": "8429769",
+    "Recovered": "3353056",
+    "Deaths": "222348"
+  },
+  {
+    "Date": "2020-10-23",
+    "Country": "US",
+    "Confirmed": "8511431",
+    "Recovered": "3375427",
+    "Deaths": "223293"
+  },
+  {
+    "Date": "2020-10-24",
+    "Country": "US",
+    "Confirmed": "8589807",
+    "Recovered": "3406656",
+    "Deaths": "224253"
+  },
+  {
+    "Date": "2020-10-25",
+    "Country": "US",
+    "Confirmed": "8650782",
+    "Recovered": "3422878",
+    "Deaths": "224698"
+  },
+  {
+    "Date": "2020-10-26",
+    "Country": "US",
+    "Confirmed": "8715346",
+    "Recovered": "3460455",
+    "Deaths": "225212"
+  },
+  {
+    "Date": "2020-10-27",
+    "Country": "US",
+    "Confirmed": "8792570",
+    "Recovered": "3487666",
+    "Deaths": "226219"
+  },
+  {
+    "Date": "2020-10-28",
+    "Country": "US",
+    "Confirmed": "8879046",
+    "Recovered": "3518140",
+    "Deaths": "227229"
+  },
+  {
+    "Date": "2020-10-29",
+    "Country": "US",
+    "Confirmed": "8970339",
+    "Recovered": "3554336",
+    "Deaths": "228217"
+  },
+  {
+    "Date": "2020-10-30",
+    "Country": "US",
+    "Confirmed": "9070188",
+    "Recovered": "3578452",
+    "Deaths": "229272"
+  },
+  {
+    "Date": "2020-10-31",
+    "Country": "US",
+    "Confirmed": "9157531",
+    "Recovered": "3612478",
+    "Deaths": "230195"
+  },
+  {
+    "Date": "2020-11-01",
+    "Country": "US",
+    "Confirmed": "9235361",
+    "Recovered": "3630579",
+    "Deaths": "230684"
+  },
+  {
+    "Date": "2020-11-02",
+    "Country": "US",
+    "Confirmed": "9317169",
+    "Recovered": "3674981",
+    "Deaths": "231238"
+  },
+  {
+    "Date": "2020-11-03",
+    "Country": "US",
+    "Confirmed": "9441936",
+    "Recovered": "3705130",
+    "Deaths": "232833"
+  },
+  {
+    "Date": "2020-11-04",
+    "Country": "US",
+    "Confirmed": "9542200",
+    "Recovered": "3743527",
+    "Deaths": "233941"
+  },
+  {
+    "Date": "2020-11-05",
+    "Country": "US",
+    "Confirmed": "9670281",
+    "Recovered": "3781751",
+    "Deaths": "235100"
+  },
+  {
+    "Date": "2020-11-06",
+    "Country": "US",
+    "Confirmed": "9797339",
+    "Recovered": "3810791",
+    "Deaths": "236306"
+  },
+  {
+    "Date": "2020-11-07",
+    "Country": "US",
+    "Confirmed": "9924404",
+    "Recovered": "3851465",
+    "Deaths": "237413"
+  },
+  {
+    "Date": "2020-11-08",
+    "Country": "US",
+    "Confirmed": "10044078",
+    "Recovered": "3881491",
+    "Deaths": "237966"
+  },
+  {
+    "Date": "2020-11-09",
+    "Country": "US",
+    "Confirmed": "10161034",
+    "Recovered": "3928845",
+    "Deaths": "238724"
+  },
+  {
+    "Date": "2020-11-10",
+    "Country": "US",
+    "Confirmed": "10297589",
+    "Recovered": "3961873",
+    "Deaths": "240132"
+  },
+  {
+    "Date": "2020-11-11",
+    "Country": "US",
+    "Confirmed": "10445272",
+    "Recovered": "3997175",
+    "Deaths": "241554"
+  },
+  {
+    "Date": "2020-11-12",
+    "Country": "US",
+    "Confirmed": "10604069",
+    "Recovered": "4051256",
+    "Deaths": "242749"
+  },
+  {
+    "Date": "2020-11-13",
+    "Country": "US",
+    "Confirmed": "10783587",
+    "Recovered": "4095146",
+    "Deaths": "243944"
+  },
+  {
+    "Date": "2020-11-14",
+    "Country": "US",
+    "Confirmed": "10947637",
+    "Recovered": "4148444",
+    "Deaths": "245304"
+  },
+  {
+    "Date": "2020-11-15",
+    "Country": "US",
+    "Confirmed": "11087354",
+    "Recovered": "4174884",
+    "Deaths": "246071"
+  },
+  {
+    "Date": "2020-11-16",
+    "Country": "US",
+    "Confirmed": "11240441",
+    "Recovered": "4244811",
+    "Deaths": "246885"
+  },
+  {
+    "Date": "2020-11-17",
+    "Country": "US",
+    "Confirmed": "11405087",
+    "Recovered": "4293640",
+    "Deaths": "248587"
+  },
+  {
+    "Date": "2020-11-18",
+    "Country": "US",
+    "Confirmed": "11577056",
+    "Recovered": "4350789",
+    "Deaths": "250505"
+  },
+  {
+    "Date": "2020-11-19",
+    "Country": "US",
+    "Confirmed": "11769359",
+    "Recovered": "4410709",
+    "Deaths": "252534"
+  },
+  {
+    "Date": "2020-11-20",
+    "Country": "US",
+    "Confirmed": "11971026",
+    "Recovered": "4457930",
+    "Deaths": "254469"
+  },
+  {
+    "Date": "2020-11-21",
+    "Country": "US",
+    "Confirmed": "12150847",
+    "Recovered": "4529700",
+    "Deaths": "256106"
+  },
+  {
+    "Date": "2020-11-22",
+    "Country": "US",
+    "Confirmed": "12297434",
+    "Recovered": "4526513",
+    "Deaths": "257157"
+  },
+  {
+    "Date": "2020-11-23",
+    "Country": "US",
+    "Confirmed": "12478945",
+    "Recovered": "4633600",
+    "Deaths": "258222"
+  },
+  {
+    "Date": "2020-11-24",
+    "Country": "US",
+    "Confirmed": "12652507",
+    "Recovered": "4696664",
+    "Deaths": "260354"
+  },
+  {
+    "Date": "2020-11-25",
+    "Country": "US",
+    "Confirmed": "12832721",
+    "Recovered": "4835956",
+    "Deaths": "262590"
+  },
+  {
+    "Date": "2020-11-26",
+    "Country": "US",
+    "Confirmed": "12949971",
+    "Recovered": "4871203",
+    "Deaths": "263993"
+  },
+  {
+    "Date": "2020-11-27",
+    "Country": "US",
+    "Confirmed": "13164608",
+    "Recovered": "4947446",
+    "Deaths": "265537"
+  },
+  {
+    "Date": "2020-11-28",
+    "Country": "US",
+    "Confirmed": "13332834",
+    "Recovered": "5023063",
+    "Deaths": "266886"
+  },
+  {
+    "Date": "2020-11-29",
+    "Country": "US",
+    "Confirmed": "13473178",
+    "Recovered": "5065030",
+    "Deaths": "267921"
+  },
+  {
+    "Date": "2020-11-30",
+    "Country": "US",
+    "Confirmed": "13628096",
+    "Recovered": "5146319",
+    "Deaths": "269230"
+  },
+  {
+    "Date": "2020-12-01",
+    "Country": "US",
+    "Confirmed": "13825212",
+    "Recovered": "5226581",
+    "Deaths": "271777"
+  },
+  {
+    "Date": "2020-12-02",
+    "Country": "US",
+    "Confirmed": "14021377",
+    "Recovered": "5322128",
+    "Deaths": "274587"
+  },
+  {
+    "Date": "2020-12-03",
+    "Country": "US",
+    "Confirmed": "14241608",
+    "Recovered": "5404018",
+    "Deaths": "277534"
+  },
+  {
+    "Date": "2020-12-04",
+    "Country": "US",
+    "Confirmed": "14476983",
+    "Recovered": "5470389",
+    "Deaths": "280142"
+  },
+  {
+    "Date": "2020-12-05",
+    "Country": "US",
+    "Confirmed": "14698992",
+    "Recovered": "5576026",
+    "Deaths": "282524"
+  },
+  {
+    "Date": "2020-12-06",
+    "Country": "US",
+    "Confirmed": "14878319",
+    "Recovered": "5624444",
+    "Deaths": "283913"
+  },
+  {
+    "Date": "2020-12-07",
+    "Country": "US",
+    "Confirmed": "15073780",
+    "Recovered": "5714557",
+    "Deaths": "285471"
+  },
+  {
+    "Date": "2020-12-08",
+    "Country": "US",
+    "Confirmed": "15300837",
+    "Recovered": "5786915",
+    "Deaths": "288044"
+  },
+  {
+    "Date": "2020-12-09",
+    "Country": "US",
+    "Confirmed": "15516852",
+    "Recovered": "5889896",
+    "Deaths": "291207"
+  },
+  {
+    "Date": "2020-12-10",
+    "Country": "US",
+    "Confirmed": "15753796",
+    "Recovered": "5985047",
+    "Deaths": "294184"
+  },
+  {
+    "Date": "2020-12-11",
+    "Country": "US",
+    "Confirmed": "15992706",
+    "Recovered": "6135314",
+    "Deaths": "297553"
+  },
+  {
+    "Date": "2020-12-12",
+    "Country": "US",
+    "Confirmed": "16217240",
+    "Recovered": "6246605",
+    "Deaths": "300077"
+  },
+  {
+    "Date": "2020-12-13",
+    "Country": "US",
+    "Confirmed": "16408837",
+    "Recovered": "6298082",
+    "Deaths": "301731"
+  },
+  {
+    "Date": "2020-12-14",
+    "Country": "US",
+    "Confirmed": "16618677",
+    "Recovered": "0",
+    "Deaths": "303376"
+  },
+  {
+    "Date": "2020-12-15",
+    "Country": "US",
+    "Confirmed": "16844993",
+    "Recovered": "0",
+    "Deaths": "306342"
+  },
+  {
+    "Date": "2020-12-16",
+    "Country": "US",
+    "Confirmed": "17079802",
+    "Recovered": "0",
+    "Deaths": "310064"
+  },
+  {
+    "Date": "2020-12-17",
+    "Country": "US",
+    "Confirmed": "17320054",
+    "Recovered": "0",
+    "Deaths": "313509"
+  },
+  {
+    "Date": "2020-12-18",
+    "Country": "US",
+    "Confirmed": "17568005",
+    "Recovered": "0",
+    "Deaths": "316439"
+  },
+  {
+    "Date": "2020-12-19",
+    "Country": "US",
+    "Confirmed": "17773856",
+    "Recovered": "0",
+    "Deaths": "319243"
+  },
+  {
+    "Date": "2020-12-20",
+    "Country": "US",
+    "Confirmed": "17961053",
+    "Recovered": "0",
+    "Deaths": "320945"
+  },
+  {
+    "Date": "2020-12-21",
+    "Country": "US",
+    "Confirmed": "18157913",
+    "Recovered": "0",
+    "Deaths": "322737"
+  },
+  {
+    "Date": "2020-12-22",
+    "Country": "US",
+    "Confirmed": "18363849",
+    "Recovered": "0",
+    "Deaths": "326029"
+  },
+  {
+    "Date": "2020-12-23",
+    "Country": "US",
+    "Confirmed": "18585289",
+    "Recovered": "0",
+    "Deaths": "329399"
+  },
+  {
+    "Date": "2020-12-24",
+    "Country": "US",
+    "Confirmed": "18798236",
+    "Recovered": "0",
+    "Deaths": "332313"
+  },
+  {
+    "Date": "2020-12-25",
+    "Country": "US",
+    "Confirmed": "18925408",
+    "Recovered": "0",
+    "Deaths": "333823"
+  },
+  {
+    "Date": "2020-12-26",
+    "Country": "US",
+    "Confirmed": "19142846",
+    "Recovered": "0",
+    "Deaths": "335731"
+  },
+  {
+    "Date": "2020-12-27",
+    "Country": "US",
+    "Confirmed": "19278802",
+    "Recovered": "0",
+    "Deaths": "337162"
+  },
+  {
+    "Date": "2020-12-28",
+    "Country": "US",
+    "Confirmed": "19452104",
+    "Recovered": "0",
+    "Deaths": "339028"
+  },
+  {
+    "Date": "2020-12-29",
+    "Country": "US",
+    "Confirmed": "19658082",
+    "Recovered": "0",
+    "Deaths": "342639"
+  },
+  {
+    "Date": "2020-12-30",
+    "Country": "US",
+    "Confirmed": "19876375",
+    "Recovered": "0",
+    "Deaths": "346543"
+  },
+  {
+    "Date": "2020-12-31",
+    "Country": "US",
+    "Confirmed": "20191459",
+    "Recovered": "0",
+    "Deaths": "349854"
+  },
+  {
+    "Date": "2021-01-01",
+    "Country": "US",
+    "Confirmed": "20370367",
+    "Recovered": "0",
+    "Deaths": "352096"
+  },
+  {
+    "Date": "2021-01-02",
+    "Country": "US",
+    "Confirmed": "20642648",
+    "Recovered": "0",
+    "Deaths": "354636"
+  },
+  {
+    "Date": "2021-01-03",
+    "Country": "US",
+    "Confirmed": "20846039",
+    "Recovered": "0",
+    "Deaths": "356059"
+  },
+  {
+    "Date": "2021-01-04",
+    "Country": "US",
+    "Confirmed": "21031555",
+    "Recovered": "0",
+    "Deaths": "358032"
+  },
+  {
+    "Date": "2021-01-05",
+    "Country": "US",
+    "Confirmed": "21264419",
+    "Recovered": "0",
+    "Deaths": "361626"
+  },
+  {
+    "Date": "2021-01-06",
+    "Country": "US",
+    "Confirmed": "21524179",
+    "Recovered": "0",
+    "Deaths": "365536"
+  },
+  {
+    "Date": "2021-01-07",
+    "Country": "US",
+    "Confirmed": "21810433",
+    "Recovered": "0",
+    "Deaths": "369549"
+  },
+  {
+    "Date": "2021-01-08",
+    "Country": "US",
+    "Confirmed": "22114510",
+    "Recovered": "0",
+    "Deaths": "373727"
+  },
+  {
+    "Date": "2021-01-09",
+    "Country": "US",
+    "Confirmed": "22379262",
+    "Recovered": "0",
+    "Deaths": "376962"
+  },
+  {
+    "Date": "2021-01-10",
+    "Country": "US",
+    "Confirmed": "22590111",
+    "Recovered": "0",
+    "Deaths": "379050"
+  },
+  {
+    "Date": "2021-01-11",
+    "Country": "US",
+    "Confirmed": "22794080",
+    "Recovered": "0",
+    "Deaths": "380884"
+  },
+  {
+    "Date": "2021-01-12",
+    "Country": "US",
+    "Confirmed": "23015894",
+    "Recovered": "0",
+    "Deaths": "385252"
+  },
+  {
+    "Date": "2021-01-13",
+    "Country": "US",
+    "Confirmed": "23245238",
+    "Recovered": "0",
+    "Deaths": "389264"
+  },
+  {
+    "Date": "2021-01-14",
+    "Country": "US",
+    "Confirmed": "23480819",
+    "Recovered": "0",
+    "Deaths": "393040"
+  },
+  {
+    "Date": "2021-01-15",
+    "Country": "US",
+    "Confirmed": "23725816",
+    "Recovered": "0",
+    "Deaths": "396848"
+  },
+  {
+    "Date": "2021-01-16",
+    "Country": "US",
+    "Confirmed": "23943499",
+    "Recovered": "0",
+    "Deaths": "400409"
+  },
+  {
+    "Date": "2021-01-17",
+    "Country": "US",
+    "Confirmed": "24120058",
+    "Recovered": "0",
+    "Deaths": "402396"
+  },
+  {
+    "Date": "2021-01-18",
+    "Country": "US",
+    "Confirmed": "24260884",
+    "Recovered": "0",
+    "Deaths": "403957"
+  },
+  {
+    "Date": "2021-01-19",
+    "Country": "US",
+    "Confirmed": "24417785",
+    "Recovered": "0",
+    "Deaths": "406346"
+  },
+  {
+    "Date": "2021-01-20",
+    "Country": "US",
+    "Confirmed": "24605182",
+    "Recovered": "0",
+    "Deaths": "410777"
+  },
+  {
+    "Date": "2021-01-21",
+    "Country": "US",
+    "Confirmed": "24797743",
+    "Recovered": "0",
+    "Deaths": "414895"
+  },
+  {
+    "Date": "2021-01-22",
+    "Country": "US",
+    "Confirmed": "24989518",
+    "Recovered": "0",
+    "Deaths": "418671"
+  },
+  {
+    "Date": "2021-01-23",
+    "Country": "US",
+    "Confirmed": "25167699",
+    "Recovered": "0",
+    "Deaths": "422205"
+  },
+  {
+    "Date": "2021-01-24",
+    "Country": "US",
+    "Confirmed": "25307842",
+    "Recovered": "0",
+    "Deaths": "424047"
+  },
+  {
+    "Date": "2021-01-25",
+    "Country": "US",
+    "Confirmed": "25437444",
+    "Recovered": "0",
+    "Deaths": "425810"
+  },
+  {
+    "Date": "2021-01-26",
+    "Country": "US",
+    "Confirmed": "25588454",
+    "Recovered": "0",
+    "Deaths": "429781"
+  },
+  {
+    "Date": "2021-01-27",
+    "Country": "US",
+    "Confirmed": "25743910",
+    "Recovered": "0",
+    "Deaths": "433893"
+  },
+  {
+    "Date": "2021-01-28",
+    "Country": "US",
+    "Confirmed": "25910675",
+    "Recovered": "0",
+    "Deaths": "437720"
+  },
+  {
+    "Date": "2021-01-29",
+    "Country": "US",
+    "Confirmed": "26074413",
+    "Recovered": "0",
+    "Deaths": "441297"
+  },
+  {
+    "Date": "2021-01-30",
+    "Country": "US",
+    "Confirmed": "26225350",
+    "Recovered": "0",
+    "Deaths": "444167"
+  },
+  {
+    "Date": "2021-01-31",
+    "Country": "US",
+    "Confirmed": "26338205",
+    "Recovered": "0",
+    "Deaths": "446110"
+  },
+  {
+    "Date": "2021-02-01",
+    "Country": "US",
+    "Confirmed": "26463526",
+    "Recovered": "0",
+    "Deaths": "447878"
+  },
+  {
+    "Date": "2021-02-02",
+    "Country": "US",
+    "Confirmed": "26580556",
+    "Recovered": "0",
+    "Deaths": "451401"
+  },
+  {
+    "Date": "2021-02-03",
+    "Country": "US",
+    "Confirmed": "26704926",
+    "Recovered": "0",
+    "Deaths": "455287"
+  },
+  {
+    "Date": "2021-02-04",
+    "Country": "US",
+    "Confirmed": "26829960",
+    "Recovered": "0",
+    "Deaths": "459188"
+  },
+  {
+    "Date": "2021-02-05",
+    "Country": "US",
+    "Confirmed": "26961070",
+    "Recovered": "0",
+    "Deaths": "462860"
+  },
+  {
+    "Date": "2021-02-06",
+    "Country": "US",
+    "Confirmed": "27077929",
+    "Recovered": "0",
+    "Deaths": "465592"
+  },
+  {
+    "Date": "2021-02-07",
+    "Country": "US",
+    "Confirmed": "27167357",
+    "Recovered": "0",
+    "Deaths": "467057"
+  },
+  {
+    "Date": "2021-02-08",
+    "Country": "US",
+    "Confirmed": "27250158",
+    "Recovered": "0",
+    "Deaths": "468498"
+  },
+  {
+    "Date": "2021-02-09",
+    "Country": "US",
+    "Confirmed": "27345537",
+    "Recovered": "0",
+    "Deaths": "471533"
+  },
+  {
+    "Date": "2021-02-10",
+    "Country": "US",
+    "Confirmed": "27440818",
+    "Recovered": "0",
+    "Deaths": "474927"
+  },
+  {
+    "Date": "2021-02-11",
+    "Country": "US",
+    "Confirmed": "27547593",
+    "Recovered": "0",
+    "Deaths": "478092"
+  },
+  {
+    "Date": "2021-02-12",
+    "Country": "US",
+    "Confirmed": "27648176",
+    "Recovered": "0",
+    "Deaths": "480934"
+  },
+  {
+    "Date": "2021-02-13",
+    "Country": "US",
+    "Confirmed": "27738936",
+    "Recovered": "0",
+    "Deaths": "483203"
+  },
+  {
+    "Date": "2021-02-14",
+    "Country": "US",
+    "Confirmed": "27807242",
+    "Recovered": "0",
+    "Deaths": "484378"
+  },
+  {
+    "Date": "2021-02-15",
+    "Country": "US",
+    "Confirmed": "27862692",
+    "Recovered": "0",
+    "Deaths": "485316"
+  },
+  {
+    "Date": "2021-02-16",
+    "Country": "US",
+    "Confirmed": "27921916",
+    "Recovered": "0",
+    "Deaths": "486948"
+  },
+  {
+    "Date": "2021-02-17",
+    "Country": "US",
+    "Confirmed": "27990762",
+    "Recovered": "0",
+    "Deaths": "489370"
+  },
+  {
+    "Date": "2021-02-18",
+    "Country": "US",
+    "Confirmed": "28063341",
+    "Recovered": "0",
+    "Deaths": "491951"
+  },
+  {
+    "Date": "2021-02-19",
+    "Country": "US",
+    "Confirmed": "28138493",
+    "Recovered": "0",
+    "Deaths": "494474"
+  },
+  {
+    "Date": "2021-02-20",
+    "Country": "US",
+    "Confirmed": "28212275",
+    "Recovered": "0",
+    "Deaths": "496382"
+  },
+  {
+    "Date": "2021-02-21",
+    "Country": "US",
+    "Confirmed": "28267539",
+    "Recovered": "0",
+    "Deaths": "497585"
+  },
+  {
+    "Date": "2021-02-22",
+    "Country": "US",
+    "Confirmed": "28323023",
+    "Recovered": "0",
+    "Deaths": "498780"
+  },
+  {
+    "Date": "2021-02-23",
+    "Country": "US",
+    "Confirmed": "28396884",
+    "Recovered": "0",
+    "Deaths": "501048"
+  },
+  {
+    "Date": "2021-02-24",
+    "Country": "US",
+    "Confirmed": "28471907",
+    "Recovered": "0",
+    "Deaths": "504279"
+  },
+  {
+    "Date": "2021-02-25",
+    "Country": "US",
+    "Confirmed": "28549184",
+    "Recovered": "0",
+    "Deaths": "506699"
+  },
+  {
+    "Date": "2021-02-26",
+    "Country": "US",
+    "Confirmed": "28624603",
+    "Recovered": "0",
+    "Deaths": "508838"
+  },
+  {
+    "Date": "2021-02-27",
+    "Country": "US",
+    "Confirmed": "28695889",
+    "Recovered": "0",
+    "Deaths": "510345"
+  },
+  {
+    "Date": "2021-02-28",
+    "Country": "US",
+    "Confirmed": "28747650",
+    "Recovered": "0",
+    "Deaths": "511429"
+  },
+  {
+    "Date": "2021-03-01",
+    "Country": "US",
+    "Confirmed": "28798094",
+    "Recovered": "0",
+    "Deaths": "512736"
+  },
+  {
+    "Date": "2021-03-02",
+    "Country": "US",
+    "Confirmed": "28856511",
+    "Recovered": "0",
+    "Deaths": "514653"
+  },
+  {
+    "Date": "2021-03-03",
+    "Country": "US",
+    "Confirmed": "28923564",
+    "Recovered": "0",
+    "Deaths": "517185"
+  },
+  {
+    "Date": "2021-03-04",
+    "Country": "US",
+    "Confirmed": "28992510",
+    "Recovered": "0",
+    "Deaths": "519110"
+  },
+  {
+    "Date": "2021-03-05",
+    "Country": "US",
+    "Confirmed": "29060390",
+    "Recovered": "0",
+    "Deaths": "520822"
+  },
+  {
+    "Date": "2021-03-06",
+    "Country": "US",
+    "Confirmed": "29121421",
+    "Recovered": "0",
+    "Deaths": "522325"
+  },
+  {
+    "Date": "2021-03-07",
+    "Country": "US",
+    "Confirmed": "29163030",
+    "Recovered": "0",
+    "Deaths": "523015"
+  },
+  {
+    "Date": "2021-03-08",
+    "Country": "US",
+    "Confirmed": "29207128",
+    "Recovered": "0",
+    "Deaths": "523709"
+  },
+  {
+    "Date": "2021-03-09",
+    "Country": "US",
+    "Confirmed": "29262633",
+    "Recovered": "0",
+    "Deaths": "525485"
+  },
+  {
+    "Date": "2021-03-10",
+    "Country": "US",
+    "Confirmed": "29320406",
+    "Recovered": "0",
+    "Deaths": "527025"
+  },
+  {
+    "Date": "2021-03-11",
+    "Country": "US",
+    "Confirmed": "29382197",
+    "Recovered": "0",
+    "Deaths": "528578"
+  },
+  {
+    "Date": "2021-03-12",
+    "Country": "US",
+    "Confirmed": "29444801",
+    "Recovered": "0",
+    "Deaths": "529991"
+  },
+  {
+    "Date": "2021-03-13",
+    "Country": "US",
+    "Confirmed": "29501621",
+    "Recovered": "0",
+    "Deaths": "530960"
+  },
+  {
+    "Date": "2021-03-14",
+    "Country": "US",
+    "Confirmed": "29540897",
+    "Recovered": "0",
+    "Deaths": "531470"
+  },
+  {
+    "Date": "2021-03-15",
+    "Country": "US",
+    "Confirmed": "29591931",
+    "Recovered": "0",
+    "Deaths": "532163"
+  },
+  {
+    "Date": "2021-03-16",
+    "Country": "US",
+    "Confirmed": "29645996",
+    "Recovered": "0",
+    "Deaths": "533418"
+  },
+  {
+    "Date": "2021-03-17",
+    "Country": "US",
+    "Confirmed": "29705270",
+    "Recovered": "0",
+    "Deaths": "534607"
+  },
+  {
+    "Date": "2021-03-18",
+    "Country": "US",
+    "Confirmed": "29767659",
+    "Recovered": "0",
+    "Deaths": "536240"
+  },
+  {
+    "Date": "2021-03-19",
+    "Country": "US",
+    "Confirmed": "29829293",
+    "Recovered": "0",
+    "Deaths": "537263"
+  },
+  {
+    "Date": "2021-03-20",
+    "Country": "US",
+    "Confirmed": "29888158",
+    "Recovered": "0",
+    "Deaths": "538027"
+  },
+  {
+    "Date": "2021-03-21",
+    "Country": "US",
+    "Confirmed": "29923536",
+    "Recovered": "0",
+    "Deaths": "538743"
+  },
+  {
+    "Date": "2021-03-22",
+    "Country": "US",
+    "Confirmed": "29970963",
+    "Recovered": "0",
+    "Deaths": "539291"
+  },
+  {
+    "Date": "2021-03-23",
+    "Country": "US",
+    "Confirmed": "30023822",
+    "Recovered": "0",
+    "Deaths": "540235"
+  },
+  {
+    "Date": "2021-03-24",
+    "Country": "US",
+    "Confirmed": "30111580",
+    "Recovered": "0",
+    "Deaths": "541693"
+  },
+  {
+    "Date": "2021-03-25",
+    "Country": "US",
+    "Confirmed": "30179209",
+    "Recovered": "0",
+    "Deaths": "543040"
+  },
+  {
+    "Date": "2021-03-26",
+    "Country": "US",
+    "Confirmed": "30255581",
+    "Recovered": "0",
+    "Deaths": "544193"
+  },
+  {
+    "Date": "2021-03-27",
+    "Country": "US",
+    "Confirmed": "30319636",
+    "Recovered": "0",
+    "Deaths": "544999"
+  },
+  {
+    "Date": "2021-03-28",
+    "Country": "US",
+    "Confirmed": "30365956",
+    "Recovered": "0",
+    "Deaths": "545440"
+  },
+  {
+    "Date": "2021-03-29",
+    "Country": "US",
+    "Confirmed": "30431828",
+    "Recovered": "0",
+    "Deaths": "546065"
+  },
+  {
+    "Date": "2021-03-30",
+    "Country": "US",
+    "Confirmed": "30493519",
+    "Recovered": "0",
+    "Deaths": "546959"
+  },
+  {
+    "Date": "2021-03-31",
+    "Country": "US",
+    "Confirmed": "30563051",
+    "Recovered": "0",
+    "Deaths": "548034"
+  },
+  {
+    "Date": "2021-04-01",
+    "Country": "US",
+    "Confirmed": "30639910",
+    "Recovered": "0",
+    "Deaths": "549135"
+  },
+  {
+    "Date": "2021-04-02",
+    "Country": "US",
+    "Confirmed": "30713935",
+    "Recovered": "0",
+    "Deaths": "550020"
+  },
+  {
+    "Date": "2021-04-03",
+    "Country": "US",
+    "Confirmed": "30778816",
+    "Recovered": "0",
+    "Deaths": "550772"
+  },
+  {
+    "Date": "2021-04-04",
+    "Country": "US",
+    "Confirmed": "30816739",
+    "Recovered": "0",
+    "Deaths": "551082"
+  },
+  {
+    "Date": "2021-04-05",
+    "Country": "US",
+    "Confirmed": "30883829",
+    "Recovered": "0",
+    "Deaths": "551540"
+  },
+  {
+    "Date": "2021-04-06",
+    "Country": "US",
+    "Confirmed": "30946656",
+    "Recovered": "0",
+    "Deaths": "552367"
+  },
+  {
+    "Date": "2021-04-07",
+    "Country": "US",
+    "Confirmed": "31022434",
+    "Recovered": "0",
+    "Deaths": "554967"
+  },
+  {
+    "Date": "2021-04-08",
+    "Country": "US",
+    "Confirmed": "31102499",
+    "Recovered": "0",
+    "Deaths": "555994"
+  },
+  {
+    "Date": "2021-04-09",
+    "Country": "US",
+    "Confirmed": "31187252",
+    "Recovered": "0",
+    "Deaths": "556901"
+  },
+  {
+    "Date": "2021-04-10",
+    "Country": "US",
+    "Confirmed": "31257787",
+    "Recovered": "0",
+    "Deaths": "557659"
+  },
+  {
+    "Date": "2021-04-11",
+    "Country": "US",
+    "Confirmed": "31305243",
+    "Recovered": "0",
+    "Deaths": "557947"
+  },
+  {
+    "Date": "2021-04-12",
+    "Country": "US",
+    "Confirmed": "31367427",
+    "Recovered": "0",
+    "Deaths": "558390"
+  },
+  {
+    "Date": "2021-04-13",
+    "Country": "US",
+    "Confirmed": "31448268",
+    "Recovered": "0",
+    "Deaths": "559269"
+  },
+  {
+    "Date": "2021-04-14",
+    "Country": "US",
+    "Confirmed": "31523873",
+    "Recovered": "0",
+    "Deaths": "560202"
+  },
+  {
+    "Date": "2021-04-15",
+    "Country": "US",
+    "Confirmed": "31597853",
+    "Recovered": "0",
+    "Deaths": "561110"
+  },
+  {
+    "Date": "2021-04-16",
+    "Country": "US",
+    "Confirmed": "31681326",
+    "Recovered": "0",
+    "Deaths": "561975"
+  },
+  {
+    "Date": "2021-04-17",
+    "Country": "US",
+    "Confirmed": "31736814",
+    "Recovered": "0",
+    "Deaths": "562680"
+  },
+  {
+    "Date": "2021-04-18",
+    "Country": "US",
+    "Confirmed": "31780644",
+    "Recovered": "0",
+    "Deaths": "563027"
+  },
+  {
+    "Date": "2021-04-19",
+    "Country": "US",
+    "Confirmed": "31839194",
+    "Recovered": "0",
+    "Deaths": "563514"
+  },
+  {
+    "Date": "2021-04-20",
+    "Country": "US",
+    "Confirmed": "31901634",
+    "Recovered": "0",
+    "Deaths": "564360"
+  },
+  {
+    "Date": "2021-04-21",
+    "Country": "US",
+    "Confirmed": "31965981",
+    "Recovered": "0",
+    "Deaths": "565251"
+  },
+  {
+    "Date": "2021-04-22",
+    "Country": "US",
+    "Confirmed": "32032699",
+    "Recovered": "0",
+    "Deaths": "566190"
+  },
+  {
+    "Date": "2021-04-23",
+    "Country": "US",
+    "Confirmed": "32095595",
+    "Recovered": "0",
+    "Deaths": "566942"
+  },
+  {
+    "Date": "2021-04-24",
+    "Country": "US",
+    "Confirmed": "32150567",
+    "Recovered": "0",
+    "Deaths": "567699"
+  },
+  {
+    "Date": "2021-04-25",
+    "Country": "US",
+    "Confirmed": "32185336",
+    "Recovered": "0",
+    "Deaths": "567999"
+  },
+  {
+    "Date": "2021-04-26",
+    "Country": "US",
+    "Confirmed": "32227622",
+    "Recovered": "0",
+    "Deaths": "568472"
+  },
+  {
+    "Date": "2021-04-27",
+    "Country": "US",
+    "Confirmed": "32279906",
+    "Recovered": "0",
+    "Deaths": "569147"
+  },
+  {
+    "Date": "2021-04-28",
+    "Country": "US",
+    "Confirmed": "32335093",
+    "Recovered": "0",
+    "Deaths": "570148"
+  },
+  {
+    "Date": "2021-04-29",
+    "Country": "US",
+    "Confirmed": "32393919",
+    "Recovered": "0",
+    "Deaths": "571033"
+  },
+  {
+    "Date": "2021-04-30",
+    "Country": "US",
+    "Confirmed": "32452021",
+    "Recovered": "0",
+    "Deaths": "571837"
+  },
+  {
+    "Date": "2021-05-01",
+    "Country": "US",
+    "Confirmed": "32500798",
+    "Recovered": "0",
+    "Deaths": "572583"
+  },
+  {
+    "Date": "2021-05-02",
+    "Country": "US",
+    "Confirmed": "32531353",
+    "Recovered": "0",
+    "Deaths": "572905"
+  },
+  {
+    "Date": "2021-05-03",
+    "Country": "US",
+    "Confirmed": "32575974",
+    "Recovered": "0",
+    "Deaths": "573379"
+  },
+  {
+    "Date": "2021-05-04",
+    "Country": "US",
+    "Confirmed": "32618870",
+    "Recovered": "0",
+    "Deaths": "574291"
+  },
+  {
+    "Date": "2021-05-05",
+    "Country": "US",
+    "Confirmed": "32664914",
+    "Recovered": "0",
+    "Deaths": "575107"
+  },
+  {
+    "Date": "2021-05-06",
+    "Country": "US",
+    "Confirmed": "32711094",
+    "Recovered": "0",
+    "Deaths": "575930"
+  },
+  {
+    "Date": "2021-05-07",
+    "Country": "US",
+    "Confirmed": "32759508",
+    "Recovered": "0",
+    "Deaths": "576747"
+  },
+  {
+    "Date": "2021-05-08",
+    "Country": "US",
+    "Confirmed": "32795165",
+    "Recovered": "0",
+    "Deaths": "577383"
+  },
+  {
+    "Date": "2021-05-09",
+    "Country": "US",
+    "Confirmed": "32818035",
+    "Recovered": "0",
+    "Deaths": "577640"
+  },
+  {
+    "Date": "2021-05-10",
+    "Country": "US",
+    "Confirmed": "32850412",
+    "Recovered": "0",
+    "Deaths": "578029"
+  },
+  {
+    "Date": "2021-05-11",
+    "Country": "US",
+    "Confirmed": "32885890",
+    "Recovered": "0",
+    "Deaths": "578724"
+  },
+  {
+    "Date": "2021-05-12",
+    "Country": "US",
+    "Confirmed": "32922041",
+    "Recovered": "0",
+    "Deaths": "579521"
+  },
+  {
+    "Date": "2021-05-13",
+    "Country": "US",
+    "Confirmed": "32960778",
+    "Recovered": "0",
+    "Deaths": "580311"
+  },
+  {
+    "Date": "2021-05-14",
+    "Country": "US",
+    "Confirmed": "33002995",
+    "Recovered": "0",
+    "Deaths": "580938"
+  },
+  {
+    "Date": "2021-05-15",
+    "Country": "US",
+    "Confirmed": "33033753",
+    "Recovered": "0",
+    "Deaths": "581469"
+  },
+  {
+    "Date": "2021-05-16",
+    "Country": "US",
+    "Confirmed": "33051445",
+    "Recovered": "0",
+    "Deaths": "581736"
+  },
+  {
+    "Date": "2021-05-17",
+    "Country": "US",
+    "Confirmed": "33076688",
+    "Recovered": "0",
+    "Deaths": "582129"
+  },
+  {
+    "Date": "2021-05-18",
+    "Country": "US",
+    "Confirmed": "33105606",
+    "Recovered": "0",
+    "Deaths": "582912"
+  },
+  {
+    "Date": "2021-05-19",
+    "Country": "US",
+    "Confirmed": "33135210",
+    "Recovered": "0",
+    "Deaths": "583586"
+  },
+  {
+    "Date": "2021-05-20",
+    "Country": "US",
+    "Confirmed": "33165429",
+    "Recovered": "0",
+    "Deaths": "584272"
+  },
+  {
+    "Date": "2021-05-21",
+    "Country": "US",
+    "Confirmed": "33194254",
+    "Recovered": "0",
+    "Deaths": "584895"
+  },
+  {
+    "Date": "2021-05-22",
+    "Country": "US",
+    "Confirmed": "33215467",
+    "Recovered": "0",
+    "Deaths": "585382"
+  },
+  {
+    "Date": "2021-05-23",
+    "Country": "US",
+    "Confirmed": "33229252",
+    "Recovered": "0",
+    "Deaths": "585578"
+  },
+  {
+    "Date": "2021-05-24",
+    "Country": "US",
+    "Confirmed": "33251126",
+    "Recovered": "0",
+    "Deaths": "586010"
+  },
+  {
+    "Date": "2021-05-25",
+    "Country": "US",
+    "Confirmed": "33275718",
+    "Recovered": "0",
+    "Deaths": "586656"
+  },
+  {
+    "Date": "2021-05-26",
+    "Country": "US",
+    "Confirmed": "33300313",
+    "Recovered": "0",
+    "Deaths": "587648"
+  },
+  {
+    "Date": "2021-05-27",
+    "Country": "US",
+    "Confirmed": "33327156",
+    "Recovered": "0",
+    "Deaths": "589004"
+  },
+  {
+    "Date": "2021-05-28",
+    "Country": "US",
+    "Confirmed": "33349400",
+    "Recovered": "0",
+    "Deaths": "589535"
+  },
+  {
+    "Date": "2021-05-29",
+    "Country": "US",
+    "Confirmed": "33362711",
+    "Recovered": "0",
+    "Deaths": "589878"
+  },
+  {
+    "Date": "2021-05-30",
+    "Country": "US",
+    "Confirmed": "33370065",
+    "Recovered": "0",
+    "Deaths": "590027"
+  },
+  {
+    "Date": "2021-05-31",
+    "Country": "US",
+    "Confirmed": "33376340",
+    "Recovered": "0",
+    "Deaths": "590199"
+  },
+  {
+    "Date": "2021-06-01",
+    "Country": "US",
+    "Confirmed": "33397194",
+    "Recovered": "0",
+    "Deaths": "590831"
+  },
+  {
+    "Date": "2021-06-02",
+    "Country": "US",
+    "Confirmed": "33413908",
+    "Recovered": "0",
+    "Deaths": "591393"
+  },
+  {
+    "Date": "2021-06-03",
+    "Country": "US",
+    "Confirmed": "33432302",
+    "Recovered": "0",
+    "Deaths": "592028"
+  },
+  {
+    "Date": "2021-06-04",
+    "Country": "US",
+    "Confirmed": "33450167",
+    "Recovered": "0",
+    "Deaths": "592549"
+  },
+  {
+    "Date": "2021-06-05",
+    "Country": "US",
+    "Confirmed": "33465772",
+    "Recovered": "0",
+    "Deaths": "593133"
+  },
+  {
+    "Date": "2021-06-06",
+    "Country": "US",
+    "Confirmed": "33471789",
+    "Recovered": "0",
+    "Deaths": "593296"
+  },
+  {
+    "Date": "2021-06-07",
+    "Country": "US",
+    "Confirmed": "33485861",
+    "Recovered": "0",
+    "Deaths": "593612"
+  },
+  {
+    "Date": "2021-06-08",
+    "Country": "US",
+    "Confirmed": "33498901",
+    "Recovered": "0",
+    "Deaths": "593932"
+  },
+  {
+    "Date": "2021-06-09",
+    "Country": "US",
+    "Confirmed": "33517466",
+    "Recovered": "0",
+    "Deaths": "594417"
+  },
+  {
+    "Date": "2021-06-10",
+    "Country": "US",
+    "Confirmed": "33532246",
+    "Recovered": "0",
+    "Deaths": "594830"
+  },
+  {
+    "Date": "2021-06-11",
+    "Country": "US",
+    "Confirmed": "33557397",
+    "Recovered": "0",
+    "Deaths": "595363"
+  },
+  {
+    "Date": "2021-06-12",
+    "Country": "US",
+    "Confirmed": "33566557",
+    "Recovered": "0",
+    "Deaths": "595639"
+  },
+  {
+    "Date": "2021-06-13",
+    "Country": "US",
+    "Confirmed": "33571828",
+    "Recovered": "0",
+    "Deaths": "595747"
+  },
+  {
+    "Date": "2021-06-14",
+    "Country": "US",
+    "Confirmed": "33583613",
+    "Recovered": "0",
+    "Deaths": "595931"
+  },
+  {
+    "Date": "2021-06-15",
+    "Country": "US",
+    "Confirmed": "33594342",
+    "Recovered": "0",
+    "Deaths": "596261"
+  },
+  {
+    "Date": "2021-06-16",
+    "Country": "US",
+    "Confirmed": "33606248",
+    "Recovered": "0",
+    "Deaths": "596647"
+  },
+  {
+    "Date": "2021-06-17",
+    "Country": "US",
+    "Confirmed": "33618011",
+    "Recovered": "0",
+    "Deaths": "596971"
+  },
+  {
+    "Date": "2021-06-18",
+    "Country": "US",
+    "Confirmed": "33639193",
+    "Recovered": "0",
+    "Deaths": "597577"
+  },
+  {
+    "Date": "2021-06-19",
+    "Country": "US",
+    "Confirmed": "33648244",
+    "Recovered": "0",
+    "Deaths": "597759"
+  },
+  {
+    "Date": "2021-06-20",
+    "Country": "US",
+    "Confirmed": "33653165",
+    "Recovered": "0",
+    "Deaths": "597834"
+  },
+  {
+    "Date": "2021-06-21",
+    "Country": "US",
+    "Confirmed": "33663719",
+    "Recovered": "0",
+    "Deaths": "598092"
+  },
+  {
+    "Date": "2021-06-22",
+    "Country": "US",
+    "Confirmed": "33674516",
+    "Recovered": "0",
+    "Deaths": "598437"
+  },
+  {
+    "Date": "2021-06-23",
+    "Country": "US",
+    "Confirmed": "33687181",
+    "Recovered": "0",
+    "Deaths": "598835"
+  },
+  {
+    "Date": "2021-06-24",
+    "Country": "US",
+    "Confirmed": "33701655",
+    "Recovered": "0",
+    "Deaths": "599177"
+  },
+  {
+    "Date": "2021-06-25",
+    "Country": "US",
+    "Confirmed": "33726258",
+    "Recovered": "0",
+    "Deaths": "599699"
+  },
+  {
+    "Date": "2021-06-26",
+    "Country": "US",
+    "Confirmed": "33735628",
+    "Recovered": "0",
+    "Deaths": "599853"
+  },
+  {
+    "Date": "2021-06-27",
+    "Country": "US",
+    "Confirmed": "33740250",
+    "Recovered": "0",
+    "Deaths": "599929"
+  },
+  {
+    "Date": "2021-06-28",
+    "Country": "US",
+    "Confirmed": "33753873",
+    "Recovered": "0",
+    "Deaths": "600075"
+  },
+  {
+    "Date": "2021-06-29",
+    "Country": "US",
+    "Confirmed": "33761350",
+    "Recovered": "0",
+    "Deaths": "600404"
+  },
+  {
+    "Date": "2021-06-30",
+    "Country": "US",
+    "Confirmed": "33776702",
+    "Recovered": "0",
+    "Deaths": "600707"
+  },
+  {
+    "Date": "2021-07-01",
+    "Country": "US",
+    "Confirmed": "33791823",
+    "Recovered": "0",
+    "Deaths": "600990"
+  },
+  {
+    "Date": "2021-07-02",
+    "Country": "US",
+    "Confirmed": "33821579",
+    "Recovered": "0",
+    "Deaths": "601423"
+  },
+  {
+    "Date": "2021-07-03",
+    "Country": "US",
+    "Confirmed": "33826993",
+    "Recovered": "0",
+    "Deaths": "601516"
+  },
+  {
+    "Date": "2021-07-04",
+    "Country": "US",
+    "Confirmed": "33831278",
+    "Recovered": "0",
+    "Deaths": "601557"
+  },
+  {
+    "Date": "2021-07-05",
+    "Country": "US",
+    "Confirmed": "33840180",
+    "Recovered": "0",
+    "Deaths": "601682"
+  },
+  {
+    "Date": "2021-07-06",
+    "Country": "US",
+    "Confirmed": "33862462",
+    "Recovered": "0",
+    "Deaths": "601983"
+  },
+  {
+    "Date": "2021-07-07",
+    "Country": "US",
+    "Confirmed": "33882639",
+    "Recovered": "0",
+    "Deaths": "602305"
+  },
+  {
+    "Date": "2021-07-08",
+    "Country": "US",
+    "Confirmed": "33903502",
+    "Recovered": "0",
+    "Deaths": "602549"
+  },
+  {
+    "Date": "2021-07-09",
+    "Country": "US",
+    "Confirmed": "33951097",
+    "Recovered": "0",
+    "Deaths": "603013"
+  },
+  {
+    "Date": "2021-07-10",
+    "Country": "US",
+    "Confirmed": "33961217",
+    "Recovered": "0",
+    "Deaths": "603099"
+  },
+  {
+    "Date": "2021-07-11",
+    "Country": "US",
+    "Confirmed": "33972964",
+    "Recovered": "0",
+    "Deaths": "603221"
+  },
+  {
+    "Date": "2021-07-12",
+    "Country": "US",
+    "Confirmed": "34002388",
+    "Recovered": "0",
+    "Deaths": "603450"
+  },
+  {
+    "Date": "2021-07-13",
+    "Country": "US",
+    "Confirmed": "34028921",
+    "Recovered": "0",
+    "Deaths": "603809"
+  },
+  {
+    "Date": "2021-07-14",
+    "Country": "US",
+    "Confirmed": "34060046",
+    "Recovered": "0",
+    "Deaths": "604137"
+  },
+  {
+    "Date": "2021-07-15",
+    "Country": "US",
+    "Confirmed": "34092009",
+    "Recovered": "0",
+    "Deaths": "604487"
+  },
+  {
+    "Date": "2021-07-16",
+    "Country": "US",
+    "Confirmed": "34170120",
+    "Recovered": "0",
+    "Deaths": "604940"
+  },
+  {
+    "Date": "2021-07-17",
+    "Country": "US",
+    "Confirmed": "34184222",
+    "Recovered": "0",
+    "Deaths": "605017"
+  },
+  {
+    "Date": "2021-07-18",
+    "Country": "US",
+    "Confirmed": "34204550",
+    "Recovered": "0",
+    "Deaths": "605104"
+  },
+  {
+    "Date": "2021-07-19",
+    "Country": "US",
+    "Confirmed": "34253393",
+    "Recovered": "0",
+    "Deaths": "605294"
+  },
+  {
+    "Date": "2021-07-20",
+    "Country": "US",
+    "Confirmed": "34293122",
+    "Recovered": "0",
+    "Deaths": "605583"
+  },
+  {
+    "Date": "2021-07-21",
+    "Country": "US",
+    "Confirmed": "34340854",
+    "Recovered": "0",
+    "Deaths": "605944"
+  },
+  {
+    "Date": "2021-07-22",
+    "Country": "US",
+    "Confirmed": "34397386",
+    "Recovered": "0",
+    "Deaths": "606233"
+  },
+  {
+    "Date": "2021-07-23",
+    "Country": "US",
+    "Confirmed": "34518187",
+    "Recovered": "0",
+    "Deaths": "606789"
+  },
+  {
+    "Date": "2021-07-24",
+    "Country": "US",
+    "Confirmed": "34546932",
+    "Recovered": "0",
+    "Deaths": "606915"
+  },
+  {
+    "Date": "2021-07-25",
+    "Country": "US",
+    "Confirmed": "34574904",
+    "Recovered": "0",
+    "Deaths": "607013"
+  },
+  {
+    "Date": "2021-07-26",
+    "Country": "US",
+    "Confirmed": "34654278",
+    "Recovered": "0",
+    "Deaths": "607271"
+  },
+  {
+    "Date": "2021-07-27",
+    "Country": "US",
+    "Confirmed": "34719272",
+    "Recovered": "0",
+    "Deaths": "607715"
+  },
+  {
+    "Date": "2021-07-28",
+    "Country": "US",
+    "Confirmed": "34792842",
+    "Recovered": "0",
+    "Deaths": "608090"
+  },
+  {
+    "Date": "2021-07-29",
+    "Country": "US",
+    "Confirmed": "34865401",
+    "Recovered": "0",
+    "Deaths": "608408"
+  },
+  {
+    "Date": "2021-07-30",
+    "Country": "US",
+    "Confirmed": "35056850",
+    "Recovered": "0",
+    "Deaths": "609289"
+  },
+  {
+    "Date": "2021-07-31",
+    "Country": "US",
+    "Confirmed": "35100744",
+    "Recovered": "0",
+    "Deaths": "609457"
+  },
+  {
+    "Date": "2021-08-01",
+    "Country": "US",
+    "Confirmed": "35145314",
+    "Recovered": "0",
+    "Deaths": "609681"
+  },
+  {
+    "Date": "2021-08-02",
+    "Country": "US",
+    "Confirmed": "35253675",
+    "Recovered": "0",
+    "Deaths": "610026"
+  },
+  {
+    "Date": "2021-08-03",
+    "Country": "US",
+    "Confirmed": "35351427",
+    "Recovered": "0",
+    "Deaths": "610603"
+  },
+  {
+    "Date": "2021-08-04",
+    "Country": "US",
+    "Confirmed": "35453864",
+    "Recovered": "0",
+    "Deaths": "611143"
+  },
+  {
+    "Date": "2021-08-05",
+    "Country": "US",
+    "Confirmed": "35563556",
+    "Recovered": "0",
+    "Deaths": "611656"
+  },
+  {
+    "Date": "2021-08-06",
+    "Country": "US",
+    "Confirmed": "35815450",
+    "Recovered": "0",
+    "Deaths": "612789"
+  },
+  {
+    "Date": "2021-08-07",
+    "Country": "US",
+    "Confirmed": "35878449",
+    "Recovered": "0",
+    "Deaths": "613044"
+  },
+  {
+    "Date": "2021-08-08",
+    "Country": "US",
+    "Confirmed": "35913323",
+    "Recovered": "0",
+    "Deaths": "613168"
+  },
+  {
+    "Date": "2021-08-09",
+    "Country": "US",
+    "Confirmed": "36073112",
+    "Recovered": "0",
+    "Deaths": "613689"
+  },
+  {
+    "Date": "2021-08-10",
+    "Country": "US",
+    "Confirmed": "36190914",
+    "Recovered": "0",
+    "Deaths": "614522"
+  },
+  {
+    "Date": "2021-08-11",
+    "Country": "US",
+    "Confirmed": "36345351",
+    "Recovered": "0",
+    "Deaths": "615312"
+  },
+  {
+    "Date": "2021-08-12",
+    "Country": "US",
+    "Confirmed": "36489427",
+    "Recovered": "0",
+    "Deaths": "616335"
+  },
+  {
+    "Date": "2021-08-13",
+    "Country": "US",
+    "Confirmed": "36716250",
+    "Recovered": "0",
+    "Deaths": "617383"
+  },
+  {
+    "Date": "2021-08-14",
+    "Country": "US",
+    "Confirmed": "36789314",
+    "Recovered": "0",
+    "Deaths": "617649"
+  },
+  {
+    "Date": "2021-08-15",
+    "Country": "US",
+    "Confirmed": "36836100",
+    "Recovered": "0",
+    "Deaths": "617853"
+  },
+  {
+    "Date": "2021-08-16",
+    "Country": "US",
+    "Confirmed": "37030460",
+    "Recovered": "0",
+    "Deaths": "618878"
+  },
+  {
+    "Date": "2021-08-17",
+    "Country": "US",
+    "Confirmed": "37181051",
+    "Recovered": "0",
+    "Deaths": "619901"
+  },
+  {
+    "Date": "2021-08-18",
+    "Country": "US",
+    "Confirmed": "37348658",
+    "Recovered": "0",
+    "Deaths": "621102"
+  },
+  {
+    "Date": "2021-08-19",
+    "Country": "US",
+    "Confirmed": "37503878",
+    "Recovered": "0",
+    "Deaths": "622879"
+  },
+  {
+    "Date": "2021-08-20",
+    "Country": "US",
+    "Confirmed": "37742957",
+    "Recovered": "0",
+    "Deaths": "624339"
+  },
+  {
+    "Date": "2021-08-21",
+    "Country": "US",
+    "Confirmed": "37835147",
+    "Recovered": "0",
+    "Deaths": "624903"
+  },
+  {
+    "Date": "2021-08-22",
+    "Country": "US",
+    "Confirmed": "37879350",
+    "Recovered": "0",
+    "Deaths": "625108"
+  },
+  {
+    "Date": "2021-08-23",
+    "Country": "US",
+    "Confirmed": "38087584",
+    "Recovered": "0",
+    "Deaths": "626438"
+  },
+  {
+    "Date": "2021-08-24",
+    "Country": "US",
+    "Confirmed": "38242044",
+    "Recovered": "0",
+    "Deaths": "627849"
+  },
+  {
+    "Date": "2021-08-25",
+    "Country": "US",
+    "Confirmed": "38421014",
+    "Recovered": "0",
+    "Deaths": "629389"
+  },
+  {
+    "Date": "2021-08-26",
+    "Country": "US",
+    "Confirmed": "38604788",
+    "Recovered": "0",
+    "Deaths": "631586"
+  },
+  {
+    "Date": "2021-08-27",
+    "Country": "US",
+    "Confirmed": "38843468",
+    "Recovered": "0",
+    "Deaths": "633319"
+  },
+  {
+    "Date": "2021-08-28",
+    "Country": "US",
+    "Confirmed": "38922361",
+    "Recovered": "0",
+    "Deaths": "633968"
+  },
+  {
+    "Date": "2021-08-29",
+    "Country": "US",
+    "Confirmed": "38974376",
+    "Recovered": "0",
+    "Deaths": "634278"
+  },
+  {
+    "Date": "2021-08-30",
+    "Country": "US",
+    "Confirmed": "39203590",
+    "Recovered": "0",
+    "Deaths": "635986"
+  },
+  {
+    "Date": "2021-08-31",
+    "Country": "US",
+    "Confirmed": "39383534",
+    "Recovered": "0",
+    "Deaths": "637406"
+  },
+  {
+    "Date": "2021-09-01",
+    "Country": "US",
+    "Confirmed": "39574045",
+    "Recovered": "0",
+    "Deaths": "639440"
+  },
+  {
+    "Date": "2021-09-02",
+    "Country": "US",
+    "Confirmed": "39753168",
+    "Recovered": "0",
+    "Deaths": "642433"
+  },
+  {
+    "Date": "2021-09-03",
+    "Country": "US",
+    "Confirmed": "39988600",
+    "Recovered": "0",
+    "Deaths": "644363"
+  },
+  {
+    "Date": "2021-09-04",
+    "Country": "US",
+    "Confirmed": "40074511",
+    "Recovered": "0",
+    "Deaths": "645012"
+  },
+  {
+    "Date": "2021-09-05",
+    "Country": "US",
+    "Confirmed": "40138014",
+    "Recovered": "0",
+    "Deaths": "645418"
+  },
+  {
+    "Date": "2021-09-06",
+    "Country": "US",
+    "Confirmed": "40231755",
+    "Recovered": "0",
+    "Deaths": "646042"
+  },
+  {
+    "Date": "2021-09-07",
+    "Country": "US",
+    "Confirmed": "40440928",
+    "Recovered": "0",
+    "Deaths": "648113"
+  },
+  {
+    "Date": "2021-09-08",
+    "Country": "US",
+    "Confirmed": "40617839",
+    "Recovered": "0",
+    "Deaths": "650405"
+  },
+  {
+    "Date": "2021-09-09",
+    "Country": "US",
+    "Confirmed": "40784260",
+    "Recovered": "0",
+    "Deaths": "653620"
+  },
+  {
+    "Date": "2021-09-10",
+    "Country": "US",
+    "Confirmed": "41026278",
+    "Recovered": "0",
+    "Deaths": "656092"
+  },
+  {
+    "Date": "2021-09-11",
+    "Country": "US",
+    "Confirmed": "41115401",
+    "Recovered": "0",
+    "Deaths": "656914"
+  },
+  {
+    "Date": "2021-09-12",
+    "Country": "US",
+    "Confirmed": "41163747",
+    "Recovered": "0",
+    "Deaths": "657284"
+  },
+  {
+    "Date": "2021-09-13",
+    "Country": "US",
+    "Confirmed": "41374525",
+    "Recovered": "0",
+    "Deaths": "659444"
+  },
+  {
+    "Date": "2021-09-14",
+    "Country": "US",
+    "Confirmed": "41519932",
+    "Recovered": "0",
+    "Deaths": "661333"
+  },
+  {
+    "Date": "2021-09-15",
+    "Country": "US",
+    "Confirmed": "41693180",
+    "Recovered": "0",
+    "Deaths": "664072"
+  },
+  {
+    "Date": "2021-09-16",
+    "Country": "US",
+    "Confirmed": "41851957",
+    "Recovered": "0",
+    "Deaths": "667533"
+  },
+  {
+    "Date": "2021-09-17",
+    "Country": "US",
+    "Confirmed": "42062812",
+    "Recovered": "0",
+    "Deaths": "669977"
+  },
+  {
+    "Date": "2021-09-18",
+    "Country": "US",
+    "Confirmed": "42137785",
+    "Recovered": "0",
+    "Deaths": "670957"
+  },
+  {
+    "Date": "2021-09-19",
+    "Country": "US",
+    "Confirmed": "42182658",
+    "Recovered": "0",
+    "Deaths": "671346"
+  },
+  {
+    "Date": "2021-09-20",
+    "Country": "US",
+    "Confirmed": "42354453",
+    "Recovered": "0",
+    "Deaths": "673650"
+  },
+  {
+    "Date": "2021-09-21",
+    "Country": "US",
+    "Confirmed": "42476185",
+    "Recovered": "0",
+    "Deaths": "676090"
+  },
+  {
+    "Date": "2021-09-22",
+    "Country": "US",
+    "Confirmed": "42607532",
+    "Recovered": "0",
+    "Deaths": "678775"
+  },
+  {
+    "Date": "2021-09-23",
+    "Country": "US",
+    "Confirmed": "42736691",
+    "Recovered": "0",
+    "Deaths": "682065"
+  },
+  {
+    "Date": "2021-09-24",
+    "Country": "US",
+    "Confirmed": "42911456",
+    "Recovered": "0",
+    "Deaths": "684538"
+  },
+  {
+    "Date": "2021-09-25",
+    "Country": "US",
+    "Confirmed": "42971953",
+    "Recovered": "0",
+    "Deaths": "685375"
+  },
+  {
+    "Date": "2021-09-26",
+    "Country": "US",
+    "Confirmed": "43026268",
+    "Recovered": "0",
+    "Deaths": "685943"
+  },
+  {
+    "Date": "2021-09-27",
+    "Country": "US",
+    "Confirmed": "43182202",
+    "Recovered": "0",
+    "Deaths": "688208"
+  },
+  {
+    "Date": "2021-09-28",
+    "Country": "US",
+    "Confirmed": "43294951",
+    "Recovered": "0",
+    "Deaths": "690710"
+  },
+  {
+    "Date": "2021-09-29",
+    "Country": "US",
+    "Confirmed": "43416335",
+    "Recovered": "0",
+    "Deaths": "693325"
+  },
+  {
+    "Date": "2021-09-30",
+    "Country": "US",
+    "Confirmed": "43526729",
+    "Recovered": "0",
+    "Deaths": "696128"
+  },
+  {
+    "Date": "2021-10-01",
+    "Country": "US",
+    "Confirmed": "43681560",
+    "Recovered": "0",
+    "Deaths": "698275"
+  },
+  {
+    "Date": "2021-10-02",
+    "Country": "US",
+    "Confirmed": "43729766",
+    "Recovered": "0",
+    "Deaths": "699098"
+  },
+  {
+    "Date": "2021-10-03",
+    "Country": "US",
+    "Confirmed": "43774544",
+    "Recovered": "0",
+    "Deaths": "699634"
+  },
+  {
+    "Date": "2021-10-04",
+    "Country": "US",
+    "Confirmed": "43917461",
+    "Recovered": "0",
+    "Deaths": "701556"
+  },
+  {
+    "Date": "2021-10-05",
+    "Country": "US",
+    "Confirmed": "44012688",
+    "Recovered": "0",
+    "Deaths": "703428"
+  },
+  {
+    "Date": "2021-10-06",
+    "Country": "US",
+    "Confirmed": "44124865",
+    "Recovered": "0",
+    "Deaths": "706077"
+  },
+  {
+    "Date": "2021-10-07",
+    "Country": "US",
+    "Confirmed": "44226389",
+    "Recovered": "0",
+    "Deaths": "708540"
+  },
+  {
+    "Date": "2021-10-08",
+    "Country": "US",
+    "Confirmed": "44357811",
+    "Recovered": "0",
+    "Deaths": "710340"
+  },
+  {
+    "Date": "2021-10-09",
+    "Country": "US",
+    "Confirmed": "44396641",
+    "Recovered": "0",
+    "Deaths": "710767"
+  },
+  {
+    "Date": "2021-10-10",
+    "Country": "US",
+    "Confirmed": "44436311",
+    "Recovered": "0",
+    "Deaths": "711244"
+  },
+  {
+    "Date": "2021-10-11",
+    "Country": "US",
+    "Confirmed": "44532374",
+    "Recovered": "0",
+    "Deaths": "712425"
+  },
+  {
+    "Date": "2021-10-12",
+    "Country": "US",
+    "Confirmed": "44642979",
+    "Recovered": "0",
+    "Deaths": "714721"
+  },
+  {
+    "Date": "2021-10-13",
+    "Country": "US",
+    "Confirmed": "44751436",
+    "Recovered": "0",
+    "Deaths": "717929"
+  },
+  {
+    "Date": "2021-10-14",
+    "Country": "US",
+    "Confirmed": "44838377",
+    "Recovered": "0",
+    "Deaths": "720094"
+  },
+  {
+    "Date": "2021-10-15",
+    "Country": "US",
+    "Confirmed": "44947848",
+    "Recovered": "0",
+    "Deaths": "721893"
+  },
+  {
+    "Date": "2021-10-16",
+    "Country": "US",
+    "Confirmed": "44987629",
+    "Recovered": "0",
+    "Deaths": "722439"
+  },
+  {
+    "Date": "2021-10-17",
+    "Country": "US",
+    "Confirmed": "45019279",
+    "Recovered": "0",
+    "Deaths": "722901"
+  },
+  {
+    "Date": "2021-10-18",
+    "Country": "US",
+    "Confirmed": "45118220",
+    "Recovered": "0",
+    "Deaths": "724675"
+  },
+  {
+    "Date": "2021-10-19",
+    "Country": "US",
+    "Confirmed": "45200123",
+    "Recovered": "0",
+    "Deaths": "726804"
+  },
+  {
+    "Date": "2021-10-20",
+    "Country": "US",
+    "Confirmed": "45291728",
+    "Recovered": "0",
+    "Deaths": "729975"
+  },
+  {
+    "Date": "2021-10-21",
+    "Country": "US",
+    "Confirmed": "45369795",
+    "Recovered": "0",
+    "Deaths": "731963"
+  },
+  {
+    "Date": "2021-10-22",
+    "Country": "US",
+    "Confirmed": "45465743",
+    "Recovered": "0",
+    "Deaths": "733824"
+  },
+  {
+    "Date": "2021-10-23",
+    "Country": "US",
+    "Confirmed": "45498148",
+    "Recovered": "0",
+    "Deaths": "734365"
+  },
+  {
+    "Date": "2021-10-24",
+    "Country": "US",
+    "Confirmed": "45517308",
+    "Recovered": "0",
+    "Deaths": "734619"
+  },
+  {
+    "Date": "2021-10-25",
+    "Country": "US",
+    "Confirmed": "45629868",
+    "Recovered": "0",
+    "Deaths": "736093"
+  },
+  {
+    "Date": "2021-10-26",
+    "Country": "US",
+    "Confirmed": "45696522",
+    "Recovered": "0",
+    "Deaths": "737671"
+  },
+  {
+    "Date": "2021-10-27",
+    "Country": "US",
+    "Confirmed": "45799081",
+    "Recovered": "0",
+    "Deaths": "739726"
+  },
+  {
+    "Date": "2021-10-28",
+    "Country": "US",
+    "Confirmed": "45874170",
+    "Recovered": "0",
+    "Deaths": "741569"
+  },
+  {
+    "Date": "2021-10-29",
+    "Country": "US",
+    "Confirmed": "45969273",
+    "Recovered": "0",
+    "Deaths": "743292"
+  },
+  {
+    "Date": "2021-10-30",
+    "Country": "US",
+    "Confirmed": "46003562",
+    "Recovered": "0",
+    "Deaths": "743664"
+  },
+  {
+    "Date": "2021-10-31",
+    "Country": "US",
+    "Confirmed": "46035880",
+    "Recovered": "0",
+    "Deaths": "743897"
+  },
+  {
+    "Date": "2021-11-01",
+    "Country": "US",
+    "Confirmed": "46149131",
+    "Recovered": "0",
+    "Deaths": "745178"
+  },
+  {
+    "Date": "2021-11-02",
+    "Country": "US",
+    "Confirmed": "46217861",
+    "Recovered": "0",
+    "Deaths": "746447"
+  },
+  {
+    "Date": "2021-11-03",
+    "Country": "US",
+    "Confirmed": "46303454",
+    "Recovered": "0",
+    "Deaths": "748406"
+  },
+  {
+    "Date": "2021-11-04",
+    "Country": "US",
+    "Confirmed": "46384890",
+    "Recovered": "0",
+    "Deaths": "749608"
+  },
+  {
+    "Date": "2021-11-05",
+    "Country": "US",
+    "Confirmed": "46481747",
+    "Recovered": "0",
+    "Deaths": "751738"
+  },
+  {
+    "Date": "2021-11-06",
+    "Country": "US",
+    "Confirmed": "46516602",
+    "Recovered": "0",
+    "Deaths": "752201"
+  },
+  {
+    "Date": "2021-11-07",
+    "Country": "US",
+    "Confirmed": "46553426",
+    "Recovered": "0",
+    "Deaths": "752400"
+  },
+  {
+    "Date": "2021-11-08",
+    "Country": "US",
+    "Confirmed": "46664172",
+    "Recovered": "0",
+    "Deaths": "753660"
+  },
+  {
+    "Date": "2021-11-09",
+    "Country": "US",
+    "Confirmed": "46742530",
+    "Recovered": "0",
+    "Deaths": "755087"
+  },
+  {
+    "Date": "2021-11-10",
+    "Country": "US",
+    "Confirmed": "46837597",
+    "Recovered": "0",
+    "Deaths": "756766"
+  },
+  {
+    "Date": "2021-11-11",
+    "Country": "US",
+    "Confirmed": "46895239",
+    "Recovered": "0",
+    "Deaths": "757638"
+  },
+  {
+    "Date": "2021-11-12",
+    "Country": "US",
+    "Confirmed": "47038738",
+    "Recovered": "0",
+    "Deaths": "760098"
+  },
+  {
+    "Date": "2021-11-13",
+    "Country": "US",
+    "Confirmed": "47082685",
+    "Recovered": "0",
+    "Deaths": "760658"
+  },
+  {
+    "Date": "2021-11-14",
+    "Country": "US",
+    "Confirmed": "47114595",
+    "Recovered": "0",
+    "Deaths": "760852"
+  },
+  {
+    "Date": "2021-11-15",
+    "Country": "US",
+    "Confirmed": "47248634",
+    "Recovered": "0",
+    "Deaths": "762160"
+  },
+  {
+    "Date": "2021-11-16",
+    "Country": "US",
+    "Confirmed": "47335899",
+    "Recovered": "0",
+    "Deaths": "763492"
+  },
+  {
+    "Date": "2021-11-17",
+    "Country": "US",
+    "Confirmed": "47448735",
+    "Recovered": "0",
+    "Deaths": "765138"
+  },
+  {
+    "Date": "2021-11-18",
+    "Country": "US",
+    "Confirmed": "47558567",
+    "Recovered": "0",
+    "Deaths": "766489"
+  },
+  {
+    "Date": "2021-11-19",
+    "Country": "US",
+    "Confirmed": "47685434",
+    "Recovered": "0",
+    "Deaths": "768279"
+  },
+  {
+    "Date": "2021-11-20",
+    "Country": "US",
+    "Confirmed": "47730790",
+    "Recovered": "0",
+    "Deaths": "768730"
+  },
+  {
+    "Date": "2021-11-21",
+    "Country": "US",
+    "Confirmed": "47770619",
+    "Recovered": "0",
+    "Deaths": "768946"
+  },
+  {
+    "Date": "2021-11-22",
+    "Country": "US",
+    "Confirmed": "47915235",
+    "Recovered": "0",
+    "Deaths": "770207"
+  },
+  {
+    "Date": "2021-11-23",
+    "Country": "US",
+    "Confirmed": "48006579",
+    "Recovered": "0",
+    "Deaths": "771581"
+  },
+  {
+    "Date": "2021-11-24",
+    "Country": "US",
+    "Confirmed": "48118158",
+    "Recovered": "0",
+    "Deaths": "773291"
+  },
+  {
+    "Date": "2021-11-25",
+    "Country": "US",
+    "Confirmed": "48157477",
+    "Recovered": "0",
+    "Deaths": "773762"
+  },
+  {
+    "Date": "2021-11-26",
+    "Country": "US",
+    "Confirmed": "48210898",
+    "Recovered": "0",
+    "Deaths": "774134"
+  },
+  {
+    "Date": "2021-11-27",
+    "Country": "US",
+    "Confirmed": "48237436",
+    "Recovered": "0",
+    "Deaths": "774446"
+  },
+  {
+    "Date": "2021-11-28",
+    "Country": "US",
+    "Confirmed": "48280582",
+    "Recovered": "0",
+    "Deaths": "774691"
+  },
+  {
+    "Date": "2021-11-29",
+    "Country": "US",
+    "Confirmed": "48466877",
+    "Recovered": "0",
+    "Deaths": "776627"
+  },
+  {
+    "Date": "2021-11-30",
+    "Country": "US",
+    "Confirmed": "48583978",
+    "Recovered": "0",
+    "Deaths": "778263"
+  },
+  {
+    "Date": "2021-12-01",
+    "Country": "US",
+    "Confirmed": "48721085",
+    "Recovered": "0",
+    "Deaths": "780317"
+  },
+  {
+    "Date": "2021-12-02",
+    "Country": "US",
+    "Confirmed": "48859937",
+    "Recovered": "0",
+    "Deaths": "784221"
+  },
+  {
+    "Date": "2021-12-03",
+    "Country": "US",
+    "Confirmed": "49018557",
+    "Recovered": "0",
+    "Deaths": "785800"
+  },
+  {
+    "Date": "2021-12-04",
+    "Country": "US",
+    "Confirmed": "49084899",
+    "Recovered": "0",
+    "Deaths": "786470"
+  },
+  {
+    "Date": "2021-12-05",
+    "Country": "US",
+    "Confirmed": "49140079",
+    "Recovered": "0",
+    "Deaths": "786857"
+  },
+  {
+    "Date": "2021-12-06",
+    "Country": "US",
+    "Confirmed": "49317767",
+    "Recovered": "0",
+    "Deaths": "788274"
+  },
+  {
+    "Date": "2021-12-07",
+    "Country": "US",
+    "Confirmed": "49431030",
+    "Recovered": "0",
+    "Deaths": "789838"
+  },
+  {
+    "Date": "2021-12-08",
+    "Country": "US",
+    "Confirmed": "49580935",
+    "Recovered": "0",
+    "Deaths": "791654"
+  },
+  {
+    "Date": "2021-12-09",
+    "Country": "US",
+    "Confirmed": "49705462",
+    "Recovered": "0",
+    "Deaths": "793226"
+  },
+  {
+    "Date": "2021-12-10",
+    "Country": "US",
+    "Confirmed": "49863661",
+    "Recovered": "0",
+    "Deaths": "795025"
+  },
+  {
+    "Date": "2021-12-11",
+    "Country": "US",
+    "Confirmed": "49920244",
+    "Recovered": "0",
+    "Deaths": "795625"
+  },
+  {
+    "Date": "2021-12-12",
+    "Country": "US",
+    "Confirmed": "49972548",
+    "Recovered": "0",
+    "Deaths": "795977"
+  },
+  {
+    "Date": "2021-12-13",
+    "Country": "US",
+    "Confirmed": "50158041",
+    "Recovered": "0",
+    "Deaths": "797384"
+  },
+  {
+    "Date": "2021-12-14",
+    "Country": "US",
+    "Confirmed": "50273069",
+    "Recovered": "0",
+    "Deaths": "798933"
+  },
+  {
+    "Date": "2021-12-15",
+    "Country": "US",
+    "Confirmed": "50416695",
+    "Recovered": "0",
+    "Deaths": "801186"
+  },
+  {
+    "Date": "2021-12-16",
+    "Country": "US",
+    "Confirmed": "50558421",
+    "Recovered": "0",
+    "Deaths": "802479"
+  },
+  {
+    "Date": "2021-12-17",
+    "Country": "US",
+    "Confirmed": "50751072",
+    "Recovered": "0",
+    "Deaths": "804329"
+  },
+  {
+    "Date": "2021-12-18",
+    "Country": "US",
+    "Confirmed": "50830833",
+    "Recovered": "0",
+    "Deaths": "804973"
+  },
+  {
+    "Date": "2021-12-19",
+    "Country": "US",
+    "Confirmed": "50920033",
+    "Recovered": "0",
+    "Deaths": "805270"
+  },
+  {
+    "Date": "2021-12-20",
+    "Country": "US",
+    "Confirmed": "51160078",
+    "Recovered": "0",
+    "Deaths": "806849"
+  },
+  {
+    "Date": "2021-12-21",
+    "Country": "US",
+    "Confirmed": "51339479",
+    "Recovered": "0",
+    "Deaths": "808800"
+  },
+  {
+    "Date": "2021-12-22",
+    "Country": "US",
+    "Confirmed": "51583228",
+    "Recovered": "0",
+    "Deaths": "812988"
+  },
+  {
+    "Date": "2021-12-23",
+    "Country": "US",
+    "Confirmed": "51852982",
+    "Recovered": "0",
+    "Deaths": "814373"
+  },
+  {
+    "Date": "2021-12-24",
+    "Country": "US",
+    "Confirmed": "52101485",
+    "Recovered": "0",
+    "Deaths": "815067"
+  },
+  {
+    "Date": "2021-12-25",
+    "Country": "US",
+    "Confirmed": "52188134",
+    "Recovered": "0",
+    "Deaths": "815296"
+  },
+  {
+    "Date": "2021-12-26",
+    "Country": "US",
+    "Confirmed": "52366507",
+    "Recovered": "0",
+    "Deaths": "815645"
+  },
+  {
+    "Date": "2021-12-27",
+    "Country": "US",
+    "Confirmed": "52867054",
+    "Recovered": "0",
+    "Deaths": "817438"
+  },
+  {
+    "Date": "2021-12-28",
+    "Country": "US",
+    "Confirmed": "53229051",
+    "Recovered": "0",
+    "Deaths": "819753"
+  },
+  {
+    "Date": "2021-12-29",
+    "Country": "US",
+    "Confirmed": "53731144",
+    "Recovered": "0",
+    "Deaths": "822108"
+  },
+  {
+    "Date": "2021-12-30",
+    "Country": "US",
+    "Confirmed": "54321804",
+    "Recovered": "0",
+    "Deaths": "823603"
+  },
+  {
+    "Date": "2021-12-31",
+    "Country": "US",
+    "Confirmed": "54835397",
+    "Recovered": "0",
+    "Deaths": "824314"
+  },
+  {
+    "Date": "2022-01-01",
+    "Country": "US",
+    "Confirmed": "55024111",
+    "Recovered": "0",
+    "Deaths": "824703"
+  },
+  {
+    "Date": "2022-01-02",
+    "Country": "US",
+    "Confirmed": "55309989",
+    "Recovered": "0",
+    "Deaths": "825081"
+  },
+  {
+    "Date": "2022-01-03",
+    "Country": "US",
+    "Confirmed": "56354828",
+    "Recovered": "0",
+    "Deaths": "826921"
+  },
+  {
+    "Date": "2022-01-04",
+    "Country": "US",
+    "Confirmed": "57166940",
+    "Recovered": "0",
+    "Deaths": "829230"
+  },
+  {
+    "Date": "2022-01-05",
+    "Country": "US",
+    "Confirmed": "57829451",
+    "Recovered": "0",
+    "Deaths": "831412"
+  },
+  {
+    "Date": "2022-01-06",
+    "Country": "US",
+    "Confirmed": "58664396",
+    "Recovered": "0",
+    "Deaths": "833469"
+  },
+  {
+    "Date": "2022-01-07",
+    "Country": "US",
+    "Confirmed": "59534080",
+    "Recovered": "0",
+    "Deaths": "835870"
+  },
+  {
+    "Date": "2022-01-08",
+    "Country": "US",
+    "Confirmed": "59931741",
+    "Recovered": "0",
+    "Deaths": "836684"
+  },
+  {
+    "Date": "2022-01-09",
+    "Country": "US",
+    "Confirmed": "60416690",
+    "Recovered": "0",
+    "Deaths": "837272"
+  },
+  {
+    "Date": "2022-01-10",
+    "Country": "US",
+    "Confirmed": "61800485",
+    "Recovered": "0",
+    "Deaths": "839284"
+  },
+  {
+    "Date": "2022-01-11",
+    "Country": "US",
+    "Confirmed": "62587703",
+    "Recovered": "0",
+    "Deaths": "841753"
+  },
+  {
+    "Date": "2022-01-12",
+    "Country": "US",
+    "Confirmed": "63436245",
+    "Recovered": "0",
+    "Deaths": "844559"
+  },
+  {
+    "Date": "2022-01-13",
+    "Country": "US",
+    "Confirmed": "64297543",
+    "Recovered": "0",
+    "Deaths": "847077"
+  },
+  {
+    "Date": "2022-01-14",
+    "Country": "US",
+    "Confirmed": "65177487",
+    "Recovered": "0",
+    "Deaths": "849815"
+  },
+  {
+    "Date": "2022-01-15",
+    "Country": "US",
+    "Confirmed": "65585769",
+    "Recovered": "0",
+    "Deaths": "850786"
+  },
+  {
+    "Date": "2022-01-16",
+    "Country": "US",
+    "Confirmed": "66065516",
+    "Recovered": "0",
+    "Deaths": "851525"
+  },
+  {
+    "Date": "2022-01-17",
+    "Country": "US",
+    "Confirmed": "66740462",
+    "Recovered": "0",
+    "Deaths": "852546"
+  },
+  {
+    "Date": "2022-01-18",
+    "Country": "US",
+    "Confirmed": "67869801",
+    "Recovered": "0",
+    "Deaths": "855229"
+  },
+  {
+    "Date": "2022-01-19",
+    "Country": "US",
+    "Confirmed": "68777782",
+    "Recovered": "0",
+    "Deaths": "858664"
+  },
+  {
+    "Date": "2022-01-20",
+    "Country": "US",
+    "Confirmed": "69510296",
+    "Recovered": "0",
+    "Deaths": "861559"
+  },
+  {
+    "Date": "2022-01-21",
+    "Country": "US",
+    "Confirmed": "70351280",
+    "Recovered": "0",
+    "Deaths": "864915"
+  },
+  {
+    "Date": "2022-01-22",
+    "Country": "US",
+    "Confirmed": "70653756",
+    "Recovered": "0",
+    "Deaths": "865880"
+  },
+  {
+    "Date": "2022-01-23",
+    "Country": "US",
+    "Confirmed": "71019151",
+    "Recovered": "0",
+    "Deaths": "866584"
+  },
+  {
+    "Date": "2022-01-24",
+    "Country": "US",
+    "Confirmed": "71941130",
+    "Recovered": "0",
+    "Deaths": "868748"
+  },
+  {
+    "Date": "2022-01-25",
+    "Country": "US",
+    "Confirmed": "72434260",
+    "Recovered": "0",
+    "Deaths": "871918"
+  },
+  {
+    "Date": "2022-01-26",
+    "Country": "US",
+    "Confirmed": "73058263",
+    "Recovered": "0",
+    "Deaths": "875749"
+  },
+  {
+    "Date": "2022-01-27",
+    "Country": "US",
+    "Confirmed": "73564529",
+    "Recovered": "0",
+    "Deaths": "878328"
+  },
+  {
+    "Date": "2022-01-28",
+    "Country": "US",
+    "Confirmed": "74178562",
+    "Recovered": "0",
+    "Deaths": "882426"
+  },
+  {
+    "Date": "2022-01-29",
+    "Country": "US",
+    "Confirmed": "74357179",
+    "Recovered": "0",
+    "Deaths": "883587"
+  },
+  {
+    "Date": "2022-01-30",
+    "Country": "US",
+    "Confirmed": "74555112",
+    "Recovered": "0",
+    "Deaths": "884052"
+  },
+  {
+    "Date": "2022-01-31",
+    "Country": "US",
+    "Confirmed": "75097338",
+    "Recovered": "0",
+    "Deaths": "886672"
+  },
+  {
+    "Date": "2022-02-01",
+    "Country": "US",
+    "Confirmed": "75422719",
+    "Recovered": "0",
+    "Deaths": "890004"
+  },
+  {
+    "Date": "2022-02-02",
+    "Country": "US",
+    "Confirmed": "75752221",
+    "Recovered": "0",
+    "Deaths": "893576"
+  },
+  {
+    "Date": "2022-02-03",
+    "Country": "US",
+    "Confirmed": "76027012",
+    "Recovered": "0",
+    "Deaths": "896030"
+  },
+  {
+    "Date": "2022-02-04",
+    "Country": "US",
+    "Confirmed": "76381952",
+    "Recovered": "0",
+    "Deaths": "900137"
+  },
+  {
+    "Date": "2022-02-05",
+    "Country": "US",
+    "Confirmed": "76468358",
+    "Recovered": "0",
+    "Deaths": "901012"
+  },
+  {
+    "Date": "2022-02-06",
+    "Country": "US",
+    "Confirmed": "76551822",
+    "Recovered": "0",
+    "Deaths": "901465"
+  },
+  {
+    "Date": "2022-02-07",
+    "Country": "US",
+    "Confirmed": "76898215",
+    "Recovered": "0",
+    "Deaths": "904527"
+  },
+  {
+    "Date": "2022-02-08",
+    "Country": "US",
+    "Confirmed": "77112479",
+    "Recovered": "0",
+    "Deaths": "907506"
+  },
+  {
+    "Date": "2022-02-09",
+    "Country": "US",
+    "Confirmed": "77300879",
+    "Recovered": "0",
+    "Deaths": "910934"
+  },
+  {
+    "Date": "2022-02-10",
+    "Country": "US",
+    "Confirmed": "77472152",
+    "Recovered": "0",
+    "Deaths": "914199"
+  },
+  {
+    "Date": "2022-02-11",
+    "Country": "US",
+    "Confirmed": "77681472",
+    "Recovered": "0",
+    "Deaths": "916889"
+  },
+  {
+    "Date": "2022-02-12",
+    "Country": "US",
+    "Confirmed": "77733334",
+    "Recovered": "0",
+    "Deaths": "917698"
+  },
+  {
+    "Date": "2022-02-13",
+    "Country": "US",
+    "Confirmed": "77791646",
+    "Recovered": "0",
+    "Deaths": "918260"
+  },
+  {
+    "Date": "2022-02-14",
+    "Country": "US",
+    "Confirmed": "77961828",
+    "Recovered": "0",
+    "Deaths": "921458"
+  },
+  {
+    "Date": "2022-02-15",
+    "Country": "US",
+    "Confirmed": "78073003",
+    "Recovered": "0",
+    "Deaths": "924022"
+  },
+  {
+    "Date": "2022-02-16",
+    "Country": "US",
+    "Confirmed": "78187841",
+    "Recovered": "0",
+    "Deaths": "927209"
+  },
+  {
+    "Date": "2022-02-17",
+    "Country": "US",
+    "Confirmed": "78289539",
+    "Recovered": "0",
+    "Deaths": "930128"
+  },
+  {
+    "Date": "2022-02-18",
+    "Country": "US",
+    "Confirmed": "78434715",
+    "Recovered": "0",
+    "Deaths": "932614"
+  },
+  {
+    "Date": "2022-02-19",
+    "Country": "US",
+    "Confirmed": "78466121",
+    "Recovered": "0",
+    "Deaths": "933268"
+  },
+  {
+    "Date": "2022-02-20",
+    "Country": "US",
+    "Confirmed": "78489122",
+    "Recovered": "0",
+    "Deaths": "933703"
+  },
+  {
+    "Date": "2022-02-21",
+    "Country": "US",
+    "Confirmed": "78572010",
+    "Recovered": "0",
+    "Deaths": "934614"
+  },
+  {
+    "Date": "2022-02-22",
+    "Country": "US",
+    "Confirmed": "78661358",
+    "Recovered": "0",
+    "Deaths": "936783"
+  },
+  {
+    "Date": "2022-02-23",
+    "Country": "US",
+    "Confirmed": "78746506",
+    "Recovered": "0",
+    "Deaths": "939876"
+  },
+  {
+    "Date": "2022-02-24",
+    "Country": "US",
+    "Confirmed": "78813584",
+    "Recovered": "0",
+    "Deaths": "942838"
+  },
+  {
+    "Date": "2022-02-25",
+    "Country": "US",
+    "Confirmed": "78887963",
+    "Recovered": "0",
+    "Deaths": "944911"
+  },
+  {
+    "Date": "2022-02-26",
+    "Country": "US",
+    "Confirmed": "78935375",
+    "Recovered": "0",
+    "Deaths": "945644"
+  },
+  {
+    "Date": "2022-02-27",
+    "Country": "US",
+    "Confirmed": "78953596",
+    "Recovered": "0",
+    "Deaths": "945865"
+  },
+  {
+    "Date": "2022-02-28",
+    "Country": "US",
+    "Confirmed": "79052519",
+    "Recovered": "0",
+    "Deaths": "948017"
+  },
+  {
+    "Date": "2022-03-01",
+    "Country": "US",
+    "Confirmed": "79099228",
+    "Recovered": "0",
+    "Deaths": "949790"
+  },
+  {
+    "Date": "2022-03-02",
+    "Country": "US",
+    "Confirmed": "79152640",
+    "Recovered": "0",
+    "Deaths": "951880"
+  },
+  {
+    "Date": "2022-03-03",
+    "Country": "US",
+    "Confirmed": "79201258",
+    "Recovered": "0",
+    "Deaths": "953584"
+  },
+  {
+    "Date": "2022-03-04",
+    "Country": "US",
+    "Confirmed": "79252523",
+    "Recovered": "0",
+    "Deaths": "955319"
+  },
+  {
+    "Date": "2022-03-05",
+    "Country": "US",
+    "Confirmed": "79267444",
+    "Recovered": "0",
+    "Deaths": "955610"
+  },
+  {
+    "Date": "2022-03-06",
+    "Country": "US",
+    "Confirmed": "79279840",
+    "Recovered": "0",
+    "Deaths": "955815"
+  },
+  {
+    "Date": "2022-03-07",
+    "Country": "US",
+    "Confirmed": "79343929",
+    "Recovered": "0",
+    "Deaths": "957529"
+  },
+  {
+    "Date": "2022-03-08",
+    "Country": "US",
+    "Confirmed": "79373683",
+    "Recovered": "0",
+    "Deaths": "958932"
+  },
+  {
+    "Date": "2022-03-09",
+    "Country": "US",
+    "Confirmed": "79411388",
+    "Recovered": "0",
+    "Deaths": "960951"
+  },
+  {
+    "Date": "2022-03-10",
+    "Country": "US",
+    "Confirmed": "79457977",
+    "Recovered": "0",
+    "Deaths": "962720"
+  },
+  {
+    "Date": "2022-03-11",
+    "Country": "US",
+    "Confirmed": "79507694",
+    "Recovered": "0",
+    "Deaths": "964359"
+  },
+  {
+    "Date": "2022-03-12",
+    "Country": "US",
+    "Confirmed": "79517911",
+    "Recovered": "0",
+    "Deaths": "964614"
+  },
+  {
+    "Date": "2022-03-13",
+    "Country": "US",
+    "Confirmed": "79528961",
+    "Recovered": "0",
+    "Deaths": "964802"
+  },
+  {
+    "Date": "2022-03-14",
+    "Country": "US",
+    "Confirmed": "79564354",
+    "Recovered": "0",
+    "Deaths": "966121"
+  },
+  {
+    "Date": "2022-03-15",
+    "Country": "US",
+    "Confirmed": "79588738",
+    "Recovered": "0",
+    "Deaths": "967202"
+  },
+  {
+    "Date": "2022-03-16",
+    "Country": "US",
+    "Confirmed": "79634875",
+    "Recovered": "0",
+    "Deaths": "969026"
+  },
+  {
+    "Date": "2022-03-17",
+    "Country": "US",
+    "Confirmed": "79688041",
+    "Recovered": "0",
+    "Deaths": "970529"
+  },
+  {
+    "Date": "2022-03-18",
+    "Country": "US",
+    "Confirmed": "79719388",
+    "Recovered": "0",
+    "Deaths": "971329"
+  },
+  {
+    "Date": "2022-03-19",
+    "Country": "US",
+    "Confirmed": "79730270",
+    "Recovered": "0",
+    "Deaths": "971599"
+  },
+  {
+    "Date": "2022-03-20",
+    "Country": "US",
+    "Confirmed": "79741713",
+    "Recovered": "0",
+    "Deaths": "971681"
+  },
+  {
+    "Date": "2022-03-21",
+    "Country": "US",
+    "Confirmed": "79783990",
+    "Recovered": "0",
+    "Deaths": "973209"
+  },
+  {
+    "Date": "2022-03-22",
+    "Country": "US",
+    "Confirmed": "79808558",
+    "Recovered": "0",
+    "Deaths": "973766"
+  },
+  {
+    "Date": "2022-03-23",
+    "Country": "US",
+    "Confirmed": "79849247",
+    "Recovered": "0",
+    "Deaths": "975394"
+  },
+  {
+    "Date": "2022-03-24",
+    "Country": "US",
+    "Confirmed": "79892237",
+    "Recovered": "0",
+    "Deaths": "976250"
+  },
+  {
+    "Date": "2022-03-25",
+    "Country": "US",
+    "Confirmed": "79938661",
+    "Recovered": "0",
+    "Deaths": "976864"
+  },
+  {
+    "Date": "2022-03-26",
+    "Country": "US",
+    "Confirmed": "79948075",
+    "Recovered": "0",
+    "Deaths": "977008"
+  },
+  {
+    "Date": "2022-03-27",
+    "Country": "US",
+    "Confirmed": "79959836",
+    "Recovered": "0",
+    "Deaths": "977064"
+  },
+  {
+    "Date": "2022-03-28",
+    "Country": "US",
+    "Confirmed": "79998748",
+    "Recovered": "0",
+    "Deaths": "978123"
+  },
+  {
+    "Date": "2022-03-29",
+    "Country": "US",
+    "Confirmed": "80022811",
+    "Recovered": "0",
+    "Deaths": "979101"
+  },
+  {
+    "Date": "2022-03-30",
+    "Country": "US",
+    "Confirmed": "80061842",
+    "Recovered": "0",
+    "Deaths": "980269"
+  },
+  {
+    "Date": "2022-03-31",
+    "Country": "US",
+    "Confirmed": "80107303",
+    "Recovered": "0",
+    "Deaths": "980785"
+  },
+  {
+    "Date": "2022-04-01",
+    "Country": "US",
+    "Confirmed": "80139338",
+    "Recovered": "0",
+    "Deaths": "981610"
+  },
+  {
+    "Date": "2022-04-02",
+    "Country": "US",
+    "Confirmed": "80151068",
+    "Recovered": "0",
+    "Deaths": "981760"
+  },
+  {
+    "Date": "2022-04-03",
+    "Country": "US",
+    "Confirmed": "80155304",
+    "Recovered": "0",
+    "Deaths": "981768"
+  },
+  {
+    "Date": "2022-04-04",
+    "Country": "US",
+    "Confirmed": "80183801",
+    "Recovered": "0",
+    "Deaths": "982223"
+  },
+  {
+    "Date": "2022-04-05",
+    "Country": "US",
+    "Confirmed": "80209383",
+    "Recovered": "0",
+    "Deaths": "982700"
+  },
+  {
+    "Date": "2022-04-06",
+    "Country": "US",
+    "Confirmed": "80249869",
+    "Recovered": "0",
+    "Deaths": "983941"
+  },
+  {
+    "Date": "2022-04-07",
+    "Country": "US",
+    "Confirmed": "80296887",
+    "Recovered": "0",
+    "Deaths": "984571"
+  },
+  {
+    "Date": "2022-04-08",
+    "Country": "US",
+    "Confirmed": "80384319",
+    "Recovered": "0",
+    "Deaths": "985205"
+  },
+  {
+    "Date": "2022-04-09",
+    "Country": "US",
+    "Confirmed": "80397170",
+    "Recovered": "0",
+    "Deaths": "985482"
+  },
+  {
+    "Date": "2022-04-10",
+    "Country": "US",
+    "Confirmed": "80406370",
+    "Recovered": "0",
+    "Deaths": "985504"
+  },
+  {
+    "Date": "2022-04-11",
+    "Country": "US",
+    "Confirmed": "80449944",
+    "Recovered": "0",
+    "Deaths": "985826"
+  },
+  {
+    "Date": "2022-04-12",
+    "Country": "US",
+    "Confirmed": "80477797",
+    "Recovered": "0",
+    "Deaths": "986387"
+  },
+  {
+    "Date": "2022-04-13",
+    "Country": "US",
+    "Confirmed": "80518989",
+    "Recovered": "0",
+    "Deaths": "987343"
+  },
+  {
+    "Date": "2022-04-14",
+    "Country": "US",
+    "Confirmed": "80573532",
+    "Recovered": "0",
+    "Deaths": "988121"
+  },
+  {
+    "Date": "2022-04-15",
+    "Country": "US",
+    "Confirmed": "80612681",
+    "Recovered": "0",
+    "Deaths": "988558"
+  },
+  {
+    "Date": "2022-04-16",
+    "Country": "US",
+    "Confirmed": "80625120",
+    "Recovered": "0",
+    "Deaths": "988609"
+  }
+]

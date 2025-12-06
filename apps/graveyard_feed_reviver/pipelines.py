@@ -10,9 +10,11 @@ import logging
 from typing import Any
 
 import feedparser
+import requests
 
 from skeleton_core.config import register_step
 from skeleton_core.summarization import summarize_feeds
+from skeleton_core.utils import validate_file_path
 
 logger = logging.getLogger(__name__)
 
@@ -38,10 +40,11 @@ class LoadFeedURLsStep:
     
     def run(self, data: Any, context: dict[str, Any]) -> list[str]:
         """Load feed URLs from file."""
-        logger.info(f"Loading feed URLs from {self.path}")
-        
+        validated_path = validate_file_path(self.path)
+        logger.info(f"Loading feed URLs from {validated_path}")
+
         urls = []
-        with open(self.path, 'r') as f:
+        with open(validated_path, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
                 # Skip empty lines and comments
@@ -74,13 +77,18 @@ class FetchFeedsStep:
         
         for url in urls:
             logger.info(f"Fetching feed: {url}")
-            
+
             try:
-                feed = feedparser.parse(url)
-                
+                # Fetch with timeout to prevent hanging
+                response = requests.get(url, timeout=30)
+                response.raise_for_status()
+
+                # Parse the feed content
+                feed = feedparser.parse(response.content)
+
                 # Get feed-level metadata
                 feed_title = feed.feed.get('title', 'Unknown Feed')
-                
+
                 # Extract entries
                 for entry in feed.entries:
                     all_entries.append({

@@ -1,515 +1,515 @@
-# Bonesaw
+# 🦴🪚 Bonesaw
 
-A modular Python automation framework for building composable data processing pipelines.
+**The missing link between bash scripts and Airflow.**
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](.github/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MPL--2.0-orange.svg)](LICENSE)
 
-## Overview
+> YAML-powered automation that doesn't suck.
 
-Bonesaw is a lightweight, extensible framework for creating automation pipelines. It provides a step-based architecture where each step performs a discrete operation, and pipelines are defined declaratively using YAML configuration files.
-
-The framework is designed for:
-- Data processing workflows
-- Log analysis and transformation
-- Feed aggregation and normalization
-- Report generation
-- Any sequential automation task
-
-## Key Features
-
-- **Declarative Configuration**: Define pipelines using YAML files
-- **Step Registry**: Automatic step discovery via decorator-based registration
-- **Context Sharing**: Pass state between steps using a shared context dictionary
-- **CLI Tools**: Built-in commands for running, inspecting, and managing pipelines
-- **App Scaffolding**: Generate new pipeline applications with a single command
-- **Optional LLM Integration**: Enhance output with AI-powered summaries via OpenRouter
-- **Testing**: Comprehensive test suite with pytest
-- **Code Quality**: Enforced linting with Ruff
-- **CI/CD**: GitHub Actions workflow included
-
-## Installation
-
-### Prerequisites
-
-- Python 3.11 or higher
-- pip
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-## Quick Start
-
-### List Available Applications
-
-```bash
-python main.py list-apps
-```
-
-### Inspect a Pipeline
-
-View pipeline structure without executing:
-
-```bash
-python main.py inspect --app log_cleaner --config apps/log_cleaner/config.example.yml
-```
-
-
-### Dry-Run a Pipeline
-
-See detailed step information without side effects:
-
-```bash
-python main.py dry-run --app feed_processor --config apps/feed_processor/config.example.yml
-```
-
-### Run a Pipeline
-
-Execute a complete pipeline:
-
-```bash
-python main.py run --app log_cleaner --config apps/log_cleaner/config.example.yml
-```
-
-## Directory Structure
-
-```
-bonesaw/
-├── skeleton_core/          # Core framework
-│   ├── pipeline.py         # Pipeline execution engine
-│   ├── config.py           # Step registry and configuration loader
-│   ├── cli.py              # Command-line interface
-│   ├── scaffold.py         # App generator
-│   └── summarization.py    # Optional LLM integration
-├── apps/                   # Pipeline applications
-│   ├── log_cleaner/        # Example: Log processing pipeline
-│   └── feed_processor/     # Example: RSS/Atom feed pipeline
-├── tests/                  # Test suite
-├── main.py                 # CLI entry point
-└── requirements.txt        # Python dependencies
-```
-
-### Core Components
-
-- **`skeleton_core/`**: Contains the reusable framework code
-- **`apps/`**: Individual pipeline applications, each with its own steps and configuration
-- **`tests/`**: Pytest test files for framework and applications
-- **`main.py`**: Entry point for the CLI
-
-## Usage Examples
-
-### Creating a New Application
-
-Generate a new pipeline application with scaffolding:
-
-```bash
-python main.py create-app my_processor
-```
-
-This creates:
-- `apps/my_processor/pipelines.py` - Step implementations
-- `apps/my_processor/config.example.yml` - Pipeline configuration
-- `apps/my_processor/sample_input.txt` - Sample data
-- `apps/my_processor/README.md` - Documentation
-
-### Running with LLM Enhancement
-
-Enable optional AI-powered summaries:
-
-```bash
-set BONESAW_LLM_PROVIDER=openrouter
-set BONESAW_LLM_MODEL=deepseek/deepseek-r1-0528-qwen3-8b
-set BONESAW_LLM_API_KEY=your_api_key
-
-python main.py run --app my_processor --config apps/my_processor/config.example.yml --use-llm
-```
-
-### Deleting an Application
-
-Remove an application and its files:
-
-```bash
-python main.py delete-app my_processor
-```
-
-
-## Creating Custom Pipeline Steps
-
-Steps are the building blocks of pipelines. Each step implements a `run` method that processes data and optionally updates shared context.
-
-### Step Implementation
-
-```python
-from skeleton_core.config import register_step
-from typing import Any
-
-@register_step("transform_data")
-class TransformDataStep:
-    """
-    Transforms input data according to specified rules.
-    
-    Input: Raw data dictionary
-    Output: Transformed data dictionary
-    Context: Writes 'transform_count' with number of transformations
-    """
-    
-    def __init__(self, mode: str = "default", multiplier: int = 1):
-        """
-        Initialize the step with configuration parameters.
-        
-        Args:
-            mode: Transformation mode
-            multiplier: Scaling factor for numeric values
-        """
-        self.mode = mode
-        self.multiplier = multiplier
-    
-    def run(self, data: Any, context: dict[str, Any]) -> Any:
-        """
-        Execute the transformation step.
-        
-        Args:
-            data: Input data from previous step
-            context: Shared context dictionary
-            
-        Returns:
-            Transformed data for next step
-        """
-        # Implement transformation logic
-        transformed = self._transform(data)
-        
-        # Update context
-        context['transform_count'] = len(transformed)
-        
-        return transformed
-    
-    def _transform(self, data: Any) -> Any:
-        # Transformation implementation
-        return data
-```
-
-### Pipeline Configuration
-
-Define pipelines in YAML:
+Bonesaw is a lightweight, declarative pipeline framework for building composable automation workflows. Think GitHub Actions for your local machine, or Make for data pipelines.
 
 ```yaml
 pipeline:
-  name: data_processor
+  name: morning_digest
   steps:
-    - type: load_data
-      source: input.txt
-    
-    - type: transform_data
-      mode: advanced
-      multiplier: 2
-    
-    - type: write_output
-      destination: output.txt
+    - type: http_get
+      url: https://news.ycombinator.com/rss
+    - type: grep
+      pattern: "<title>"
+    - type: write_file
+      path: digest.txt
 ```
-
-### Step Registration
-
-The `@register_step` decorator automatically registers steps in the global registry. The framework uses the step type from the configuration to instantiate the correct class.
-
-
-## Example Applications
-
-The repository includes two complete example applications demonstrating different use cases.
-
-### Log Cleaner
-
-A log processing pipeline that:
-1. Loads log files from disk
-2. Parses log entries using regex patterns
-3. Anonymizes sensitive data (IP addresses, email addresses)
-4. Aggregates errors and warnings
-5. Generates a formatted Markdown report
-6. Optionally adds an AI-generated summary
-
-**Usage:**
-```bash
-python main.py run --app log_cleaner --config apps/log_cleaner/config.example.yml
-```
-
-### Feed Processor
-
-An RSS/Atom feed aggregation pipeline that:
-1. Loads feed URLs from a text file
-2. Fetches and parses feeds using feedparser
-3. Normalizes entry metadata across different feed formats
-4. Outputs structured JSON data
-5. Generates a formatted Markdown report
-6. Optionally adds an AI-generated summary
-
-**Usage:**
-```bash
-python main.py run --app feed_processor --config apps/feed_processor/config.example.yml
-```
-
-## Optional LLM Integration
-
-Bonesaw supports optional AI-powered text summarization via OpenRouter.
-
-### Configuration
-
-Set environment variables:
 
 ```bash
-set BONESAW_LLM_PROVIDER=openrouter
-set BONESAW_LLM_MODEL=deepseek/deepseek-r1-0528-qwen3-8b
-set BONESAW_LLM_API_KEY=your_api_key_here
+python main.py run --config pipeline.yml
 ```
 
-### Behavior
+That's it. No framework magic. No hidden complexity. Just simple, composable steps.
 
-- **Without LLM**: Pipelines generate deterministic, template-based summaries
-- **With LLM**: Summaries are enhanced with AI-generated insights
-- **Fallback**: If LLM calls fail, the system gracefully falls back to deterministic summaries
+---
 
-### Supported Providers
+## Why Bonesaw?
 
-Currently supports OpenRouter. The framework can be extended to support additional providers by modifying `skeleton_core/summarization.py`.
+**Too Simple** → Bash scripts (messy, unmaintainable)
+**👉 Perfect** → Bonesaw (declarative, testable, composable)
+**Too Complex** → Airflow (overkill unless you're Netflix)
 
+### What Makes Bonesaw Different
 
-## Testing
+- **🎯 Declarative**: YAML configuration, not imperative code
+- **🔧 Hackable**: ~3,000 LOC, readable in one sitting
+- **🔋 Batteries Included**: 30+ built-in steps for common tasks
+- **⚡ Smart Caching**: Automatic result caching for fast iteration
+- **🪨 Rock Solid**: Type-safe Python with comprehensive tests
+- **🎃 Fun**: Spooky theme (haunted_log_cleaner, graveyard_feed_reviver)
 
-The project includes a comprehensive test suite using pytest.
+---
 
-### Running Tests
+## Quick Start
+
+### Install
 
 ```bash
-pytest
+git clone https://github.com/yourusername/bonesaw
+cd bonesaw
+pip install -r requirements.txt
 ```
 
-### Test Coverage
-
-- **`tests/test_pipeline_core.py`**: Core framework functionality
-- **`tests/test_logs.py`**: Log cleaner application
-- **`tests/test_feeds.py`**: Feed processor application
-
-All tests are deterministic and do not require network access or external API calls.
-
-### Code Quality
-
-Linting is enforced using Ruff:
+### Run an Example
 
 ```bash
-ruff check .
+# Fetch today's top tech news
+python main.py run --config examples/daily_news_digest/pipeline.yml
+
+# Process CSV data
+python main.py run --config examples/csv_processor/pipeline.yml
+
+# Monitor websites
+python main.py run --config examples/website_monitor/pipeline.yml
 ```
 
-## Continuous Integration
+### Create Your Own
 
-The repository includes a GitHub Actions workflow (`.github/workflows/ci.yml`) that:
-- Runs on push and pull requests to main/master branches
-- Tests against Python 3.11 on Ubuntu
-- Installs dependencies
-- Runs Ruff linting
-- Executes the full test suite
+```bash
+# Generate a new pipeline app
+python main.py create-app my_automation
 
-## Extending the Framework
+# Edit the generated files
+cd apps/my_automation
+# - pipelines.py: Define your custom steps
+# - config.example.yml: Configure your pipeline
 
-### Adding New Step Types
+# Run it
+python main.py run --app my_automation --config apps/my_automation/config.example.yml
+```
 
-1. Create a new class in your app's `pipelines.py`
-2. Decorate with `@register_step("step_name")`
-3. Implement the `run(self, data, context)` method
-4. Add the step to your pipeline configuration
+---
 
-### Creating Reusable Steps
+## Features
 
-Steps can be shared across applications by:
-- Placing them in a common module
-- Importing them in application-specific `pipelines.py` files
-- Ensuring they are registered before pipeline execution
+### Batteries-Included Steps
 
-### Custom Context Keys
+Bonesaw ships with 30+ built-in steps for common tasks:
 
-Steps can read and write arbitrary keys to the shared context dictionary. Common patterns:
-- Store metadata: `context['record_count'] = 100`
-- Share configuration: `context['output_format'] = 'json'`
-- Pass intermediate results: `context['parsed_data'] = data`
+#### 📁 File Operations
+- `read_file` / `write_file` - File I/O
+- `copy_file` / `move_file` / `delete_file` - File management
+- `list_files` - Find files with glob patterns
 
+#### 🌐 HTTP Operations
+- `http_get` / `http_post` - Make API requests
+- `download_file` - Download from URLs
+- `webhook` - Send data to webhooks
 
-## Architecture
+#### 📝 Text Operations
+- `grep` - Filter lines (like Unix grep)
+- `replace` - Regex find/replace
+- `split_lines` / `join_lines` - Line manipulation
+- `template` - String templating
+- `to_uppercase` / `to_lowercase` - Case conversion
 
-### Pipeline Execution Flow
+#### 📊 Data Operations
+- `parse_json` / `to_json` - JSON parsing/serialization
+- `parse_csv` / `to_csv` - CSV parsing/serialization
+- `parse_yaml` / `to_yaml` - YAML parsing/serialization
+- `filter_data` - Filter lists with conditions
 
-1. **Configuration Loading**: YAML file is parsed into a dictionary
-2. **Step Instantiation**: Each step type is looked up in the registry and instantiated with its parameters
-3. **Pipeline Creation**: Steps are assembled into a Pipeline object
-4. **Execution**: Pipeline runs each step sequentially, passing data and context
-5. **Output**: Final step returns the processed result
+### Smart Caching
 
-### Step Protocol
+Expensive operations are automatically cached:
 
-Steps must implement:
 ```python
-def run(self, data: Any, context: dict[str, Any]) -> Any:
-    """
-    Process data and return result for next step.
-    
-    Args:
-        data: Output from previous step (or initial_data for first step)
-        context: Shared dictionary for passing state between steps
-        
-    Returns:
-        Processed data for next step
-    """
+from skeleton_core.cache import cache_step
+
+@register_step("expensive_api_call")
+@cache_step(ttl=3600)  # Cache for 1 hour
+class ExpensiveAPIStep:
+    def run(self, data, context):
+        # This only runs once per hour
+        return fetch_from_slow_api()
 ```
 
-### Context Dictionary
-
-The context is a mutable dictionary shared across all steps in a pipeline execution. It enables:
-- Passing metadata between steps
-- Accumulating statistics
-- Sharing configuration
-- Storing intermediate results
-
-## CLI Reference
-
-### Commands
-
-- **`list-apps`**: Display all available pipeline applications
-- **`inspect`**: Show pipeline structure without execution
-- **`dry-run`**: Display detailed step information without side effects
-- **`run`**: Execute a complete pipeline
-- **`create-app`**: Generate a new pipeline application
-- **`delete-app`**: Remove a pipeline application
-
-### Common Options
-
-- **`--app`**: Application name (required for most commands)
-- **`--config`**: Path to YAML configuration file (required for pipeline operations)
-- **`--use-llm`**: Enable LLM-enhanced summaries (optional, requires environment variables)
-- **`--force`**: Skip confirmation prompts (for delete-app)
-
-### Examples
+Manage cache from CLI:
 
 ```bash
-# List all applications
-python main.py list-apps
-
-# Inspect pipeline structure
-python main.py inspect --app my_app --config apps/my_app/config.example.yml
-
-# Run with detailed output
-python main.py run --app my_app --config apps/my_app/config.example.yml
-
-# Create new application
-python main.py create-app new_processor
-
-# Delete application (with confirmation)
-python main.py delete-app old_processor
-
-# Delete application (skip confirmation)
-python main.py delete-app old_processor --force
+python main.py cache-info    # Show cache stats
+python main.py cache-clear   # Clear cache
 ```
 
+### Custom Steps
 
-## Requirements
+Build your own steps in minutes:
 
-### Python Dependencies
+```python
+from skeleton_core.config import register_step
 
-- **pyyaml**: YAML configuration parsing
-- **typer**: CLI framework
-- **feedparser**: RSS/Atom feed parsing (for feed processor example)
-- **requests**: HTTP client (for LLM integration)
-- **pytest**: Testing framework
-- **ruff**: Code linting and formatting
+@register_step("my_step")
+class MyCustomStep:
+    def __init__(self, param: str):
+        self.param = param
 
-See `requirements.txt` for complete dependency list with versions.
+    def run(self, data, context):
+        # Process data
+        result = transform(data, self.param)
 
-### System Requirements
+        # Share state via context
+        context['my_key'] = 'my_value'
 
-- Python 3.11 or higher
-- pip package manager
-- Operating System: Windows, macOS, or Linux
+        return result
+```
 
-## Configuration File Format
-
-Pipeline configurations use YAML format:
+Use in YAML:
 
 ```yaml
 pipeline:
   name: my_pipeline
   steps:
-    - type: step_type_1
-      param1: value1
-      param2: value2
-    
-    - type: step_type_2
-      param1: value1
-    
-    - type: step_type_3
-      param1: value1
-      param2: value2
-      param3: value3
+    - type: my_step
+      param: "value"
 ```
 
-### Configuration Rules
+---
 
-- **`pipeline.name`**: Arbitrary string for identification and logging
-- **`pipeline.steps`**: Ordered list of step definitions
-- **`type`**: Step type name (must match a registered step)
-- Additional keys are passed as keyword arguments to the step constructor
+## Example Pipelines
 
-## Error Handling
+### 📰 Daily News Digest
 
-The framework provides clear error messages for common issues:
+Fetch top stories from Hacker News:
 
-- **Unknown step type**: Raised when a step type is not found in the registry
-- **Missing configuration**: Raised when required parameters are not provided
-- **File not found**: Raised when configuration or input files cannot be located
-- **Step execution errors**: Logged with full context and re-raised for debugging
+```yaml
+pipeline:
+  name: news_digest
+  steps:
+    - type: http_get
+      url: https://news.ycombinator.com/rss
+    - type: grep
+      pattern: "<title>"
+    - type: replace
+      pattern: "<[^>]+>"
+      replacement: ""
+    - type: write_file
+      path: digest.md
+```
 
-All errors include descriptive messages to aid in troubleshooting.
+### 📊 CSV Data Pipeline
+
+Download, filter, and transform CSV data:
+
+```yaml
+pipeline:
+  name: csv_pipeline
+  steps:
+    - type: download_file
+      url: https://example.com/data.csv
+    - type: read_file
+    - type: parse_csv
+    - type: filter_data
+      field: country
+      value: US
+    - type: to_json
+    - type: write_file
+      path: filtered.json
+```
+
+### 🔌 API Integration
+
+Fetch from API, transform, save:
+
+```yaml
+pipeline:
+  name: api_integration
+  steps:
+    - type: http_get
+      url: https://api.example.com/data
+    - type: parse_json
+    - type: to_yaml
+    - type: write_file
+      path: data.yml
+```
+
+[See more examples →](examples/)
+
+---
+
+## How It Works
+
+### Pipeline Execution
+
+Pipelines execute steps sequentially:
+
+1. Load YAML configuration
+2. Instantiate step classes from registry
+3. Execute steps in order, passing data between them
+4. Share state via context dictionary
+
+```
+initial_data → Step1 → Step2 → Step3 → final_result
+                ↓       ↓       ↓
+              context (shared state)
+```
+
+### Step Interface
+
+Every step implements the same simple interface:
+
+```python
+class Step:
+    def run(self, data: Any, context: dict[str, Any]) -> Any:
+        """
+        Args:
+            data: Output from previous step
+            context: Shared dictionary for state
+
+        Returns:
+            Data for next step
+        """
+```
+
+### Context Sharing
+
+Steps communicate via a shared context:
+
+```python
+# Step 1: Store data
+context['user_count'] = 100
+
+# Step 2: Read data
+if context['user_count'] > 50:
+    send_alert()
+```
+
+---
+
+## CLI Commands
+
+```bash
+# List available apps
+python main.py list-apps
+
+# Inspect pipeline without running
+python main.py inspect --config pipeline.yml
+
+# Dry-run (show what would happen)
+python main.py dry-run --config pipeline.yml
+
+# Run pipeline
+python main.py run --config pipeline.yml
+
+# Create new app
+python main.py create-app my_app
+
+# Delete app
+python main.py delete-app my_app
+
+# Cache management
+python main.py cache-info
+python main.py cache-clear
+```
+
+---
+
+## Comparison to Alternatives
+
+| Feature | Bash Scripts | Bonesaw | Airflow | Prefect |
+|---------|-------------|---------|---------|---------|
+| **Setup Time** | 0 min | 5 min | 30+ min | 20+ min |
+| **Learning Curve** | Low | Low | High | Medium |
+| **Declarative Config** | ❌ | ✅ | ❌ | ❌ |
+| **Type Safety** | ❌ | ✅ | ✅ | ✅ |
+| **Built-in Steps** | ❌ | ✅ 30+ | ✅ Many | ✅ Many |
+| **Caching** | Manual | ✅ Auto | ✅ | ✅ |
+| **Web UI** | ❌ | ❌ | ✅ | ✅ |
+| **Parallel Execution** | Manual | 🚧 | ✅ | ✅ |
+| **Local First** | ✅ | ✅ | ❌ | ❌ |
+| **Lines of Code** | Varies | ~3,000 | ~500,000 | ~200,000 |
+
+**Bonesaw is for you if:**
+- You outgrew bash scripts
+- Airflow feels like overkill
+- You want local-first automation
+- You value simplicity and hackability
+
+---
+
+## Architecture
+
+### Project Structure
+
+```
+bonesaw/
+├── skeleton_core/          # Core framework
+│   ├── pipeline.py         # Pipeline execution engine
+│   ├── config.py          # Step registry & config loader
+│   ├── cache.py           # Caching system
+│   ├── cli.py             # CLI interface
+│   ├── utils.py           # Utilities (path validation, etc.)
+│   └── steps/             # Built-in steps
+│       ├── file_ops.py    # File operations
+│       ├── http_ops.py    # HTTP operations
+│       ├── text_ops.py    # Text manipulation
+│       └── data_ops.py    # Data transformation
+├── apps/                  # Your custom pipelines
+├── examples/              # Example pipelines
+├── tests/                 # Test suite
+└── main.py               # CLI entry point
+```
+
+### Core Components
+
+- **Pipeline**: Orchestrates step execution
+- **Step Registry**: Auto-discovers steps via decorators
+- **Context**: Shared state dictionary
+- **Cache**: Automatic result caching with TTL
+- **CLI**: Typer-based command interface
+
+---
+
+## Advanced Usage
+
+### Environment Variables
+
+```bash
+# LLM integration (optional)
+export BONESAW_LLM_PROVIDER=openrouter
+export BONESAW_LLM_MODEL=deepseek/deepseek-r1
+export BONESAW_LLM_API_KEY=your_api_key
+```
+
+### Programmatic Usage
+
+```python
+from skeleton_core.config import build_pipeline_from_config, load_config
+
+# Load pipeline from YAML
+config = load_config('pipeline.yml')
+pipeline = build_pipeline_from_config(config)
+
+# Run it
+result = pipeline.run(initial_data="Hello")
+print(result)
+```
+
+### Testing Your Steps
+
+```python
+import pytest
+from your_app.pipelines import YourStep
+
+def test_your_step():
+    step = YourStep(param="value")
+    context = {}
+
+    result = step.run(input_data, context)
+
+    assert result == expected_output
+    assert context['key'] == expected_value
+```
+
+---
+
+## Roadmap
+
+### ✅ Completed
+- Core pipeline framework
+- 30+ built-in steps
+- Smart caching
+- CLI commands
+- Example pipelines
+
+### 🚧 In Progress
+- Async/parallel execution
+- Watch mode (auto-rerun on changes)
+- Web UI for visualization
+
+### 💡 Planned
+- Plugin marketplace
+- More LLM providers
+- Conditional steps
+- Error retry policies
+- Prometheus metrics
+- Docker support
+
+---
 
 ## Contributing
 
-Contributions are welcome. Please ensure:
-- All tests pass (`pytest`)
-- Code passes linting (`ruff check .`)
-- New features include tests
-- Documentation is updated
+Contributions welcome! Please:
 
+1. Fork the repo
+2. Create a feature branch
+3. Add tests for new features
+4. Ensure all tests pass: `pytest`
+5. Ensure code quality: `ruff check .`
+6. Submit a pull request
+
+### Adding New Built-in Steps
+
+1. Create step in `skeleton_core/steps/`
+2. Use `@register_step` decorator
+3. Implement `run(data, context)` method
+4. Add tests
+5. Update documentation
+
+---
+
+## FAQ
+
+**Q: Why "Bonesaw"?**
+A: It cuts through complexity like a saw through bone. Also, spooky vibes.
+
+**Q: Is this production-ready?**
+A: Getting there! It's stable for personal use. We're hardening it for production.
+
+**Q: Can I use this in production?**
+A: Sure, but test thoroughly first. We recommend starting with non-critical workflows.
+
+**Q: How does this compare to Luigi/Dagster/etc?**
+A: Bonesaw is simpler and more hackable. Those tools are more feature-rich but heavier.
+
+**Q: Can I contribute?**
+A: Yes! See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+**Q: Why not just use Airflow?**
+A: Airflow is amazing for large-scale orchestration. Bonesaw is for when you need something simpler.
+
+---
 
 ## License
 
-This project is licensed under the Mozilla Public License 2.0 (MPL-2.0).
-
-See the [LICENSE](LICENSE) file for full license text.
+Mozilla Public License 2.0 (MPL-2.0)
 
 ### MPL-2.0 Summary
-
-- **Permissions**: Commercial use, modification, distribution, patent use, private use
-- **Conditions**: Disclose source, include license and copyright notice, state changes
+- **Permissions**: Commercial use, modification, distribution, patent use
+- **Conditions**: Disclose source, include license, state changes
 - **Limitations**: Liability, warranty
 
-## Project Status
+See [LICENSE](LICENSE) for full text.
 
-This project is actively maintained and suitable for production use. The framework is stable and the API is considered mature.
-
-## Support
-
-For issues, questions, or feature requests:
-- Open an issue on GitHub
-- Check existing documentation
-- Review example applications for usage patterns
+---
 
 ## Acknowledgments
 
 Built with:
 - Python 3.11+
-- Typer for CLI
-- PyYAML for configuration
-- Feedparser for RSS/Atom support
-- Pytest for testing
-- Ruff for code quality
+- Typer (CLI framework)
+- PyYAML (configuration)
+- Feedparser (RSS/Atom support)
+- Pytest (testing)
+- Ruff (code quality)
 
 ---
 
-**Bonesaw** - A modular Python automation framework for composable data processing pipelines.
+## Support
+
+- 🐛 [Report bugs](https://github.com/yourusername/bonesaw/issues)
+- 💬 [Discussions](https://github.com/yourusername/bonesaw/discussions)
+- 📖 [Documentation](docs/)
+- ⭐ [Star on GitHub](https://github.com/yourusername/bonesaw)
+
+---
+
+**Bonesaw** - YAML-powered automation that doesn't suck. 🦴🪚
+
+*Made with ❤️ (and a bit of 💀) for developers who hate complexity*

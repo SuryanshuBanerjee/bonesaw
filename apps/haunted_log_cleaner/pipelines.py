@@ -11,6 +11,7 @@ from typing import Any
 
 from skeleton_core.config import register_step
 from skeleton_core.summarization import summarize_logs
+from skeleton_core.utils import validate_file_path
 
 logger = logging.getLogger(__name__)
 
@@ -36,12 +37,13 @@ class LoadLogsStep:
     
     def run(self, data: Any, context: dict[str, Any]) -> list[str]:
         """Load log file and return lines."""
-        logger.info(f"Loading logs from {self.path}")
-        
-        with open(self.path, 'r') as f:
+        validated_path = validate_file_path(self.path)
+        logger.info(f"Loading logs from {validated_path}")
+
+        with open(validated_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
-        
-        context['source_file'] = self.path
+
+        context['source_file'] = str(validated_path)
         logger.info(f"Loaded {len(lines)} log lines")
         
         return lines

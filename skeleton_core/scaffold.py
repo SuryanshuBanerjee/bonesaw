@@ -7,6 +7,8 @@ Provides functions to generate new application skeletons with working pipelines.
 import logging
 from pathlib import Path
 
+from skeleton_core.utils import validate_file_path
+
 logger = logging.getLogger(__name__)
 
 
@@ -75,14 +77,15 @@ class LoadTextStep:
     
     def run(self, data: Any, context: dict[str, Any]) -> list[str]:
         """Load text file and return lines."""
-        logger.info(f"Loading text from {{self.input_path}}")
-        
-        with open(self.input_path, 'r', encoding='utf-8') as f:
+        validated_path = validate_file_path(self.input_path)
+        logger.info(f"Loading text from {validated_path}")
+
+        with open(validated_path, 'r', encoding='utf-8') as f:
             lines = [line.rstrip('\\n') for line in f]
-        
-        context['source_file'] = self.input_path
-        logger.info(f"Loaded {{len(lines)}} lines")
-        
+
+        context['source_file'] = str(validated_path)
+        logger.info(f"Loaded {len(lines)} lines")
+
         return lines
 
 
@@ -111,28 +114,28 @@ class TransformTextStep:
         """Transform text lines."""
         lines = data
         transformations = []
-        
-        logger.info(f"Transforming {{len(lines)}} lines")
-        
+
+        logger.info(f"Transforming {len(lines)} lines")
+
         result = []
         for i, line in enumerate(lines):
             transformed = line
-            
+
             if self.uppercase:
                 transformed = transformed.upper()
                 if 'uppercase' not in transformations:
                     transformations.append('uppercase')
-            
+
             if self.prefix_line_numbers:
-                transformed = f"{{i + 1}}: {{transformed}}"
+                transformed = f"{i + 1}: {transformed}"
                 if 'line_numbers' not in transformations:
                     transformations.append('line_numbers')
-            
+
             result.append(transformed)
-        
+
         context['transformations_applied'] = transformations
-        logger.info(f"Applied transformations: {{', '.join(transformations)}}")
-        
+        logger.info(f"Applied transformations: {', '.join(transformations)}")
+
         return result
 
 
@@ -158,32 +161,32 @@ class WriteTextReportStep:
     def run(self, data: Any, context: dict[str, Any]) -> list[str]:
         """Generate and write markdown report."""
         lines = data
-        
-        logger.info(f"Writing report to {{self.output_path}}")
-        
+
+        logger.info(f"Writing report to {self.output_path}")
+
         # Build markdown content
         report_lines = [
             "# 🩸 Bonesaw Text Report",
             "",
             "## Summary",
             "",
-            f"**Total lines processed:** {{len(lines)}}",
+            f"**Total lines processed:** {len(lines)}",
             ""
         ]
-        
+
         # Show transformations if available
         if 'transformations_applied' in context:
             transformations = context['transformations_applied']
-            report_lines.append(f"**Transformations applied:** {{', '.join(transformations)}}")
+            report_lines.append(f"**Transformations applied:** {', '.join(transformations)}")
             report_lines.append("")
-        
+
         # Show first few lines as preview
         preview_count = min(3, len(lines))
         if preview_count > 0:
-            report_lines.append("## Preview (first {{}} lines)".format(preview_count))
+            report_lines.append(f"## Preview (first {preview_count} lines)")
             report_lines.append("")
             for line in lines[:preview_count]:
-                report_lines.append(f"- {{line}}")
+                report_lines.append(f"- {line}")
             report_lines.append("")
         
         # Include full transformed text
