@@ -250,7 +250,7 @@ def inspect(
     if app_name:
         logger.info(f"Inspecting pipeline for app '{app_name}'")
     else:
-        logger.info(f"Inspecting standalone pipeline")
+        logger.info("Inspecting standalone pipeline")
 
     # Load app and config
     config_dict, pipeline = _load_app_and_config(app_name, config)
@@ -283,7 +283,7 @@ def dry_run(
     if app_name:
         logger.info(f"Dry-run for app '{app_name}'")
     else:
-        logger.info(f"Dry-run for standalone pipeline")
+        logger.info("Dry-run for standalone pipeline")
     
     # Load app and config
     config_dict, pipeline = _load_app_and_config(app_name, config)
@@ -418,7 +418,7 @@ def cache_info():
         typer.echo("Cache is empty")
         return
 
-    safe_echo(f"📊 Cache Statistics:")
+    safe_echo("📊 Cache Statistics:")
     typer.echo(f"  Files: {stats['file_count']}")
     typer.echo(f"  Total size: {stats['total_size_mb']} MB")
     typer.echo(f"  Oldest entry: {stats['oldest_age']}s ago")

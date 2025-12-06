@@ -117,7 +117,7 @@ class CopyFileStep:
         context['source_path'] = str(src_path)
         context['dest_path'] = str(dest_path)
 
-        logger.info(f"Copied successfully")
+        logger.info("Copied successfully")
         return str(dest_path)
 
 
@@ -153,7 +153,7 @@ class MoveFileStep:
         context['source_path'] = str(src_path)
         context['dest_path'] = str(dest_path)
 
-        logger.info(f"Moved successfully")
+        logger.info("Moved successfully")
         return str(dest_path)
 
 
@@ -184,7 +184,7 @@ class DeleteFileStep:
 
         context['deleted_path'] = str(file_path)
 
-        logger.info(f"Deleted successfully")
+        logger.info("Deleted successfully")
         return True
 
 

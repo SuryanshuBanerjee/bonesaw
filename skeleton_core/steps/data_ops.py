@@ -8,7 +8,6 @@ import csv
 import json
 import logging
 from io import StringIO
-from pathlib import Path
 from typing import Any, Optional
 
 import feedparser
@@ -37,7 +36,7 @@ class ParseJSONStep:
 
         result = json.loads(json_text)
 
-        logger.info(f"Parsed successfully")
+        logger.info("Parsed successfully")
         return result
 
 
@@ -62,7 +61,7 @@ class ToJSONStep:
 
     def run(self, data: Any, context: dict[str, Any]) -> str:
         """Convert to JSON."""
-        logger.info(f"Converting to JSON")
+        logger.info("Converting to JSON")
 
         result = json.dumps(data, indent=self.indent, ensure_ascii=self.ensure_ascii)
 
@@ -90,7 +89,7 @@ class ParseYAMLStep:
 
         result = yaml.safe_load(yaml_text)
 
-        logger.info(f"Parsed successfully")
+        logger.info("Parsed successfully")
         return result
 
 
@@ -113,7 +112,7 @@ class ToYAMLStep:
 
     def run(self, data: Any, context: dict[str, Any]) -> str:
         """Convert to YAML."""
-        logger.info(f"Converting to YAML")
+        logger.info("Converting to YAML")
 
         result = yaml.dump(data, default_flow_style=self.default_flow_style)
 

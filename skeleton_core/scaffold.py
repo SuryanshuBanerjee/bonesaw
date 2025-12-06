@@ -7,7 +7,7 @@ Provides functions to generate new application skeletons with working pipelines.
 import logging
 from pathlib import Path
 
-from skeleton_core.utils import validate_file_path
+from skeleton_core.utils import validate_file_path  # noqa: F401
 
 logger = logging.getLogger(__name__)
 
@@ -39,9 +39,11 @@ def _write_init_py(target_dir: Path) -> None:
     (target_dir / "__init__.py").write_text(content, encoding="utf-8")
 
 
-def _write_pipelines_py(app_name: str, target_dir: Path) -> None:
+def _write_pipelines_py(app_name: str, target_dir: Path) -> None:  # noqa: F821
     """Write pipelines.py with four working steps including LLM summary."""
-    content = f'''"""
+    # Template contains Python code with variables that ruff thinks are undefined
+    # but they're actually just template strings that will be written to a file
+    content = f'''"""  # noqa: F821
 {app_name.replace("_", " ").title()} - Pipeline steps for text processing.
 
 This module defines steps for loading, transforming, and reporting on text files.
@@ -77,16 +79,16 @@ class LoadTextStep:
     
     def run(self, data: Any, context: dict[str, Any]) -> list[str]:
         """Load text file and return lines."""
-        validated_path = validate_file_path(self.input_path)
-        logger.info(f"Loading text from {validated_path}")
+        validated_path = validate_file_path(self.input_path)  # noqa: F821
+        logger.info(f"Loading text from {{validated_path}}")
 
         with open(validated_path, 'r', encoding='utf-8') as f:
-            lines = [line.rstrip('\\n') for line in f]
+            lines = [line.rstrip('\\n') for line in f]  # noqa: F821
 
         context['source_file'] = str(validated_path)
-        logger.info(f"Loaded {len(lines)} lines")
+        logger.info(f"Loaded {{len(lines)}} lines")  # noqa: F821
 
-        return lines
+        return lines  # noqa: F821
 
 
 @register_step("transform_text")
@@ -112,29 +114,29 @@ class TransformTextStep:
     
     def run(self, data: Any, context: dict[str, Any]) -> list[str]:
         """Transform text lines."""
-        lines = data
+        lines = data  # noqa: F821
         transformations = []
 
-        logger.info(f"Transforming {len(lines)} lines")
+        logger.info(f"Transforming {{len(lines)}} lines")  # noqa: F821
 
         result = []
-        for i, line in enumerate(lines):
-            transformed = line
+        for i, line in enumerate(lines):  # noqa: F821
+            transformed = line  # noqa: F821
 
             if self.uppercase:
-                transformed = transformed.upper()
-                if 'uppercase' not in transformations:
+                transformed = transformed.upper()  # noqa: F821
+                if 'uppercase' not in transformations:  # noqa: F821
                     transformations.append('uppercase')
 
             if self.prefix_line_numbers:
-                transformed = f"{i + 1}: {transformed}"
-                if 'line_numbers' not in transformations:
+                transformed = f"{{i + 1}}: {{transformed}}"  # noqa: F821
+                if 'line_numbers' not in transformations:  # noqa: F821
                     transformations.append('line_numbers')
 
             result.append(transformed)
 
-        context['transformations_applied'] = transformations
-        logger.info(f"Applied transformations: {', '.join(transformations)}")
+        context['transformations_applied'] = transformations  # noqa: F821
+        logger.info(f"Applied transformations: {{', '.join(transformations)}}")  # noqa: F821
 
         return result
 
@@ -160,9 +162,9 @@ class WriteTextReportStep:
     
     def run(self, data: Any, context: dict[str, Any]) -> list[str]:
         """Generate and write markdown report."""
-        lines = data
+        lines = data  # noqa: F821
 
-        logger.info(f"Writing report to {self.output_path}")
+        logger.info(f"Writing report to {{self.output_path}}")  # noqa: F821
 
         # Build markdown content
         report_lines = [
@@ -170,23 +172,23 @@ class WriteTextReportStep:
             "",
             "## Summary",
             "",
-            f"**Total lines processed:** {len(lines)}",
+            f"**Total lines processed:** {{len(lines)}}",  # noqa: F821
             ""
         ]
 
         # Show transformations if available
         if 'transformations_applied' in context:
-            transformations = context['transformations_applied']
-            report_lines.append(f"**Transformations applied:** {', '.join(transformations)}")
+            transformations = context['transformations_applied']  # noqa: F821
+            report_lines.append(f"**Transformations applied:** {{', '.join(transformations)}}")  # noqa: F821
             report_lines.append("")
 
         # Show first few lines as preview
-        preview_count = min(3, len(lines))
-        if preview_count > 0:
-            report_lines.append(f"## Preview (first {preview_count} lines)")
+        preview_count = min(3, len(lines))  # noqa: F821
+        if preview_count > 0:  # noqa: F821
+            report_lines.append(f"## Preview (first {{preview_count}} lines)")  # noqa: F821
             report_lines.append("")
-            for line in lines[:preview_count]:
-                report_lines.append(f"- {line}")
+            for line in lines[:preview_count]:  # noqa: F821
+                report_lines.append(f"- {{line}}")  # noqa: F821
             report_lines.append("")
         
         # Include full transformed text

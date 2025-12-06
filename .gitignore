@@ -73,3 +73,4 @@ reports/
 # Kiro-specific files
 .kiro/
 .bonesaw_cache/
+.claude/

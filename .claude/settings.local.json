@@ -6,7 +6,9 @@
       "Bash(pip install:*)",
       "Bash(python main.py:*)",
       "Bash(find:*)",
-      "Bash(xargs -I {} sh -c 'grep -q \"\"from typing import.*Optional\"\" {} || sed -i \"\"s/from typing import \\(.*\\)$/from typing import \\1, Optional/\"\" {}')"
+      "Bash(xargs -I {} sh -c 'grep -q \"\"from typing import.*Optional\"\" {} || sed -i \"\"s/from typing import \\(.*\\)$/from typing import \\1, Optional/\"\" {}')",
+      "Bash(ruff check:*)",
+      "Bash(python -m ruff check:*)"
     ],
     "deny": [],
     "ask": []
